@@ -38,4 +38,12 @@ public class PhraseIdDict {
         }
 
     }
+
+    public Integer GetPhraseId(String phrase, boolean replaceSpecial) {
+        if(replaceSpecial) {
+            phrase = phrase.replaceAll("-LRB-", "(").replace("-RRB-", ")");
+        }
+
+        return Dict.get(phrase);
+    }
 }

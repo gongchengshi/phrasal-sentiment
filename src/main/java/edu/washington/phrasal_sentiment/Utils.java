@@ -54,4 +54,15 @@ public class Utils {
 
         return rtn;
     }
+
+    public static List<String> ReadLines(Path inPath) throws IOException {
+        BufferedReader reader = Files.newBufferedReader(inPath, StandardCharsets.UTF_8);
+        ArrayList<String> rtn = new ArrayList<String>();
+        String line;
+        while((line = reader.readLine()) != null) {
+            rtn.add(line);
+        }
+
+        return rtn;
+    }
 }

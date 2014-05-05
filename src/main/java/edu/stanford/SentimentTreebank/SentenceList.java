@@ -25,7 +25,6 @@ public class SentenceList {
         BufferedReader reader = Files.newBufferedReader(Paths.get(path), StandardCharsets.UTF_8);
         /* read the heading */
         String line = reader.readLine();
-        int i = 0;
         while ((line = reader.readLine()) != null) {
             Iterable<String> tokens = PIPE_SPLITTER.split(line);
             Iterator<String> tokensIter = tokens.iterator();

@@ -5,9 +5,12 @@ import edu.stanford.SentimentTreebank.PhraseIdSentimentList;
 import edu.stanford.SentimentTreebank.SentenceList;
 import edu.stanford.SentimentTreebank.StanfordSentimentTreebankInfo;
 
+import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -17,11 +20,15 @@ public class PhrasalVerbsInvestigation {
     public static void main(String[] args) throws IOException {
         StanfordSentimentTreebankInfo sentimentTbInfo = new StanfordSentimentTreebankInfo("supplementary/stanfordSentimentTreebank");
 
-        Path wikipediaPhrasalVerbsPath = Paths.get("supplementary/phrasal_verb_lists/wikipedia_phrasal_verbs.txt");
-        Path simplePhrasalVerbsPath = Paths.get("base_phrasal_verbs.txt");
-        List<String> simplePhrasalVerbs = Utils.GetTwoWordLines(wikipediaPhrasalVerbsPath);
+        Path simplePhrasalVerbsPath = Paths.get("phrasal_verb_investigation/base_phrasal_verbs.txt");
+        //ExtractAndWriteBasePhrasalVerbs(simplePhrasalVerbsPath);
 
-        WriteSimplePhrasalVerbsFile(simplePhrasalVerbs, simplePhrasalVerbsPath.toString());
+        List<String> simplePhrasalVerbs = new ArrayList<>();
+        BufferedReader reader = Files.newBufferedReader(simplePhrasalVerbsPath, StandardCharsets.UTF_8);
+        String line;
+        while ((line = reader.readLine()) != null) {
+            simplePhrasalVerbs.add(line.split("\\t")[1]);
+        }
 
         PhraseIdDict phraseIds = new PhraseIdDict(sentimentTbInfo.DictionaryPath);
         PhraseIdSentimentList phraseIdSentiments = new PhraseIdSentimentList(sentimentTbInfo.SentimentLabelsPath, 239233);
@@ -30,25 +37,44 @@ public class PhrasalVerbsInvestigation {
         List<Double> aveSentOfVerbalPhraseSentences = new ArrayList<>(simplePhrasalVerbs.size());
 
         for(List<Integer> verbPhraseSentences: phrasalVerbSentences) {
+            if(verbPhraseSentences.isEmpty()) {
+                aveSentOfVerbalPhraseSentences.add(null);
+                continue;
+            }
             Double aveSentiment = 0.0;
+
             for(Integer sentenceId : verbPhraseSentences) {
-                Integer phraseId = phraseIds.Dict.get(sentences.List.get(sentenceId));
-                Double sentimentScore = phraseIdSentiments.List.get(phraseId);
-                aveSentiment += (Integer)SentimentScoreToClass(sentimentScore);
+                String sentence = sentences.List.get(sentenceId);
+                Integer phraseId = phraseIds.GetPhraseId(sentence, true);
+                Double sentimentScore = null;
+                try {
+                    sentimentScore = phraseIdSentiments.List.get(phraseId);
+                    aveSentiment += SentimentScoreToClass(sentimentScore);
+                } catch(Exception ex) {
+                    int j = 0;
+                }
             }
 
             aveSentiment /= (double)verbPhraseSentences.size();
             aveSentOfVerbalPhraseSentences.add(aveSentiment);
         }
 
-        WriteAverageSentimentOfVerbalPhraseSentences(aveSentOfVerbalPhraseSentences, "phrasal_verb_sentence_sentiment.txt");
+        WriteAverageSentimentOfVerbalPhraseSentences(
+                aveSentOfVerbalPhraseSentences, "phrasal_verb_investigation/phrasal_verb_sentence_sentiment.txt");
+    }
+
+    private static void ExtractAndWriteBasePhrasalVerbs(Path outPath) throws IOException {
+        Path wikipediaPhrasalVerbsPath = Paths.get("supplementary/phrasal_verb_lists/wikipedia_phrasal_verbs.txt");
+        List<String> simplePhrasalVerbs = Utils.GetTwoWordLines(wikipediaPhrasalVerbsPath);
+
+        WriteSimplePhrasalVerbsFile(simplePhrasalVerbs, outPath.toString());
     }
 
     private static void WriteAverageSentimentOfVerbalPhraseSentences(List<Double> values, String outPath) throws FileNotFoundException {
         PrintWriter writer = new PrintWriter(outPath);
         int i = 0;
         for(Double value : values) {
-            writer.println(i++ + "\t" + value);
+            writer.println(i++ + "\t" + (value == null ? "NA" : value));
         }
         writer.close();
     }
@@ -84,7 +110,7 @@ public class PhrasalVerbsInvestigation {
 
     public static ArrayList<List<Integer>> BuildPhraseVerbSentencesMap(
             List<String> simplePhrasalVerbs, SentenceList sentences) throws IOException {
-        ArrayList<List<Integer>> phrasalVerbSentences = new ArrayList<List<Integer>>(simplePhrasalVerbs.size());
+        ArrayList<List<Integer>> phrasalVerbSentences = new ArrayList<>(simplePhrasalVerbs.size());
 
         for(String phrasalVerb : simplePhrasalVerbs) {
             phrasalVerbSentences.add(sentences.FindSentencesWithPhrase(phrasalVerb));
