@@ -1,0 +1,41 @@
+package edu.stanford.SentimentTreebank;
+
+import com.google.common.base.Splitter;
+import com.google.common.collect.BiMap;
+import com.google.common.collect.HashBiMap;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Iterator;
+
+public class PhraseIdDict {
+    public final BiMap<String,Integer> Dict;
+    private static final Splitter PIPE_SPLITTER = Splitter.on('|')
+            .trimResults()
+            .omitEmptyStrings();
+    public PhraseIdDict(String path) throws IOException {
+        this.Dict = HashBiMap.create();
+        this.read_dictionary(path);
+    }
+
+    public void read_dictionary(String dict_filename) throws IOException {
+        Path path = Paths.get(dict_filename);
+        BufferedReader reader = Files.newBufferedReader(path, StandardCharsets.UTF_8);
+        /* read the heading */
+        String line;
+        while ((line = reader.readLine()) != null) {
+            Iterable<String> tokens = PIPE_SPLITTER.split(line);
+            Iterator<String> tokens_iter = tokens.iterator();
+            try {
+                Dict.put(tokens_iter.next(), Integer.parseInt(tokens_iter.next()));
+            } catch (NumberFormatException nfe) {
+                System.err.printf("failed to parse numbers (dict): line=[%1$s] error=[%1$s]\n", line, nfe.getMessage());
+            }
+        }
+
+    }
+}
