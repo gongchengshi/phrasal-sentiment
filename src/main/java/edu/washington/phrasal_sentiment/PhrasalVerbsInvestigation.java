@@ -13,15 +13,14 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class PhrasalVerbsInvestigation {
     public static void main(String[] args) throws IOException {
-        StanfordSentimentTreebankInfo sentimentTbInfo = new StanfordSentimentTreebankInfo("supplementary/stanfordSentimentTreebank");
-
         Path simplePhrasalVerbsPath = Paths.get("phrasal_verb_investigation/base_phrasal_verbs.txt");
-        //ExtractAndWriteBasePhrasalVerbs(simplePhrasalVerbsPath);
+        ExtractAndWriteBasePhrasalVerbs(simplePhrasalVerbsPath);
+
+        StanfordSentimentTreebankInfo sentimentTbInfo = new StanfordSentimentTreebankInfo("supplementary/stanfordSentimentTreebank");
 
         List<String> simplePhrasalVerbs = new ArrayList<>();
         BufferedReader reader = Files.newBufferedReader(simplePhrasalVerbsPath, StandardCharsets.UTF_8);
@@ -65,7 +64,10 @@ public class PhrasalVerbsInvestigation {
 
     private static void ExtractAndWriteBasePhrasalVerbs(Path outPath) throws IOException {
         Path wikipediaPhrasalVerbsPath = Paths.get("supplementary/phrasal_verb_lists/wikipedia_phrasal_verbs.txt");
-        List<String> simplePhrasalVerbs = Utils.GetTwoWordLines(wikipediaPhrasalVerbsPath);
+        Path usingEnglishPhrasalVerbsPath = Paths.get("supplementary/phrasal_verb_lists/usingenglish_dot_com_phrasal_verbs.txt");
+
+        SortedSet<String> simplePhrasalVerbs = new TreeSet<>(Utils.GetTwoWordLines(wikipediaPhrasalVerbsPath));
+        simplePhrasalVerbs.addAll(Utils.GetTwoWordLines(usingEnglishPhrasalVerbsPath));
 
         WriteSimplePhrasalVerbsFile(simplePhrasalVerbs, outPath.toString());
     }
@@ -79,7 +81,7 @@ public class PhrasalVerbsInvestigation {
         writer.close();
     }
 
-    private static void WriteSimplePhrasalVerbsFile(List<String> simplePhrasalVerbs, String outPath) throws FileNotFoundException {
+    private static void WriteSimplePhrasalVerbsFile(Collection<String> simplePhrasalVerbs, String outPath) throws FileNotFoundException {
         PrintWriter writer = new PrintWriter(outPath);
         int i = 0;
         for(String item : simplePhrasalVerbs) {
