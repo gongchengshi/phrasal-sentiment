@@ -1,4 +1,4 @@
-package edu.washington.phrasal_sentiment;
+package edu.washington.phrasal;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
