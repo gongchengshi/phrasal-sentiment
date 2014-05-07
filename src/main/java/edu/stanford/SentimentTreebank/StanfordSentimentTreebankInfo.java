@@ -1,9 +1,9 @@
 package edu.stanford.SentimentTreebank;
 
-import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class StanfordSentimentTreebankInfo {
+
     public final String SentimentLabelsPath;
     public final String DictionaryPath;
     public final String DatasetSplitPath;

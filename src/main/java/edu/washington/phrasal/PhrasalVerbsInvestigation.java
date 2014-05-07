@@ -17,9 +17,9 @@ import java.util.*;
 import java.util.Map.Entry;
 
 public class PhrasalVerbsInvestigation {
-	private Path simplePhrasalVerbsPath = Paths
+	private final Path simplePhrasalVerbsPath = Paths
 			.get("phrasal_verb_investigation/base_phrasal_verbs.txt");
-	private StanfordSentimentTreebankInfo sentimentTbInfo = new StanfordSentimentTreebankInfo(
+	private final StanfordSentimentTreebankInfo sentimentTbInfo = new StanfordSentimentTreebankInfo(
 			"supplementary/stanfordSentimentTreebank");
 	private PhraseIdDict phraseIds;
 	private PhraseIdSentimentList phraseIdSentiments;
@@ -69,11 +69,11 @@ public class PhrasalVerbsInvestigation {
 			Double aveSentiment = 0.0;
 
 			for (Integer sentenceId : verbPhraseSentences) {
-				String sentence = sentences.List.get(sentenceId);
+				String sentence = sentences.sentenceList.get(sentenceId);
 				Integer phraseId = phraseIds.GetPhraseId(sentence, true);
 				Double sentimentScore = null;
 				try {
-					sentimentScore = phraseIdSentiments.List.get(phraseId);
+					sentimentScore = phraseIdSentiments.sentimentList.get(phraseId);
 					aveSentiment += SentimentScoreToClass(sentimentScore);
 				} catch (Exception ex) {
 					int j = 0;
@@ -90,16 +90,16 @@ public class PhrasalVerbsInvestigation {
 	}
 
 	public void printSentimentScores() {
-		Map<Integer, List<Integer>> indexedScores = new HashMap<Integer, List<Integer>>();
+		Map<Integer, List<Integer>> indexedScores = new HashMap<>();
 		for (int i = 0; i < phrasalVerbSentences.size(); i++) {
 			List<Integer> verbPhraseSentences = phrasalVerbSentences.get(i);
-			List<Integer> scoresForTerm = new ArrayList<Integer>();
+			List<Integer> scoresForTerm = new ArrayList<>();
 			for (Integer verbPhraseSentence : verbPhraseSentences) {
-				String sentence = sentences.List.get(verbPhraseSentence);
+				String sentence = sentences.sentenceList.get(verbPhraseSentence);
 				Integer phraseId = phraseIds.GetPhraseId(sentence, true);
 				Double sentimentScore = null;
 				try {
-					sentimentScore = phraseIdSentiments.List.get(phraseId);
+					sentimentScore = phraseIdSentiments.sentimentList.get(phraseId);
 					scoresForTerm.add(SentimentScoreToClass(sentimentScore));
 				} catch (Exception ex) {
 					int j = 0;
@@ -138,12 +138,12 @@ public class PhrasalVerbsInvestigation {
 	public static void WriteAverageSentimentOfVerbalPhraseSentences(
 			List<Double> values, String outPath) {
 		try {
-			PrintWriter writer = new PrintWriter(outPath);
-			int i = 0;
-			for (Double value : values) {
-				writer.println(i++ + "\t" + (value == null ? "NA" : value));
-			}
-			writer.close();
+                    try (PrintWriter writer = new PrintWriter(outPath)) {
+                        int i = 0;
+                        for (Double value : values) {
+                            writer.println(i++ + "\t" + (value == null ? "NA" : value));
+                        }
+                    }
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -153,21 +153,21 @@ public class PhrasalVerbsInvestigation {
 	public static void writeSentimentScoresOfSentences(
 			Map<Integer, List<Integer>> indexedScores, String outPath) {
 		try {
-			PrintWriter writer = new PrintWriter(outPath);
-			for (Entry<Integer, List<Integer>> indexedScore : indexedScores
-					.entrySet()) {
-				List<Integer> scores = indexedScore.getValue();
-				writer.print(indexedScore.getKey() + "\t");
-				if (scores.size() > 0)
-					writer.print(scores.get(0));
-				for (int i = 1; i < scores.size(); i++) {
-					writer.print("," + scores.get(i));
-				}
-				writer.println();
-
-			}
-			writer.flush();
-			writer.close();
+                    try (PrintWriter writer = new PrintWriter(outPath)) {
+                        for (Entry<Integer, List<Integer>> indexedScore : indexedScores
+                                .entrySet()) {
+                            List<Integer> scores = indexedScore.getValue();
+                            writer.print(indexedScore.getKey() + "\t");
+                            if (scores.size() > 0)
+                                writer.print(scores.get(0));
+                            for (int i = 1; i < scores.size(); i++) {
+                                writer.print("," + scores.get(i));
+                            }
+                            writer.println();
+                            
+                        }
+                        writer.flush();
+                    }
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -177,12 +177,12 @@ public class PhrasalVerbsInvestigation {
 	private static void WriteSimplePhrasalVerbsFile(
 			Collection<String> simplePhrasalVerbs, String outPath)
 			throws FileNotFoundException {
-		PrintWriter writer = new PrintWriter(outPath);
-		int i = 0;
-		for (String item : simplePhrasalVerbs) {
-			writer.println(i++ + "\t" + item);
-		}
-		writer.close();
+            try (PrintWriter writer = new PrintWriter(outPath)) {
+                int i = 0;
+                for (String item : simplePhrasalVerbs) {
+                    writer.println(i++ + "\t" + item);
+                }
+            }
 	}
 
 	public static int SentimentScoreToClass(Double value) {
@@ -211,7 +211,7 @@ public class PhrasalVerbsInvestigation {
 		try {
 			for (String phrasalVerb : simplePhrasalVerbs) {
 				phrasalVerbSentences.add(sentences
-						.FindSentencesWithPhrase(phrasalVerb));
+						.findSentencesWithPhrase(phrasalVerb));
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

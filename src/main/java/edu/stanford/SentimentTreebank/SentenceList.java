@@ -10,14 +10,20 @@ import java.nio.file.Paths;
 import java.util.*;
 
 public class SentenceList {
-    public final List<String> List;
+
+    public final List<String> sentenceList;
+    private static final int DEFAULT_ARRAY_SIZE = 1000;
 
     private static final Splitter PIPE_SPLITTER = Splitter.on('\t')
             .trimResults()
             .omitEmptyStrings();
 
+    public SentenceList(String path) throws IOException {
+        this(path, DEFAULT_ARRAY_SIZE);
+    }
+
     public SentenceList(String path, int size) throws IOException {
-        List = new ArrayList(size);
+        sentenceList = new ArrayList(size);
         ReadSentences(path);
     }
 
@@ -29,19 +35,22 @@ public class SentenceList {
             Iterable<String> tokens = PIPE_SPLITTER.split(line);
             Iterator<String> tokensIter = tokens.iterator();
             tokensIter.next();
-            List.add(tokensIter.next());
+            sentenceList.add(tokensIter.next());
         }
     }
+    
+    public String getSentence(int id) {
+        return sentenceList.get(id);
+    }
 
-    public List<Integer> FindSentencesWithPhrase(String phrase) throws IOException {
-        List<Integer> ids = new ArrayList<Integer>();
+    public List<Integer> findSentencesWithPhrase(String phrase) throws IOException {
+        List<Integer> ids = new ArrayList<>();
 
-        int i = 0;
-        for(String sentence : List) {
-            if(sentence.contains(phrase)) {
+        for (int i = 0; i < sentenceList.size(); i++) {
+            String sentence = sentenceList.get(i);
+            if (sentence.contains(phrase)) {
                 ids.add(i);
             }
-            ++i;
         }
 
         return ids;

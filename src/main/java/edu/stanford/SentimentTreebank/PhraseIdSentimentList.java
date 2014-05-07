@@ -12,14 +12,15 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class PhraseIdSentimentList {
-    public final ArrayList<Double> List;
+
+    public final ArrayList<Double> sentimentList;
 
     private static final Splitter PIPE_SPLITTER = Splitter.on('|')
             .trimResults()
             .omitEmptyStrings();
 
     public PhraseIdSentimentList(String path, int size) throws IOException {
-        List = new ArrayList<Double>(size);
+        sentimentList = new ArrayList<>(size);
         read_sentiment(path);
     }
 
@@ -28,13 +29,12 @@ public class PhraseIdSentimentList {
         BufferedReader reader = Files.newBufferedReader(path, StandardCharsets.UTF_8);
         /* read the heading */
         String line = reader.readLine();
-        int i = 0;
         while ((line = reader.readLine()) != null) {
             Iterable<String> tokens = PIPE_SPLITTER.split(line);
             Iterator<String> tokensIter = tokens.iterator();
             try {
                 tokensIter.next();
-                List.add(Double.parseDouble(tokensIter.next()));
+                sentimentList.add(Double.parseDouble(tokensIter.next()));
             } catch (NumberFormatException nfe) {
                 System.err.printf("failed to parse numbers (dict): line=[%1$s] error=[%1$s]\n", line, nfe.getMessage());
             }
