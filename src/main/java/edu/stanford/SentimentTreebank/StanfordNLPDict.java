@@ -11,7 +11,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.apache.commons.cli.*;
 
-
 /**
  *
  * @author nickchen
@@ -33,9 +32,33 @@ public class StanfordNLPDict {
     public Set<String> getAllPharses() {
         return phrase_id.getAllPhrase();
     }
-    
+
     public Integer getPhraseId(String phrase) {
-        return phrase_id.GetPhraseId(phrase, false);
+        return phrase_id.getPhraseId(phrase, false);
+    }
+
+    public Double getPhraseSentimentById(int sentence_id) {
+        return id_sentiment.sentimentDict.get(sentence_id);
+    }
+
+    public String getPhraseSentimentClassById(int sentence_id) {
+        double value = getPhraseSentimentById(sentence_id);
+        if (value <= .2) {
+            return "very_negative";
+        }
+        if (value <= .4) {
+            return "negative";
+        }
+        if (value <= .6) {
+            return "neutral";
+        }
+        if (value <= .8) {
+            return "positive";
+        }
+        if (value <= 1) {
+            return "very";
+        }
+        return "UNKNOWN";
     }
 
     public static void main(String args[]) {

@@ -70,7 +70,7 @@ public class PhrasalVerbsInvestigation {
 
 			for (Integer sentenceId : verbPhraseSentences) {
 				String sentence = sentences.sentenceList.get(sentenceId);
-				Integer phraseId = phraseIds.GetPhraseId(sentence, true);
+				Integer phraseId = phraseIds.getPhraseId(sentence, true);
 				Double sentimentScore = null;
 				try {
 					sentimentScore = phraseIdSentiments.sentimentList.get(phraseId);
@@ -96,7 +96,7 @@ public class PhrasalVerbsInvestigation {
 			List<Integer> scoresForTerm = new ArrayList<>();
 			for (Integer verbPhraseSentence : verbPhraseSentences) {
 				String sentence = sentences.sentenceList.get(verbPhraseSentence);
-				Integer phraseId = phraseIds.GetPhraseId(sentence, true);
+				Integer phraseId = phraseIds.getPhraseId(sentence, true);
 				Double sentimentScore = null;
 				try {
 					sentimentScore = phraseIdSentiments.sentimentList.get(phraseId);

@@ -44,7 +44,7 @@ public final class PhraseIdDict {
         return idDict.keySet();
     }
 
-    public Integer GetPhraseId(String phrase, boolean replaceSpecial) {
+    public Integer getPhraseId(String phrase, boolean replaceSpecial) {
         if (replaceSpecial) {
             phrase = phrase.replaceAll("-LRB-", "(").replace("-RRB-", ")");
         }
