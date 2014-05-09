@@ -51,4 +51,8 @@ public final class PhraseIdDict {
 
         return idDict.get(phrase);
     }
+
+    public BiMap<String, Integer> getBiDict() {
+        return idDict;
+    }
 }

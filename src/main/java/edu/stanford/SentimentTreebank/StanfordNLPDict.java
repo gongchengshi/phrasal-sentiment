@@ -6,6 +6,7 @@
 package edu.stanford.SentimentTreebank;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -17,24 +18,24 @@ import org.apache.commons.cli.*;
  */
 public class StanfordNLPDict {
 
-    private final PhraseIdDict phrase_id;
+    private final PhraseIdDict phrase_id_dict;
     private final PhraseIdSentimentDict id_sentiment;
 
     public StanfordNLPDict(String dict_filename, String sentiment_filename) throws IOException {
-        this.phrase_id = new PhraseIdDict(dict_filename);
+        this.phrase_id_dict = new PhraseIdDict(dict_filename);
         this.id_sentiment = new PhraseIdSentimentDict(sentiment_filename);
     }
 
     public double getPhraseSentiment(String sentence) {
-        return id_sentiment.sentimentDict.get(phrase_id.idDict.get(sentence));
+        return id_sentiment.sentimentDict.get(phrase_id_dict.idDict.get(sentence));
     }
 
     public Set<String> getAllPharses() {
-        return phrase_id.getAllPhrase();
+        return phrase_id_dict.getAllPhrase();
     }
 
     public Integer getPhraseId(String phrase) {
-        return phrase_id.getPhraseId(phrase, false);
+        return phrase_id_dict.getPhraseId(phrase, false);
     }
 
     public Double getPhraseSentimentById(int sentence_id) {
@@ -59,6 +60,10 @@ public class StanfordNLPDict {
             return "very";
         }
         return "UNKNOWN";
+    }
+
+    public String getPhraseById(Integer sentenceId) {
+        return phrase_id_dict.getBiDict().inverse().get(sentenceId);
     }
 
     public static void main(String args[]) {
@@ -89,5 +94,15 @@ public class StanfordNLPDict {
         } catch (IOException ex) {
             Logger.getLogger(StanfordNLPDict.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+
+    public ArrayList<Integer> findStanfordPhraseIdFromPhasalVerb(String phrasal_verb) {
+        ArrayList<Integer> phrase_ids = new ArrayList<>();
+        this.phrase_id_dict.getBiDict().forEach((phrase, phrase_id) -> {
+            if (phrase.contains(phrasal_verb)) {
+                phrase_ids.add(phrase_id);
+            }
+        });
+        return phrase_ids;
     }
 }

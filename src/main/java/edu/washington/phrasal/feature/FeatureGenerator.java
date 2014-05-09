@@ -8,8 +8,6 @@ package edu.washington.phrasal.feature;
 import edu.stanford.SentimentTreebank.SentenceList;
 import edu.stanford.SentimentTreebank.StanfordNLPDict;
 import edu.stanford.SentimentTreebank.StanfordSentimentTreebankInfo;
-import edu.stanford.nlp.process.DocumentPreprocessor;
-import edu.stanford.nlp.process.PTBTokenizer;
 import edu.stanford.nlp.tagger.maxent.MaxentTagger;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -21,7 +19,6 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.logging.Level;
@@ -34,19 +31,24 @@ import java.util.logging.Logger;
 public class FeatureGenerator {
 
     /* sentence id to phrasal verbs */
-    final private Map<Integer, Set<Integer>> sentenceIdToPhrasalId;
-    final private SentenceList sentenceList;
-    final private StanfordNLPDict nlpDict;
-    final private StanfordSentimentTreebankInfo stanfordInfo;
-    final private Map<Integer, String> phrasalVerbIdToPhrase;
-    final private MaxentTagger tagger;
+    final public Map<Integer, Set<Integer>> sentenceIdToPhrasalVerbId;
+    /* phrasal verb to Stanford NLP phrase id */
+    final public Map<Integer, Set<Integer>> phrasalVerbIdToStanfordPhraseId;
+    final public SentenceList sentenceList;
+    final public StanfordNLPDict nlpDict;
+    final public StanfordSentimentTreebankInfo stanfordInfo;
+    final public Map<Integer, String> phrasalVerbIdToPhrase;
+    final public MaxentTagger tagger;
+    final public static String FEATURE_SEPARATOR = " ";
+    final public static String FEATURE_VALUE_SEPARATOR = "=";
 
     public FeatureGenerator(String basepath) throws IOException {
         stanfordInfo = new StanfordSentimentTreebankInfo(basepath + "supplementary/stanfordSentimentTreebank");
         nlpDict = new StanfordNLPDict(stanfordInfo.DictionaryPath, stanfordInfo.SentimentLabelsPath);
         sentenceList = new SentenceList(stanfordInfo.DatasetSentencesPath);
-        sentenceIdToPhrasalId = new HashMap<>();
+        sentenceIdToPhrasalVerbId = new HashMap<>();
         phrasalVerbIdToPhrase = new HashMap<>();
+        phrasalVerbIdToStanfordPhraseId = new HashMap<>();
         tagger = new MaxentTagger(
                     "edu/stanford/nlp/models/pos-tagger/english-left3words/english-left3words-distsim.tagger");
 
@@ -62,8 +64,8 @@ public class FeatureGenerator {
 
             f.phrases.stream().forEach((String phrasal_verb) -> {
                 try {
-
                     Set<Integer> sentenceIds = new HashSet<>(sentenceList.findSentencesWithPhrase(phrasal_verb));
+                    
                     if (sentenceIds.size() > 0) {
                         keepPhrasalVerb.merge(phrasal_verb, sentenceIds, (value, newValue) -> {
                             if (value == null) {
@@ -93,10 +95,12 @@ public class FeatureGenerator {
                         append.append(phrasal_verb);
                         writer.write(append.toString());
                         writer.newLine();
-                        keepPhrasalVerb.get(phrasal_verb).stream().forEach((Integer sentence_id) -> {
+                        ArrayList<Integer> phraseId = nlpDict.findStanfordPhraseIdFromPhasalVerb(phrasal_verb);
+                        phrasalVerbIdToStanfordPhraseId.put(id, new HashSet<>(phraseId));
+                        keepPhrasalVerb.get(phrasal_verb).stream().forEach((sentence_id) -> {
                             Set<Integer> phrasal_verb_set = new HashSet<>();
                             phrasal_verb_set.add(id);
-                            sentenceIdToPhrasalId.merge(sentence_id, phrasal_verb_set, (value, newValue) -> {
+                            sentenceIdToPhrasalVerbId.merge(sentence_id, phrasal_verb_set, (value, newValue) -> {
                                 if (value == null) {
                                     value = new HashSet<>();
                                 }
@@ -121,8 +125,8 @@ public class FeatureGenerator {
     /* print out feature in mallet format to */
     public void generateFeatureDocument() {
         /* format is id classification key:value key:value */
-        sentenceIdToPhrasalId.keySet().stream().sorted().forEach((sentenceId) -> {
-            sentenceIdToPhrasalId.get(sentenceId).stream().sorted().forEach((phrasalVerbId) -> {
+        sentenceIdToPhrasalVerbId.keySet().stream().sorted().forEach((sentenceId) -> {
+            sentenceIdToPhrasalVerbId.get(sentenceId).stream().sorted().forEach((phrasalVerbId) -> {
                 StringBuilder sb = new StringBuilder();
                 sb.append(sentenceId);
                 sb.append("_");
@@ -130,10 +134,10 @@ public class FeatureGenerator {
                 sb.append(" ");
                 
                 PhrasalVerbFeatures pvf = new PhrasalVerbFeatures(this, sentenceId, phrasalVerbId);
-                sb.append(pvf.phrasalVerbContextualClassification()).append(" ");
-                sb.append(pvf.phrasalVerbToken()).append(" ");
-                sb.append(pvf.phrasalVerbPOS()).append(" ");
-//                sb.append(pvf.phrasalVerbContext()).append(" ");
+                sb.append(pvf.phrasalVerbContextualClassification()).append(FEATURE_SEPARATOR);
+                sb.append(pvf.phrasalVerbToken()).append(FEATURE_SEPARATOR);
+                sb.append(pvf.phrasalVerbPOS()).append(FEATURE_SEPARATOR);
+                sb.append(pvf.phrasalVerbContext()).append(FEATURE_SEPARATOR);
 //                sb.append(pvf.phrasalVerbPriorPolarity()).append(" ");
 
                 System.out.println(sb.toString());
@@ -145,6 +149,25 @@ public class FeatureGenerator {
 
     public StanfordNLPDict getNLPDict() {
         return nlpDict;
+    }
+
+    public String getClassBySentiment(double value) {
+        if (value <= .2) {
+            return "very_negative";
+        }
+        if (value <= .4) {
+            return "negative";
+        }
+        if (value <= .6) {
+            return "neutral";
+        }
+        if (value <= .8) {
+            return "positive";
+        }
+        if (value <= 1) {
+            return "very";
+        }
+        return "UNKNOWN";
     }
 
     public MaxentTagger getTagger() {
@@ -159,7 +182,7 @@ public class FeatureGenerator {
     public String getPhrasalVerbById(Integer phrasalVerbId) {
         return phrasalVerbIdToPhrase.get(phrasalVerbId);
     }
-    
+
     /* temporary fig.txt reader */
     public class FigReader {
 

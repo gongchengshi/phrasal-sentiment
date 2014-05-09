@@ -11,8 +11,8 @@ import java.util.*;
 
 public class SentenceList {
 
-    public final List<String> sentenceList;
-    private static final int DEFAULT_ARRAY_SIZE = 1000;
+    public final Map<Integer, String> sentenceList;
+    private static final int DEFAULT_ARRAY_SIZE = 11855;
 
     private static final Splitter PIPE_SPLITTER = Splitter.on('\t')
             .trimResults()
@@ -23,7 +23,7 @@ public class SentenceList {
     }
 
     public SentenceList(String path, int size) throws IOException {
-        sentenceList = new ArrayList(size);
+        sentenceList = new HashMap<>();
         ReadSentences(path);
     }
 
@@ -34,8 +34,8 @@ public class SentenceList {
         while ((line = reader.readLine()) != null) {
             Iterable<String> tokens = PIPE_SPLITTER.split(line);
             Iterator<String> tokensIter = tokens.iterator();
-            tokensIter.next();
-            sentenceList.add(tokensIter.next());
+            int index = Integer.parseInt(tokensIter.next());
+            sentenceList.put(index, tokensIter.next());
         }
     }
     
@@ -46,13 +46,13 @@ public class SentenceList {
     public List<Integer> findSentencesWithPhrase(String phrase) throws IOException {
         List<Integer> ids = new ArrayList<>();
 
-        for (int i = 0; i < sentenceList.size(); i++) {
-            String sentence = sentenceList.get(i);
+        sentenceList.entrySet().stream().forEach((set) -> {
+            String sentence = set.getValue();
+            Integer key = set.getKey();
             if (sentence.contains(phrase)) {
-                ids.add(i);
+                ids.add(key);
             }
-        }
-
+        });
         return ids;
     }
 }
