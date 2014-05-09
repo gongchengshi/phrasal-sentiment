@@ -1,4 +1,4 @@
-package edu.washington.wordlists;
+package edu.washington.expressionlists;
 
 import java.util.List;
 import java.util.function.Function;

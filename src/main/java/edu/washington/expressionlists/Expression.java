@@ -1,4 +1,4 @@
-package edu.washington.wordlists;
+package edu.washington.expressionlists;
 
 public class Expression {
 

@@ -1,4 +1,4 @@
-package edu.washington.wordlists;
+package edu.washington.expressionlists;
 
 import java.io.BufferedReader;
 import java.io.IOException;
