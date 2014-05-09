@@ -5,15 +5,16 @@
  */
 package edu.washington.phrasal.feature;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Set;
+
 import com.google.common.base.Joiner;
+
 import edu.stanford.nlp.ie.machinereading.common.SimpleTokenize;
 import edu.stanford.nlp.ling.HasWord;
 import edu.stanford.nlp.ling.TaggedWord;
 import edu.stanford.nlp.ling.Word;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Set;
 
 /**
  *

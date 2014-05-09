@@ -46,13 +46,14 @@ public class SentenceList {
     public List<Integer> findSentencesWithPhrase(String phrase) throws IOException {
         List<Integer> ids = new ArrayList<>();
 
-        sentenceList.entrySet().stream().forEach((set) -> {
+        sentenceList.entrySet().stream().forEach(set -> {
             String sentence = set.getValue();
             Integer key = set.getKey();
             if (sentence.contains(phrase)) {
                 ids.add(key);
             }
         });
+//        System.out.println("hi");
         return ids;
     }
 }
