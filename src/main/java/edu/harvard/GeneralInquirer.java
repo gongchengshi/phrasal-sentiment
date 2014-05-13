@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class GeneralInquirer {
+    // As of 5/12/2014 out of 11788 total words in the General Inquirer dictionary there are 4211 words with sentiment.
     private final Map<String, Double> termPolarity = new HashMap<>();
 
     public GeneralInquirer() throws IOException {
@@ -44,7 +45,20 @@ public class GeneralInquirer {
 
     // Return value >= .5 should be considered positive < .5 is negative
     // Returns null if the term is not in the dictionary
-    public Double getSentiment(String term) {
+    public Double getSentimentOfTerm(String term) {
         return termPolarity.get(term.toLowerCase());
+    }
+
+    public Double getSentimentOfPhrase(String phrase) {
+        // Todo: implement better stemming
+        String[] words = phrase.toLowerCase().split(" ");
+        Double sum = 0.0;
+        for(String word : words) {
+            Double value = getSentimentOfTerm(word);
+            if(value != null) {
+                sum += value;
+            }
+        }
+        return sum / words.length;
     }
 }
