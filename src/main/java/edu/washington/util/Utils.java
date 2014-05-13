@@ -11,10 +11,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Utils {
+
     public static int CharCount(String text, char character) {
         int charCount = 0;
-        for(int i = 0; i<text.length(); ++i) {
-            if(text.charAt(i) == character) {
+        for (int i = 0; i < text.length(); ++i) {
+            if (text.charAt(i) == character) {
                 ++charCount;
             }
         }
@@ -25,15 +26,15 @@ public class Utils {
     public static void GetTwoWordLines(String inPath, String outPath) throws IOException {
         try (BufferedReader reader = new BufferedReader(new FileReader(inPath))) {
             PrintWriter writer = new PrintWriter(outPath);
-            
+
             String line;
-            
-            while((line = reader.readLine()) != null) {
+
+            while ((line = reader.readLine()) != null) {
                 if (CharCount(line, ' ') == 1) {
                     writer.println(line);
                 }
             }
-            
+
             writer.close();
         }
     }
@@ -44,7 +45,7 @@ public class Utils {
         ArrayList<String> rtn = new ArrayList<>();
         String line;
 
-        while((line = reader.readLine()) != null) {
+        while ((line = reader.readLine()) != null) {
             if (CharCount(line, ' ') == 1) {
                 rtn.add(line);
             }
@@ -57,7 +58,7 @@ public class Utils {
         BufferedReader reader = Files.newBufferedReader(inPath, StandardCharsets.UTF_8);
         ArrayList<String> rtn = new ArrayList<>();
         String line;
-        while((line = reader.readLine()) != null) {
+        while ((line = reader.readLine()) != null) {
             rtn.add(line);
         }
 

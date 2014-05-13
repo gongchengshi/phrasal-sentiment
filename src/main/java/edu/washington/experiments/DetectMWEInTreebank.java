@@ -22,13 +22,11 @@ import edu.washington.mwe.MWEDetector;
 
 public class DetectMWEInTreebank {
 
-	
-	
-	public static void main(String[] args) {
-		
-		//Where to store the output expression list 
-		 Path outputSemcorFile = Paths.get("supplementary/mwe/best.secmor");
-		 
+    public static void main(String[] args) {
+
+        //Where to store the output expression list 
+        Path outputSemcorFile = Paths.get("supplementary/mwe/best.secmor");
+
 //		Generate expression list
 //		ExpressionList e = new ExpressionList(FilePaths.baseWordlist);
 //		List<Expression> filteredExprs = e.getExpressions().parallelStream()
@@ -37,35 +35,30 @@ public class DetectMWEInTreebank {
 //		ExpressionList filteredList = new ExpressionList(filteredExprs);
 //		System.out.println(filteredList.getExpressions().size() + " expresssions to consider");
 //		filteredList.saveAsSemcor(outputSemcorFile);
-		
-		//Extract MWEs from stanford corpus
-		MWEDetector detector = MWEDetector.getInstance();
-		Map<String, List<IMWE<IToken>>> results = detector.detectFromTreebank(outputSemcorFile.toFile());
-		
-		//print results
+        //Extract MWEs from stanford corpus
+        MWEDetector detector = MWEDetector.getInstance();
+        Map<String, List<IMWE<IToken>>> results = detector.detectFromTreebank(outputSemcorFile.toFile());
+
+        //print results
 //		results.entrySet().parallelStream().forEach(System.out::println);
 //		printStaCtistics(results);
-		
-	}
+    }
 
-	public static void printStatistics(Map<String, List<IMWE<IToken>>> results ){
-		Integer numMWEs = 0;
-			
+    public static void printStatistics(Map<String, List<IMWE<IToken>>> results) {
+        Integer numMWEs = 0;
 
-			for (Entry<String, List<IMWE<IToken>>> result : results.entrySet()){
-				String text = result.getKey();
-				
-				
-				List<IMWE<IToken>> extractedExpressions = result.getValue();
-			
-				numMWEs += extractedExpressions.size();
-			}
-			System.out.println(numMWEs);
-			
-		
-	}
-	
-	public static <T> Predicate<T> not(Predicate<T> t) {
-	    return t.negate();
-	}
+        for (Entry<String, List<IMWE<IToken>>> result : results.entrySet()) {
+            String text = result.getKey();
+
+            List<IMWE<IToken>> extractedExpressions = result.getValue();
+
+            numMWEs += extractedExpressions.size();
+        }
+        System.out.println(numMWEs);
+
+    }
+
+    public static <T> Predicate<T> not(Predicate<T> t) {
+        return t.negate();
+    }
 }

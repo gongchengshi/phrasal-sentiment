@@ -20,59 +20,56 @@ import edu.mit.jmwe.index.MWEIndex;
 
 public class JWMEWrapper {
 
-	private IMWEIndex index;
+    private IMWEIndex index;
 
-	public IMWEDetector detectorFromName(String name) {
-		// switch(name){
-		if (name.equals("consecutive"))
-			return new Consecutive(index);
-		else if (name.equals("exhaustive"))
-			return new Exhaustive(index); // / StopWords
-		else if (name.equals("stopWords"))
-			return new StopWords(index);
-		else if (name.equals("properNouns"))
-			return ProperNouns.getInstance();
-		else if (name.equals("all"))
-			return new CompositeDetector(new Consecutive(index),
-					new Exhaustive(index), new StopWords(index),
-					ProperNouns.getInstance());
-		else
-			return null;
-		// }
-	}
-	
+    public IMWEDetector detectorFromName(String name) {
+        // switch(name){
+        if (name.equals("consecutive")) {
+            return new Consecutive(index);
+        } else if (name.equals("exhaustive")) {
+            return new Exhaustive(index); // / StopWords
+        } else if (name.equals("stopWords")) {
+            return new StopWords(index);
+        } else if (name.equals("properNouns")) {
+            return ProperNouns.getInstance();
+        } else if (name.equals("all")) {
+            return new CompositeDetector(new Consecutive(index),
+                    new Exhaustive(index), new StopWords(index),
+                    ProperNouns.getInstance());
+        } else {
+            return null;
+        }
+        // }
+    }
 
-	public JWMEWrapper(File idxData) {
-		try {
-			index = new MWEIndex(idxData);
-			index.open();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+    public JWMEWrapper(File idxData) {
+        try {
+            index = new MWEIndex(idxData);
+            index.open();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
 
-	public static void makeNewIndexFile(String indexName, String newIndexFile,
-			List<String> forms) {
-		try {
-			IMWEIndex newIndex = new MWEIndex(forms);
-			newIndex.open();
-			List<String> headerLines = new LinkedList<String>();
-			headerLines.add("Index: " + indexName);
-			headerLines.add("Generated on: " + new Date());
-			IndexBuilder.writeDataFile(newIndex, new FileOutputStream(new File(
-					newIndexFile)), headerLines);
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+    public static void makeNewIndexFile(String indexName, String newIndexFile,
+            List<String> forms) {
+        try {
+            IMWEIndex newIndex = new MWEIndex(forms);
+            newIndex.open();
+            List<String> headerLines = new LinkedList<String>();
+            headerLines.add("Index: " + indexName);
+            headerLines.add("Generated on: " + new Date());
+            IndexBuilder.writeDataFile(newIndex, new FileOutputStream(new File(
+                    newIndexFile)), headerLines);
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
 
-	}
-
-
-
+    }
 
 }
