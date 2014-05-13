@@ -36,7 +36,6 @@ public class Reader {
             // read in scores
             reader = Files.newBufferedReader(scorePath, StandardCharsets.UTF_8);
             line = "";
-            BiMap<Integer, String> idIndex = HashBiMap.create();
             while ((line = reader.readLine()) != null) {
                 String[] datum = line.split("\t");
                 if (!datum[1].contains("NA")) {

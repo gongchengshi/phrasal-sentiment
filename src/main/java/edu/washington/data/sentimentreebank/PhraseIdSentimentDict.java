@@ -1,4 +1,4 @@
-package edu.stanford.SentimentTreebank;
+package edu.washington.data.sentimentreebank;
 
 import com.google.common.base.Splitter;
 
@@ -8,19 +8,18 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
 
-public class PhraseIdSentimentList {
+public class PhraseIdSentimentDict {
 
-    public final ArrayList<Double> sentimentList;
+    public final HashMap<Integer, Double> sentimentDict = new HashMap<>();
 
     private static final Splitter PIPE_SPLITTER = Splitter.on('|')
             .trimResults()
             .omitEmptyStrings();
 
-    public PhraseIdSentimentList(String path, int size) throws IOException {
-        sentimentList = new ArrayList<>(size);
+    public PhraseIdSentimentDict(String path) throws IOException {
         read_sentiment(path);
     }
 
@@ -31,10 +30,9 @@ public class PhraseIdSentimentList {
         String line = reader.readLine();
         while ((line = reader.readLine()) != null) {
             Iterable<String> tokens = PIPE_SPLITTER.split(line);
-            Iterator<String> tokensIter = tokens.iterator();
+            Iterator<String> tokens_iter = tokens.iterator();
             try {
-                tokensIter.next();
-                sentimentList.add(Double.parseDouble(tokensIter.next()));
+                sentimentDict.put(Integer.parseInt(tokens_iter.next()), Double.parseDouble(tokens_iter.next()));
             } catch (NumberFormatException nfe) {
                 System.err.printf("failed to parse numbers (dict): line=[%1$s] error=[%1$s]\n", line, nfe.getMessage());
             }

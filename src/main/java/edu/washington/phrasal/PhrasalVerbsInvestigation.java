@@ -1,9 +1,10 @@
 package edu.washington.phrasal;
 
-import edu.stanford.SentimentTreebank.PhraseIdDict;
-import edu.stanford.SentimentTreebank.PhraseIdSentimentList;
-import edu.stanford.SentimentTreebank.SentenceList;
-import edu.stanford.SentimentTreebank.StanfordSentimentTreebankInfo;
+import edu.washington.data.sentimentreebank.PhraseIdDict;
+import edu.washington.data.sentimentreebank.PhraseIdSentimentList;
+import edu.washington.data.sentimentreebank.SentenceList;
+import edu.washington.data.sentimentreebank.StanfordSentimentTreebankInfo;
+import edu.washington.util.Utils;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -76,7 +77,7 @@ public class PhrasalVerbsInvestigation {
 					sentimentScore = phraseIdSentiments.sentimentList.get(phraseId);
 					aveSentiment += SentimentScoreToClass(sentimentScore);
 				} catch (Exception ex) {
-					int j = 0;
+										
 				}
 			}
 
@@ -102,7 +103,6 @@ public class PhrasalVerbsInvestigation {
 					sentimentScore = phraseIdSentiments.sentimentList.get(phraseId);
 					scoresForTerm.add(SentimentScoreToClass(sentimentScore));
 				} catch (Exception ex) {
-					int j = 0;
 				}
 			}
 			if (!scoresForTerm.isEmpty())

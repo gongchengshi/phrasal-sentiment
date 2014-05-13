@@ -1,9 +1,9 @@
-package edu.washington.expressionlists;
+package edu.washington.expressionlists.types;
 
-public class Expression {
+public abstract class Expression {
 
-	private String text;
-	private String category;
+	protected String text;
+	protected String category;
 	public String getText() {
 		return text;
 	}
@@ -20,9 +20,7 @@ public class Expression {
 		this.text = text;
 	}
 	public Expression(String text, String category) {
-		super();
 		this.text = text;
 		this.category = category;
 	}
-	
-}
+	}

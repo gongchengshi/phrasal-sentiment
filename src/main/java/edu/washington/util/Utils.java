@@ -1,4 +1,4 @@
-package edu.washington.phrasal;
+package edu.washington.util;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

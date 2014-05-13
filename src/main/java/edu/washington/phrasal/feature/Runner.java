@@ -5,7 +5,6 @@
  */
 package edu.washington.phrasal.feature;
 
-import edu.stanford.nlp.tagger.maxent.MaxentTagger;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;

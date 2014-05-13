@@ -5,10 +5,11 @@
  */
 package edu.washington.phrasal.feature;
 
-import edu.stanford.SentimentTreebank.SentenceList;
-import edu.stanford.SentimentTreebank.StanfordNLPDict;
-import edu.stanford.SentimentTreebank.StanfordSentimentTreebankInfo;
 import edu.stanford.nlp.tagger.maxent.MaxentTagger;
+import edu.washington.data.sentimentreebank.SentenceList;
+import edu.washington.data.sentimentreebank.StanfordNLPDict;
+import edu.washington.data.sentimentreebank.StanfordSentimentTreebankInfo;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;

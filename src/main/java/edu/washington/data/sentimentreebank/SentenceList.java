@@ -1,4 +1,4 @@
-package edu.stanford.SentimentTreebank;
+package edu.washington.data.sentimentreebank;
 
 import com.google.common.base.Splitter;
 
