@@ -76,7 +76,7 @@ public class PhrasalVerbFeatures {
             if (index < sentenceTokens.size()) {
                 sb.append("nextWord");
                 sb.append(FeatureGenerator.FEATURE_VALUE_SEPARATOR);
-                sb.append(sentenceTokens.get(index + 1));
+                sb.append(sentenceTokens.get(index + pv.size()));
             }
             return sb.toString().trim();
         }
