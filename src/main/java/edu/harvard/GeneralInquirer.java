@@ -31,13 +31,20 @@ public class GeneralInquirer {
             Boolean pos = !(positiv.isEmpty() && pstv.isEmpty());
             Boolean neg = !(negativ.isEmpty() && ngtv.isEmpty());
             if(pos || neg) {
-                // Todo: handle multiple entries
-                termPolarity.put(entry, pos ? 1.0 : 0.0);
+                String[] parts = entry.split("#");
+                // Todo: take a weighted average of multiple definitions of identical terms
+                // Right now only the most common definition is used.
+                if(parts.length > 1 && !parts[1].equals("1")) {
+                    continue;
+                }
+                termPolarity.put(parts[0].toLowerCase(), pos ? 1.0 : 0.0);
             }
         }
     }
 
+    // Return value >= .5 should be considered positive < .5 is negative
+    // Returns null if the term is not in the dictionary
     public Double getSentiment(String term) {
-        return termPolarity.get(term);
+        return termPolarity.get(term.toLowerCase());
     }
 }
