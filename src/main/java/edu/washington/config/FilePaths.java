@@ -11,4 +11,7 @@ public class FilePaths {
     //C:\Users\Kaufmann\workspace\test\
     public static final Path mweIndex = Paths
             .get("supplementary/mwe/single.semcore");
+    public static final Path wikipediaFigSemcorFile = Paths
+            .get("supplementary/mwe/best.secmor");
+
 }

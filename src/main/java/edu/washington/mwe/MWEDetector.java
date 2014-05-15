@@ -1,14 +1,5 @@
 package edu.washington.mwe;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
-
 import edu.mit.jmwe.data.IMWE;
 import edu.mit.jmwe.data.IToken;
 import edu.mit.jmwe.data.Token;
@@ -20,6 +11,13 @@ import edu.stanford.nlp.ling.CoreLabel;
 import edu.washington.data.sentimentreebank.SentenceList;
 import edu.washington.data.sentimentreebank.StanfordSentimentTreebankInfo;
 import edu.washington.util.StanfordAnnotator;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class MWEDetector {
 
@@ -42,29 +40,17 @@ public class MWEDetector {
 
     public Map<String, List<IMWE<IToken>>> detectFromTreebank(File idxFile) {
         int NUM_SENTENCES_IN_STANFORD = 11856;
-        int counter = 0;
         Map<String, List<IMWE<IToken>>> results = new HashMap<String, List<IMWE<IToken>>>();
         try {
-            PrintWriter w = new PrintWriter(new FileWriter(new File(
-                    "results-2.txt")));
-
             SentenceList sentences = new SentenceList(
                     sentimentTbInfo.DatasetSentencesPath,
                     NUM_SENTENCES_IN_STANFORD);
             for (int i = 1; i < NUM_SENTENCES_IN_STANFORD; i++) {
                 String text = sentences.getSentence(i);
                 List<IMWE<IToken>> mwes = detect(text, idxFile);
-                w.println(text);
-                for (IMWE<IToken> extractedExpression : mwes) {
-                    w.println("\t" + extractedExpression);
-                    counter++;
-                }
-                w.flush();
+
                 results.put(text, mwes);
             }
-            w.flush();
-            w.close();
-            System.out.println(counter);
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -82,8 +68,8 @@ public class MWEDetector {
         List<IToken> sentence = tokens
                 .parallelStream()
                 .map((token) -> new Token(token.get(TextAnnotation.class),
-                                token.get(PartOfSpeechAnnotation.class), token
-                                .get(LemmaAnnotation.class)))
+                        token.get(PartOfSpeechAnnotation.class), token
+                        .get(LemmaAnnotation.class)))
                 .collect(Collectors.toList());
         JWMEWrapper jwme = new JWMEWrapper(idxFile);
         IMWEDetector detector = jwme.detectorFromName(detectorType);

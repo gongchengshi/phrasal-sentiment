@@ -13,6 +13,10 @@ public class ExpressionFilters {
 
     private static StanfordAnnotator annotator = StanfordAnnotator.getInstance();
 
+    public static Predicate<Expression> not(Predicate<Expression> t) {
+        return t.negate();
+    }
+
 	//AVAILABLE FILTERS
     //returns true if the expression is one word 
     public static Predicate<Expression> isSingleWord = (expression) -> {
