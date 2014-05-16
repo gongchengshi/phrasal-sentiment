@@ -6,6 +6,8 @@
 package edu.washington.data.sentimentreebank;
 
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Set;
 import java.util.logging.Level;
@@ -21,9 +23,9 @@ public class StanfordNLPDict {
     private final PhraseIdDict phrase_id_dict;
     private final PhraseIdSentimentDict id_sentiment;
 
-    public StanfordNLPDict(String dict_filename, String sentiment_filename) throws IOException {
-        this.phrase_id_dict = new PhraseIdDict(dict_filename);
-        this.id_sentiment = new PhraseIdSentimentDict(sentiment_filename);
+    public StanfordNLPDict(Path dictPath, Path sentimentPath) throws IOException {
+        this.phrase_id_dict = new PhraseIdDict(dictPath);
+        this.id_sentiment = new PhraseIdSentimentDict(sentimentPath);
     }
 
     public double getPhraseSentiment(String sentence) {
@@ -80,10 +82,10 @@ public class StanfordNLPDict {
                 return;
             }
 
-            String dict_filename = line.getOptionValue("dict");
-            String sentiment_filename = line.getOptionValue("sentiment");
+            Path dictPath = Paths.get(line.getOptionValue("dict"));
+            Path sentimentPath = Paths.get(line.getOptionValue("sentiment"));
 
-            StanfordNLPDict snlp = new StanfordNLPDict(dict_filename, sentiment_filename);
+            StanfordNLPDict snlp = new StanfordNLPDict(dictPath, sentimentPath);
             String sentence = "take off";
             System.out.printf("sentence [%1$s] %2$s\n", sentence, String.valueOf(snlp.getPhraseSentiment(sentence)));
 

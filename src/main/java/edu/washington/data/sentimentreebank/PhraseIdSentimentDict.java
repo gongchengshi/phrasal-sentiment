@@ -19,12 +19,14 @@ public class PhraseIdSentimentDict {
             .trimResults()
             .omitEmptyStrings();
 
-    public PhraseIdSentimentDict(String path) throws IOException {
+    public PhraseIdSentimentDict() {
+    }
+
+    public PhraseIdSentimentDict(Path path) throws IOException {
         read_sentiment(path);
     }
 
-    private void read_sentiment(String sentiment_filename) throws IOException {
-        Path path = Paths.get(sentiment_filename);
+    private void read_sentiment(Path path) throws IOException {
         BufferedReader reader = Files.newBufferedReader(path, StandardCharsets.UTF_8);
         /* read the heading */
         String line = reader.readLine();

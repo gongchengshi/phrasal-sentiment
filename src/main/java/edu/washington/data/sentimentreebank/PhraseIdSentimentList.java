@@ -19,13 +19,18 @@ public class PhraseIdSentimentList {
             .trimResults()
             .omitEmptyStrings();
 
-    public PhraseIdSentimentList(String path, int size) throws IOException {
+    private static final int DEFAULT_ARRAY_SIZE = 239233;
+
+    public PhraseIdSentimentList(Path path) throws IOException {
+        this(path, DEFAULT_ARRAY_SIZE);
+    }
+
+    public PhraseIdSentimentList(Path path, int size) throws IOException {
         sentimentList = new ArrayList<>(size);
         read_sentiment(path);
     }
 
-    private void read_sentiment(String sentiment_filename) throws IOException {
-        Path path = Paths.get(sentiment_filename);
+    private void read_sentiment(Path path) throws IOException {
         BufferedReader reader = Files.newBufferedReader(path, StandardCharsets.UTF_8);
         /* read the heading */
         String line = reader.readLine();

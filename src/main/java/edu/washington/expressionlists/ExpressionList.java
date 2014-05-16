@@ -36,30 +36,25 @@ public class ExpressionList {
 
     private void load(Path list) {
         try {
-            BufferedReader b = Files.newBufferedReader(list,
-                    StandardCharsets.UTF_8);
-            String line = b.readLine();
-            String currentCategory = line;
-            List<String> wordsForCategory = new ArrayList<String>();
-
+            BufferedReader b = Files.newBufferedReader(list, StandardCharsets.UTF_8);
+            String currentCategory = null;
+            String line = null;
             while ((line = b.readLine()) != null) {
                 if (line.startsWith("Category:")) {
-                    for (String word : wordsForCategory) {
-                        expressions.add(new BaseExpression(word,
-                                currentCategory));
-                    }
-                    currentCategory = line;
+                    currentCategory = line.split(":", 2)[1];
+                } else if(line.startsWith("\tCategory:")) {
+                    // Ignore sub-categories
                 } else {
                     // "	Adam's apple" --> "Adam's apple"
                     line = line.replaceAll("\t", "");
-                    wordsForCategory.add(line);
+                    assert(currentCategory != null);
+                    expressions.add(new BaseExpression(line, currentCategory));
                 }
             }
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-
     }
 
     public void save(Path output) {

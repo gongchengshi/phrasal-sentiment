@@ -19,13 +19,12 @@ public final class PhraseIdDict {
             .trimResults()
             .omitEmptyStrings();
 
-    public PhraseIdDict(String path) throws IOException {
+    public PhraseIdDict(Path path) throws IOException {
         this.idDict = HashBiMap.create();
         this.read_dictionary(path);
     }
 
-    public void read_dictionary(String dict_filename) throws IOException {
-        Path path = Paths.get(dict_filename);
+    public void read_dictionary(Path path) throws IOException {
         BufferedReader reader = Files.newBufferedReader(path, StandardCharsets.UTF_8);
         /* read the heading */
         String line;

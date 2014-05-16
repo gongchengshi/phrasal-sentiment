@@ -48,7 +48,7 @@ public class PhrasalVerbsInvestigation {
 
 			phraseIds = new PhraseIdDict(sentimentTbInfo.DictionaryPath);
 			phraseIdSentiments = new PhraseIdSentimentList(
-					sentimentTbInfo.SentimentLabelsPath, 239233);
+					sentimentTbInfo.SentimentLabelsPath);
 			sentences = new SentenceList(sentimentTbInfo.DatasetSentencesPath,
 					11856);
 			phrasalVerbSentences = BuildPhraseVerbSentencesMap(
