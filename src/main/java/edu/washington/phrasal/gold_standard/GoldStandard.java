@@ -21,21 +21,12 @@ public class GoldStandard {
 
     }
 
-    public void createMWEIndexFile() {
+    public static void createMWEIndexFile() {
         ExpressionList e = new ExpressionList(FilePaths.baseWordlist);
 		List<Expression> filteredExprs = e.getExpressions().parallelStream()
 				.filter(not(ExpressionFilters.isSingleWord))
 				.collect(Collectors.toList());
 		ExpressionList filteredList = new ExpressionList(filteredExprs);
 		filteredList.saveAsSemcor(FilePaths.wikipediaFigSemcorFile);
-    }
-
-    public Map<String, Double> getSentimentFromTreebank() {
-        //Extract MWEs from stanford corpus
-        MWEDetector detector = MWEDetector.getInstance();
-        Map<String, List<IMWE<IToken>>> results = detector.detectFromTreebank(FilePaths.wikipediaFigSemcorFile.toFile());
-        Map<String, Double> mweSentiment = null;
-        // Todo
-        return mweSentiment;
     }
 }

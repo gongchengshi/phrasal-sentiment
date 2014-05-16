@@ -23,7 +23,6 @@ public class JWMEWrapper {
     private IMWEIndex index;
 
     public IMWEDetector detectorFromName(String name) {
-        // switch(name){
         if (name.equals("consecutive")) {
             return new Consecutive(index);
         } else if (name.equals("exhaustive")) {
@@ -39,7 +38,6 @@ public class JWMEWrapper {
         } else {
             return null;
         }
-        // }
     }
 
     public JWMEWrapper(File idxData) {

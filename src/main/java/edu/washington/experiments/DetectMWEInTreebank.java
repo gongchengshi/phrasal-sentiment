@@ -36,8 +36,8 @@ public class DetectMWEInTreebank {
 //		System.out.println(filteredList.getExpressions().size() + " expresssions to consider");
 //		filteredList.saveAsSemcor(outputSemcorFile);
         //Extract MWEs from stanford corpus
-        MWEDetector detector = MWEDetector.getInstance();
-        Map<String, List<IMWE<IToken>>> results = detector.detectFromTreebank(outputSemcorFile.toFile());
+        MWEDetector detector = new MWEDetector(outputSemcorFile.toFile());
+        //Map<String, List<IMWE<IToken>>> results = detector.detectFromTreebank();
 
         //print results
 //		results.entrySet().parallelStream().forEach(System.out::println);

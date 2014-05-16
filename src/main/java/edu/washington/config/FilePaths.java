@@ -1,5 +1,7 @@
 package edu.washington.config;
 
+import edu.washington.data.sentimentreebank.StanfordSentimentTreebankInfo;
+
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -7,11 +9,12 @@ public class FilePaths {
 
     //Wordlists
     public static final Path baseWordlist = Paths
-            .get("wordlists/base");
+            .get("supplementary/base_expression_list.txt");
     //C:\Users\Kaufmann\workspace\test\
     public static final Path mweIndex = Paths
-            .get("supplementary/mwe/single.semcore");
+            .get("supplementary/mwe/single.semcor");
     public static final Path wikipediaFigSemcorFile = Paths
-            .get("supplementary/mwe/best.secmor");
-
+            .get("supplementary/mwe/best.semcor");
+    public static final StanfordSentimentTreebankInfo SSTPaths =
+            new StanfordSentimentTreebankInfo("supplementary/stanfordSentimentTreebank");
 }

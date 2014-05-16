@@ -88,12 +88,11 @@ public class ExpressionList {
     public void saveAsSemcor(Path output) {
         try {
             StanfordAnnotator annotator = StanfordAnnotator.getInstance();
-            BufferedWriter w = Files.newBufferedWriter(output,
-                    StandardCharsets.UTF_8);
+            BufferedWriter w = Files.newBufferedWriter(output, StandardCharsets.UTF_8);
             for (Expression e : expressions) {
                 String text = e.getText();
                 String suffix = findSuffix(annotator.annotate(text));
-                w.append(text.replaceAll(" ", "_") + suffix + "\n");
+                w.append(text.replaceAll(" ", "_")).append(suffix).append("\n");
             }
             w.flush();
             w.close();
@@ -105,8 +104,7 @@ public class ExpressionList {
 
     private String findSuffix(List<CoreLabel> tokens) {
         int numVerbs = 0;
-        for (int i = 0; i < tokens.size(); i++) {
-            CoreLabel token = tokens.get(i);
+        for (CoreLabel token : tokens) {
             String pos = token.get(PartOfSpeechAnnotation.class);
             if (pos.startsWith("V")) {
                 numVerbs++;
