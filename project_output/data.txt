@@ -1,0 +1,860 @@
+6_156 negative token=eat_in POS=VB_IN  
+23_301 neutral token=go_about POS=VB_RB prevWord=we nextWord=about 
+42_68 neutral token=creep_into POS=NN_IN prevWord=to nextWord=into 
+44_96 negative token=bite_in POS=VB_IN prevWord=its nextWord=in 
+48_157 neutral token=wipe_away POS=VB_RB prevWord=to nextWord=away 
+52_17 neutral token=kick_out POS=NN_RP prevWord=a nextWord=out 
+59_59 negative token=run_out POS=VBN_RP prevWord=has nextWord=out 
+90_248 neutral token=look_at POS=NN_IN prevWord=to nextWord=at 
+100_174 negative token=get_back POS=VB_RB prevWord=to nextWord=back 
+100_274 neutral token=back_in POS=RB_IN  
+100_306 neutral token=back_into POS=RB_IN prevWord=get nextWord=into 
+163_156 negative token=eat_in POS=VB_IN  
+179_317 neutral token=depend_on POS=VB_IN prevWord=should nextWord=on 
+187_248 neutral token=look_at POS=NN_IN prevWord=to nextWord=at 
+198_129 neutral token=ring_in POS=NN_IN  
+201_248 neutral token=look_at POS=NN_IN prevWord=close nextWord=at 
+210_8 positive token=keep_on POS=VB_IN  
+220_248 neutral token=look_at POS=NN_IN prevWord=questing nextWord=at 
+227_248 neutral token=look_at POS=NN_IN prevWord=thoughtful nextWord=at 
+228_198 negative token=walk_out POS=NN_IN prevWord=You nextWord=out 
+236_99 positive token=put_down POS=VBN_RP prevWord=n't nextWord=down 
+249_248 neutral token=look_at POS=NN_IN prevWord=unsentimental nextWord=at 
+267_283 positive token=pick_apart POS=NN_RB prevWord=to nextWord=apart 
+287_248 neutral token=look_at POS=NN_IN prevWord=thought-provoking nextWord=at 
+305_197 neutral token=add_up POS=VB_RP prevWord=to nextWord=up 
+310_182 neutral token=gross_out POS=JJ_IN  
+360_248 neutral token=look_at POS=NN_IN prevWord=unsentimental nextWord=at 
+381_216 neutral token=have_in POS=VB_IN prevWord=all nextWord=in 
+381_278 neutral token=come_to POS=VBN_TO prevWord=to nextWord=to 
+389_20 positive token=get_up POS=VB_RP prevWord=to nextWord=up 
+391_274 neutral token=back_in POS=RB_IN prevWord=is nextWord=in 
+418_318 positive token=take_on POS=VB_RP prevWord=witty nextWord=on 
+467_85 neutral token=end_up POS=VB_RP  
+467_155 neutral token=descend_upon POS=NN_IN prevWord=producers nextWord=upon 
+467_244 neutral token=ferret_out POS=VB_RP prevWord=to nextWord=out 
+493_156 negative token=eat_in POS=VB_IN  
+509_248 neutral token=look_at POS=NN_IN prevWord=watchable nextWord=at 
+519_207 neutral token=own_up POS=VB_RP  
+521_271 positive token=come_along POS=VBN_IN prevWord=films nextWord=along 
+528_48 positive token=set_on POS=VBN_IN prevWord=story nextWord=on 
+536_109 positive token=mull_over POS=VB_IN prevWord=you nextWord=over 
+541_159 positive token=sink_in POS=NN_IN prevWord=to nextWord=in 
+560_82 positive token=sit_back POS=VB_RB prevWord=so nextWord=back 
+625_88 neutral token=look_into POS=VB_IN prevWord=or nextWord=into 
+631_56 positive token=book_in POS=NN_IN prevWord=prophetic nextWord=in 
+635_235 neutral token=root_for POS=NN_IN prevWord=we nextWord=for 
+682_208 neutral token=win_over POS=VB_IN prevWord=should nextWord=over 
+690_171 positive token=stand_up POS=VB_RP prevWord=to nextWord=up 
+701_248 neutral token=look_at POS=NN_IN prevWord=funny nextWord=at 
+768_196 neutral token=stand_out POS=VB_RP prevWord=to nextWord=out 
+799_285 positive token=tap_in POS=NN_IN  
+803_140 neutral token=go_with POS=VB_IN  
+835_318 positive token=take_on POS=VB_RP prevWord=adult nextWord=on 
+839_259 neutral token=check_out POS=VB_RP prevWord=should nextWord=out 
+840_278 neutral token=come_to POS=VBN_TO prevWord=to nextWord=to 
+842_106 neutral token=plan_on POS=NN_IN prevWord=n't nextWord=on 
+854_74 neutral token=hang_out POS=VB_RP prevWord=to nextWord=out 
+856_278 neutral token=come_to POS=VBN_TO prevWord=ever nextWord=to 
+866_248 neutral token=look_at POS=NN_IN prevWord=intriguing nextWord=at 
+885_80 positive token=chew_on POS=VB_IN prevWord=and nextWord=on 
+889_241 positive token=play_out POS=VB_RP prevWord=to nextWord=out 
+889_273 positive token=lay_out POS=VBD_RP  
+892_110 neutral token=get_into POS=VB_IN prevWord=you nextWord=into 
+892_266 neutral token=get_in POS=VB_IN  
+928_259 neutral token=check_out POS=VB_RP prevWord=to nextWord=out 
+939_67 neutral token=go_for POS=VB_IN prevWord=n't nextWord=for 
+942_248 neutral token=look_at POS=NN_IN prevWord=its nextWord=at 
+953_137 positive token=give_in POS=VB_IN prevWord=, nextWord=in 
+953_225 neutral token=get_on POS=VB_IN prevWord=to nextWord=on 
+954_224 positive token=do_in POS=VB_IN  
+979_163 negative token=shut_up POS=VBN_RP prevWord=`` nextWord=up 
+979_230 negative token=talk_up POS=NN_IN prevWord=who nextWord=up 
+1000_65 neutral token=think_about POS=VB_IN prevWord=to nextWord=about 
+1051_318 positive token=take_on POS=VB_RP prevWord=director nextWord=on 
+1058_27 neutral token=film_out POS=NN_IN  
+1063_248 neutral token=look_at POS=NN_IN prevWord=to nextWord=at 
+1090_223 neutral token=time_out POS=NN_IN prevWord=This nextWord=out 
+1097_98 neutral token=shake_up POS=VB_RP prevWord=invariably nextWord=up 
+1101_318 positive token=take_on POS=VB_RP prevWord=original nextWord=on 
+1116_248 neutral token=look_at POS=NN_IN prevWord=worthy nextWord=at 
+1140_95 neutral token=reflect_on POS=VB_IN prevWord=to nextWord=on 
+1147_271 positive token=come_along POS=VBN_IN prevWord=to nextWord=along 
+1166_74 neutral token=hang_out POS=VB_RP prevWord=all nextWord=out 
+1172_248 neutral token=look_at POS=NN_IN prevWord=honest nextWord=at 
+1186_45 neutral token=clear_up POS=JJ_IN prevWord=help nextWord=up 
+1200_218 neutral token=play_off POS=VB_RP prevWord=McDowell nextWord=off 
+1200_252 neutral token=lay_off POS=VBD_RP  
+1215_33 neutral token=work_out POS=NN_IN prevWord=to nextWord=out 
+1247_235 neutral token=root_for POS=NN_IN prevWord=We nextWord=for 
+1263_300 positive token=step_in POS=NN_IN prevWord=a nextWord=in 
+1276_248 neutral token=look_at POS=NN_IN prevWord=engaging nextWord=at 
+1283_88 neutral token=look_into POS=VB_IN prevWord=uncommercial nextWord=into 
+1295_132 neutral token=get_out POS=VB_RP prevWord=to nextWord=out 
+1297_232 positive token=ring_out POS=NN_IN  
+1302_248 neutral token=look_at POS=NN_IN prevWord=serious nextWord=at 
+1307_271 positive token=come_along POS=VBN_IN prevWord=to nextWord=along 
+1343_195 positive token=speak_to POS=VB_TO prevWord=to nextWord=to 
+1350_12 neutral token=put_in POS=VBN_IN prevWord=stays nextWord=in 
+1352_197 neutral token=add_up POS=VB_RP prevWord=scenes nextWord=up 
+1362_141 positive token=bounce_off POS=VB_RP prevWord=Gerald nextWord=off 
+1370_109 positive token=mull_over POS=VB_IN prevWord=to nextWord=over 
+1393_150 negative token=play_in POS=NN_IN prevWord=teens nextWord=in 
+1400_22 positive token=round_out POS=NN_IN  
+1403_122 neutral token=go_away POS=VB_RB prevWord=n't nextWord=away 
+1409_147 neutral token=try_out POS=VB_RP  
+1429_9 negative token=put_off POS=VBN_RP prevWord=and nextWord=off 
+1479_248 neutral token=look_at POS=NN_IN prevWord=, nextWord=at 
+1484_181 neutral token=bubble_up POS=NN_IN prevWord=to nextWord=up 
+1520_17 neutral token=kick_out POS=NN_RP prevWord=a nextWord=out 
+1521_248 neutral token=look_at POS=NN_IN prevWord=admirable nextWord=at 
+1547_204 neutral token=put_on POS=VBN_IN prevWord=Liotta nextWord=on 
+1552_176 neutral token=go_down POS=VB_RP prevWord=medicine nextWord=down 
+1577_216 neutral token=have_in POS=VB_IN prevWord=movies nextWord=in 
+1616_40 neutral token=drum_up POS=VB_RP prevWord=expertly nextWord=up 
+1617_315 negative token=power_on POS=NN_IN  
+1624_164 neutral token=go_over POS=VB_IN prevWord=to nextWord=over 
+1643_132 neutral token=get_out POS=VB_RP prevWord=to nextWord=out 
+1648_248 neutral token=look_at POS=NN_IN prevWord=veiled nextWord=at 
+1655_245 neutral token=lay_by POS=VBN_IN  
+1663_12 neutral token=put_in POS=VBN_IN prevWord=Lane nextWord=in 
+1665_248 neutral token=look_at POS=NN_IN prevWord=you nextWord=at 
+1674_1 negative token=lay_on POS=VBN_IN  
+1674_121 negative token=play_on POS=VB_IN  
+1721_318 positive token=take_on POS=VB_RP prevWord=and nextWord=on 
+1740_287 neutral token=pass_up POS=VB_RP prevWord=to nextWord=up 
+1750_85 neutral token=end_up POS=VB_RP prevWord=and nextWord=up 
+1763_25 neutral token=come_from POS=VBN_IN prevWord=Igby nextWord=from 
+1772_248 neutral token=look_at POS=NN_IN prevWord=compelling nextWord=at 
+1785_248 neutral token=look_at POS=NN_IN prevWord=insider nextWord=at 
+1795_266 neutral token=get_in POS=VB_IN prevWord=to nextWord=in 
+1798_25 neutral token=come_from POS=VBN_IN prevWord=you nextWord=from 
+1839_134 positive token=speak_for POS=VB_IN prevWord=imagery nextWord=for 
+1859_85 neutral token=end_up POS=VB_RP prevWord=n't nextWord=up 
+1901_85 neutral token=end_up POS=VB_RP prevWord=often nextWord=up 
+1908_34 positive token=run_away POS=VB_RB prevWord=can nextWord=away 
+1908_140 neutral token=go_with POS=VB_IN prevWord=problems nextWord=with 
+1920_248 neutral token=look_at POS=NN_IN prevWord=flawed nextWord=at 
+1959_9 negative token=put_off POS=VBN_RP prevWord=n't nextWord=off 
+1961_12 neutral token=put_in POS=VBN_IN prevWord=when nextWord=in 
+1977_248 neutral token=look_at POS=NN_IN prevWord=unforgettable nextWord=at 
+1987_248 neutral token=look_at POS=NN_IN prevWord=objective nextWord=at 
+2006_10 positive token=turn_on POS=NN_IN  
+2021_195 positive token=speak_to POS=VB_TO prevWord=will nextWord=to 
+2030_197 neutral token=add_up POS=VB_RP prevWord=who nextWord=up 
+2033_53 negative token=tuck_in POS=VB_IN  
+2049_248 neutral token=look_at POS=NN_IN prevWord=entertaining nextWord=at 
+2073_249 neutral token=get_about POS=VB_IN  
+2120_214 neutral token=rise_up POS=VB_RP  
+2122_274 neutral token=back_in POS=RB_IN prevWord='s nextWord=in 
+2131_248 neutral token=look_at POS=NN_IN prevWord=flawed nextWord=at 
+2148_304 neutral token=wind_up POS=NN_IN prevWord=might nextWord=up 
+2149_211 positive token=string_together POS=NN_RB prevWord=to nextWord=together 
+2158_311 positive token=filter_out POS=NN_IN prevWord=to nextWord=out 
+2160_52 neutral token=believe_in POS=VB_IN prevWord=to nextWord=in 
+2212_305 neutral token=come_away POS=VB_RB prevWord=not nextWord=away 
+2216_161 neutral token=run_through POS=VBN_IN prevWord=sadness nextWord=through 
+2218_72 positive token=rough_out POS=JJ_IN  
+2234_43 positive token=step_forward POS=NN_RB prevWord=welcome nextWord=forward 
+2244_248 neutral token=look_at POS=NN_IN prevWord=thought-provoking nextWord=at 
+2251_248 neutral token=look_at POS=NN_IN prevWord=to nextWord=at 
+2252_285 positive token=tap_in POS=NN_IN  
+2259_229 neutral token=pick_up POS=VB_RP prevWord=may nextWord=up 
+2262_242 positive token=eat_up POS=VB_RP prevWord=to nextWord=up 
+2278_274 neutral token=back_in POS=RB_IN  
+2278_306 neutral token=back_into POS=RB_IN prevWord=sting nextWord=into 
+2295_10 positive token=turn_on POS=NN_IN prevWord=might nextWord=on 
+2328_248 neutral token=look_at POS=NN_IN prevWord=harrowing nextWord=at 
+2345_188 positive token=keep_up POS=VB_RP  
+2345_224 positive token=do_in POS=VB_IN prevWord=characters nextWord=in 
+2369_15 positive token=look_back POS=VB_RB prevWord=moving nextWord=back 
+2423_79 neutral token=hold_up POS=VB_RP prevWord=n't nextWord=up 
+2426_278 neutral token=come_to POS=VBN_TO prevWord='ve nextWord=to 
+2431_159 positive token=sink_in POS=NN_IN  
+2440_65 neutral token=think_about POS=VB_IN prevWord=to nextWord=about 
+2440_251 neutral token=make_up POS=VB_RP prevWord=than nextWord=up 
+2441_146 negative token=break_through POS=NN_IN prevWord=to nextWord=through 
+2463_139 positive token=go_around POS=VB_IN prevWord=to nextWord=around 
+2472_2 neutral token=get_to POS=VB_TO prevWord=should nextWord=to 
+2521_248 neutral token=look_at POS=NN_IN prevWord=knowing nextWord=at 
+2523_225 neutral token=get_on POS=VB_IN prevWord=to nextWord=on 
+2533_278 neutral token=come_to POS=VBN_TO prevWord=you nextWord=to 
+2539_204 neutral token=put_on POS=VBN_IN prevWord=clinic nextWord=on 
+2547_248 neutral token=look_at POS=NN_IN prevWord=revealing nextWord=at 
+2553_131 neutral token=grow_into POS=VB_IN prevWord=to nextWord=into 
+2567_271 positive token=come_along POS=VBN_IN prevWord=to nextWord=along 
+2598_65 neutral token=think_about POS=VB_IN prevWord=to nextWord=about 
+2623_176 neutral token=go_down POS=VB_RP prevWord=not nextWord=down 
+2625_304 neutral token=wind_up POS=NN_IN prevWord=might nextWord=up 
+2641_248 neutral token=look_at POS=NN_IN prevWord=unflinching nextWord=at 
+2651_37 positive token=reel_in POS=NN_IN prevWord=often nextWord=in 
+2653_253 negative token=come_up POS=VBN_RP prevWord=filmmakers nextWord=up 
+2659_248 neutral token=look_at POS=NN_IN prevWord=interesting nextWord=at 
+2665_49 negative token=foul_up POS=JJ_IN prevWord=to nextWord=up 
+2687_217 neutral token=hang_together POS=VB_RB prevWord=always nextWord=together 
+2689_318 positive token=take_on POS=VB_RP prevWord=captivating nextWord=on 
+2690_248 neutral token=look_at POS=NN_IN prevWord=intriguing nextWord=at 
+2698_140 neutral token=go_with POS=VB_IN prevWord=and nextWord=with 
+2710_199 neutral token=cut_out POS=VBN_RP prevWord=would nextWord=out 
+2741_216 neutral token=have_in POS=VB_IN  
+2784_296 positive token=see_over POS=VB_IN prevWord=to nextWord=over 
+2797_210 neutral token=come_in POS=VBN_IN prevWord=can nextWord=in 
+2833_278 neutral token=come_to POS=VBN_TO prevWord='ve nextWord=to 
+2850_260 neutral token=verge_on POS=NN_IN prevWord=them nextWord=on 
+2856_318 positive token=take_on POS=VB_RP prevWord=to nextWord=on 
+2857_176 neutral token=go_down POS=VB_RP prevWord=might nextWord=down 
+2873_297 neutral token=ask_for POS=VB_IN prevWord=hardly nextWord=for 
+2879_112 neutral token=slip_out POS=NN_IN prevWord=details nextWord=out 
+2906_250 positive token=aim_at POS=NN_IN prevWord=takes nextWord=at 
+2937_248 neutral token=look_at POS=NN_IN prevWord=heartbreaking nextWord=at 
+2938_239 neutral token=hinge_on POS=NN_IN prevWord=may nextWord=on 
+2954_224 positive token=do_in POS=VB_IN prevWord=they nextWord=in 
+2969_187 positive token=take_away POS=VB_RP prevWord=will nextWord=away 
+2973_32 negative token=care_for POS=NN_IN prevWord=really nextWord=for 
+2973_248 neutral token=look_at POS=NN_IN prevWord=interesting nextWord=at 
+2977_168 neutral token=warm_up POS=JJ_IN prevWord=to nextWord=up 
+3047_115 neutral token=get_along POS=VB_IN prevWord=to nextWord=along 
+3071_318 positive token=take_on POS=VB_RP prevWord=trashy nextWord=on 
+3073_232 positive token=ring_out POS=NN_IN  
+3073_255 positive token=bring_out POS=VB_RP prevWord=and nextWord=out 
+3085_248 neutral token=look_at POS=NN_IN prevWord=persuasive nextWord=at 
+3087_248 neutral token=look_at POS=NN_IN prevWord=absorbing nextWord=at 
+3101_84 neutral token=play_with POS=NN_IN  
+3136_234 neutral token=turn_down POS=VB_RP prevWord=n't nextWord=down 
+3164_126 positive token=sit_down POS=VB_RP prevWord=a nextWord=down 
+3164_171 positive token=stand_up POS=VB_RP prevWord=a nextWord=up 
+3172_62 neutral token=become_of POS=VBN_IN prevWord=has nextWord=of 
+3172_120 neutral token=come_of POS=VBN_IN  
+3177_33 neutral token=work_out POS=NN_IN prevWord=will nextWord=out 
+3214_114 neutral token=turn_out POS=VB_RP prevWord=they nextWord=out 
+3230_82 positive token=sit_back POS=VB_RB prevWord=to nextWord=back 
+3246_22 positive token=round_out POS=NN_IN prevWord=-- nextWord=out 
+3284_197 neutral token=add_up POS=VB_RP prevWord=reconstruction nextWord=up 
+3305_223 neutral token=time_out POS=NN_IN prevWord=first nextWord=out 
+3311_248 neutral token=look_at POS=NN_IN prevWord=absorbing nextWord=at 
+3334_248 neutral token=look_at POS=NN_IN prevWord=hard nextWord=at 
+3355_148 neutral token=shake_off POS=VB_RP prevWord=, nextWord=off 
+3355_316 neutral token=slow_down POS=VB_RP prevWord=: nextWord=down 
+3365_129 neutral token=ring_in POS=NN_IN  
+3385_85 neutral token=end_up POS=VB_RP prevWord='ll nextWord=up 
+3391_59 negative token=run_out POS=VBN_RP prevWord=to nextWord=out 
+3405_219 neutral token=carry_forward POS=VB_RB prevWord=to nextWord=forward 
+3407_271 positive token=come_along POS=VBN_IN prevWord=will nextWord=along 
+3414_242 positive token=eat_up POS=VB_RP prevWord=will nextWord=up 
+3418_196 neutral token=stand_out POS=VB_RP prevWord=actors nextWord=out 
+3429_248 neutral token=look_at POS=NN_IN prevWord=unstinting nextWord=at 
+3431_266 neutral token=get_in POS=VB_IN prevWord=to nextWord=in 
+3446_320 positive token=look_for POS=NN_IN prevWord=n't nextWord=for 
+3464_278 neutral token=come_to POS=VBN_TO prevWord=have nextWord=to 
+3478_233 neutral token=ring_up POS=NN_IN  
+3508_151 neutral token=act_on POS=NN_IN  
+3518_80 positive token=chew_on POS=VB_IN prevWord=to nextWord=on 
+3548_318 positive token=take_on POS=VB_RP prevWord=original nextWord=on 
+3571_16 neutral token=run_with POS=VBN_IN  
+3577_292 very token=act_up POS=VB_RP  
+3578_228 neutral token=mess_with POS=NN_IN prevWord=to nextWord=with 
+3589_248 neutral token=look_at POS=NN_IN prevWord=a nextWord=at 
+3601_299 positive token=go_off POS=VB_RP  
+3633_266 neutral token=get_in POS=VB_IN  
+3639_274 neutral token=back_in POS=RB_IN prevWord=as nextWord=in 
+3653_248 neutral token=look_at POS=NN_IN prevWord=serious nextWord=at 
+3657_318 positive token=take_on POS=VB_RP prevWord=affectionate nextWord=on 
+3665_248 neutral token=look_at POS=NN_IN prevWord=and nextWord=at 
+3671_44 neutral token=come_by POS=VBN_IN prevWord=that nextWord=by 
+3675_120 neutral token=come_of POS=VBN_IN  
+3675_251 neutral token=make_up POS=VB_RP prevWord=to nextWord=up 
+3675_298 neutral token=come_off POS=VBN_RP prevWord=n't nextWord=off 
+3689_248 neutral token=look_at POS=NN_IN prevWord=nuanced nextWord=at 
+3701_85 neutral token=end_up POS=VB_RP prevWord=may nextWord=up 
+3710_263 neutral token=pop_up POS=NN_IN prevWord=thrills nextWord=up 
+3711_127 negative token=go_back POS=VB_RB prevWord=roots nextWord=back 
+3725_25 neutral token=come_from POS=VBN_IN prevWord=missteps nextWord=from 
+3731_152 neutral token=fit_into POS=NN_IN prevWord=gags nextWord=into 
+3731_261 neutral token=fit_in POS=NN_IN  
+3742_197 neutral token=add_up POS=VB_RP prevWord=all nextWord=up 
+3769_37 positive token=reel_in POS=NN_IN prevWord=to nextWord=in 
+3788_177 neutral token=run_by POS=VBN_IN  
+3800_75 positive token=deal_in POS=NN_IN prevWord=great nextWord=in 
+3806_254 neutral token=cross_over POS=NN_IN prevWord=... nextWord=over 
+3820_248 neutral token=look_at POS=NN_IN prevWord=to nextWord=at 
+3866_102 negative token=live_up POS=VB_RP prevWord=quite nextWord=up 
+3896_191 neutral token=look_to POS=NN_TO  
+3912_275 neutral token=come_out POS=VBN_RP prevWord=to nextWord=out 
+3923_172 neutral token=run_to POS=VBN_TO prevWord=and nextWord=to 
+3927_108 neutral token=get_at POS=VB_IN prevWord=To nextWord=at 
+3935_318 positive token=take_on POS=VB_RP prevWord=clear-eyed nextWord=on 
+3950_248 neutral token=look_at POS=NN_IN prevWord=to nextWord=at 
+3987_318 positive token=take_on POS=VB_RP prevWord=may nextWord=on 
+3991_15 positive token=look_back POS=VB_RB prevWord=timely nextWord=back 
+4019_129 neutral token=ring_in POS=NN_IN  
+4028_52 neutral token=believe_in POS=VB_IN prevWord=we nextWord=in 
+4051_114 neutral token=turn_out POS=VB_RP prevWord=still nextWord=out 
+4065_114 neutral token=turn_out POS=VB_RP prevWord=does nextWord=out 
+4065_156 negative token=eat_in POS=VB_IN  
+4099_236 neutral token=serve_up POS=VB_RP prevWord=makers nextWord=up 
+4108_100 neutral token=gulp_down POS=VB_RP prevWord=will nextWord=down 
+4110_248 neutral token=look_at POS=NN_IN prevWord=dirty nextWord=at 
+4112_264 neutral token=brush_up POS=NN_IN prevWord=you nextWord=up 
+4116_52 neutral token=believe_in POS=VB_IN prevWord=to nextWord=in 
+4137_307 positive token=beat_down POS=VB_RP prevWord=the nextWord=down 
+4159_6 neutral token=wake_up POS=NN_IN prevWord=suddenly nextWord=up 
+4161_233 neutral token=ring_up POS=NN_IN  
+4169_229 neutral token=pick_up POS=VB_RP prevWord=actors nextWord=up 
+4180_41 positive token=breathe_out POS=VB_RP prevWord=affection nextWord=out 
+4185_92 positive token=look_ahead POS=NN_RB prevWord=to nextWord=ahead 
+4194_248 neutral token=look_at POS=NN_IN prevWord=fascinating nextWord=at 
+4199_47 positive token=carry_out POS=VB_RP prevWord=to nextWord=out 
+4220_294 negative token=sit_through POS=VB_IN prevWord=can nextWord=through 
+4237_278 neutral token=come_to POS=VBN_TO prevWord=aliens nextWord=to 
+4252_318 positive token=take_on POS=VB_RP prevWord=caustic nextWord=on 
+4267_251 neutral token=make_up POS=VB_RP prevWord=charisma nextWord=up 
+4271_248 neutral token=look_at POS=NN_IN prevWord=funny nextWord=at 
+4275_3 neutral token=cope_with POS=VB_IN prevWord=to nextWord=with 
+4277_129 neutral token=ring_in POS=NN_IN  
+4288_248 neutral token=look_at POS=NN_IN prevWord=dark nextWord=at 
+4292_249 neutral token=get_about POS=VB_IN  
+4320_261 neutral token=fit_in POS=NN_IN prevWord=to nextWord=in 
+4322_207 neutral token=own_up POS=VB_RP  
+4355_136 neutral token=draw_out POS=VB_RP prevWord=to nextWord=out 
+4372_29 neutral token=settle_for POS=VB_IN prevWord='ll nextWord=for 
+4379_253 negative token=come_up POS=VBN_RP prevWord=usually nextWord=up 
+4385_278 neutral token=come_to POS=VBN_TO prevWord=have nextWord=to 
+4407_274 neutral token=back_in POS=RB_IN prevWord=me nextWord=in 
+4413_129 neutral token=ring_in POS=NN_IN  
+4416_248 neutral token=look_at POS=NN_IN prevWord=a nextWord=at 
+4429_241 positive token=play_out POS=VB_RP prevWord=Matters nextWord=out 
+4429_273 positive token=lay_out POS=VBD_RP  
+4438_319 neutral token=rely_on POS=VB_IN  
+4440_232 positive token=ring_out POS=NN_IN  
+4440_255 positive token=bring_out POS=VB_RP prevWord=, nextWord=out 
+4469_248 neutral token=look_at POS=NN_IN prevWord=unflinching nextWord=at 
+4480_204 neutral token=put_on POS=VBN_IN prevWord=was nextWord=on 
+4487_206 neutral token=ring_off POS=NN_IN  
+4487_279 neutral token=bring_off POS=VB_RP prevWord=Pryce nextWord=off 
+4491_248 neutral token=look_at POS=NN_IN prevWord=personal nextWord=at 
+4495_293 positive token=deal_out POS=VB_RP  
+4499_300 positive token=step_in POS=NN_IN prevWord=a nextWord=in 
+4506_291 neutral token=break_up POS=VB_RP prevWord=occasionally nextWord=up 
+4508_319 neutral token=rely_on POS=VB_IN prevWord=that nextWord=on 
+4549_257 neutral token=walk_into POS=NN_IN prevWord=willingly nextWord=into 
+4559_248 neutral token=look_at POS=NN_IN prevWord=insightful nextWord=at 
+4560_170 neutral token=set_up POS=VBN_RP prevWord=to nextWord=up 
+4561_318 positive token=take_on POS=VB_RP prevWord=authentic nextWord=on 
+4562_25 neutral token=come_from POS=VBN_IN prevWord=laughs nextWord=from 
+4581_26 neutral token=go_through POS=VB_IN prevWord=can nextWord=through 
+4593_108 neutral token=get_at POS=VB_IN prevWord=to nextWord=at 
+4599_123 neutral token=come_on POS=VBN_IN  
+4647_23 positive token=ask_in POS=VB_IN  
+4668_89 positive token=ring_back POS=NN_RB  
+4731_305 neutral token=come_away POS=VB_RB prevWord=You nextWord=away 
+4739_118 neutral token=fall_together POS=VB_RB prevWord=pieces nextWord=together 
+4748_278 neutral token=come_to POS=VBN_TO prevWord=men nextWord=to 
+4759_28 neutral token=kick_in POS=NN_IN prevWord=friendly nextWord=in 
+4770_90 neutral token=stick_with POS=NN_IN prevWord=you nextWord=with 
+4815_248 neutral token=look_at POS=NN_IN prevWord=scenes nextWord=at 
+4820_113 neutral token=rake_in POS=VB_IN prevWord=to nextWord=in 
+4834_85 neutral token=end_up POS=VB_RP prevWord=and nextWord=up 
+4851_261 neutral token=fit_in POS=NN_IN prevWord=to nextWord=in 
+4855_229 neutral token=pick_up POS=VB_RP prevWord=or nextWord=up 
+4861_103 neutral token=take_in POS=VB_RP  
+4861_120 neutral token=come_of POS=VBN_IN  
+4871_94 neutral token=set_out POS=VBN_RP prevWord=it nextWord=out 
+4884_140 neutral token=go_with POS=VB_IN prevWord=to nextWord=with 
+4935_319 neutral token=rely_on POS=VB_IN prevWord=not nextWord=on 
+4937_52 neutral token=believe_in POS=VB_IN prevWord=to nextWord=in 
+4951_160 neutral token=hate_on POS=NN_IN  
+4954_80 positive token=chew_on POS=VB_IN prevWord=to nextWord=on 
+4956_88 neutral token=look_into POS=VB_IN prevWord=funky nextWord=into 
+4960_25 neutral token=come_from POS=VBN_IN prevWord=I nextWord=from 
+4967_188 positive token=keep_up POS=VB_RP prevWord=to nextWord=up 
+4970_2 neutral token=get_to POS=VB_TO prevWord=you nextWord=to 
+4973_65 neutral token=think_about POS=VB_IN prevWord=to nextWord=about 
+4984_302 neutral token=turn_in POS=NN_IN prevWord=Jagger nextWord=in 
+4986_65 neutral token=think_about POS=VB_IN prevWord=you nextWord=about 
+4988_79 neutral token=hold_up POS=VB_RP prevWord=does nextWord=up 
+5020_263 neutral token=pop_up POS=NN_IN prevWord=which nextWord=up 
+5042_192 neutral token=work_at POS=NN_IN prevWord=to nextWord=at 
+5066_204 neutral token=put_on POS=VBN_IN prevWord=Glass nextWord=on 
+5116_321 neutral token=go_out POS=VB_RP prevWord=hearts nextWord=out 
+5132_324 negative token=shrug_off POS=VB_RP prevWord=to nextWord=off 
+5141_248 neutral token=look_at POS=NN_IN prevWord=last nextWord=at 
+5155_110 neutral token=get_into POS=VB_IN prevWord=to nextWord=into 
+5155_266 neutral token=get_in POS=VB_IN  
+5158_3 neutral token=cope_with POS=VB_IN prevWord=to nextWord=with 
+5175_2 neutral token=get_to POS=VB_TO  
+5175_24 neutral token=get_together POS=VB_RB prevWord=indeed nextWord=together 
+5194_310 neutral token=deal_with POS=NN_IN prevWord=and nextWord=with 
+5200_318 positive token=take_on POS=VB_RP prevWord=humorous nextWord=on 
+5205_31 neutral token=push_on POS=NN_IN prevWord=can nextWord=on 
+5213_275 neutral token=come_out POS=VBN_RP prevWord=to nextWord=out 
+5242_320 positive token=look_for POS=NN_IN prevWord=a nextWord=for 
+5271_305 neutral token=come_away POS=VB_RB prevWord=still nextWord=away 
+5282_105 neutral token=will_on POS=MD_IN  
+5287_278 neutral token=come_to POS=VBN_TO prevWord=has nextWord=to 
+5306_205 positive token=pull_together POS=VB_RB prevWord=to nextWord=together 
+5331_143 neutral token=hit_on POS=VBN_IN prevWord=to nextWord=on 
+5371_52 neutral token=believe_in POS=VB_IN prevWord=n't nextWord=in 
+5386_251 neutral token=make_up POS=VB_RP prevWord=theme nextWord=up 
+5387_123 neutral token=come_on POS=VBN_IN  
+5441_248 neutral token=look_at POS=NN_IN prevWord=powerful nextWord=at 
+5456_248 neutral token=look_at POS=NN_IN prevWord=you nextWord=at 
+5468_248 neutral token=look_at POS=NN_IN prevWord=funny nextWord=at 
+5481_58 positive token=sum_up POS=NN_IN prevWord=, nextWord=up 
+5486_52 neutral token=believe_in POS=VB_IN prevWord=to nextWord=in 
+5488_271 positive token=come_along POS=VBN_IN prevWord=would nextWord=along 
+5549_202 neutral token=carry_on POS=VB_IN prevWord=and nextWord=on 
+5553_248 neutral token=look_at POS=NN_IN prevWord=n't nextWord=at 
+5571_248 neutral token=look_at POS=NN_IN prevWord=fascinating nextWord=at 
+5604_25 neutral token=come_from POS=VBN_IN prevWord=to nextWord=from 
+5620_4 neutral token=rip_off POS=VB_RP prevWord=only nextWord=off 
+5642_91 negative token=cover_up POS=VB_RP prevWord=to nextWord=up 
+5644_8 positive token=keep_on POS=VB_IN prevWord=to nextWord=on 
+5698_164 neutral token=go_over POS=VB_IN prevWord=to nextWord=over 
+5717_39 neutral token=pile_up POS=VB_RP prevWord=just nextWord=up 
+5729_2 neutral token=get_to POS=VB_TO prevWord=to nextWord=to 
+5732_46 negative token=pass_for POS=NN_IN prevWord=could nextWord=for 
+5734_171 positive token=stand_up POS=VB_RP prevWord=to nextWord=up 
+5761_294 negative token=sit_through POS=VB_IN prevWord=to nextWord=through 
+5761_297 neutral token=ask_for POS=VB_IN prevWord=should nextWord=for 
+5763_215 neutral token=allow_for POS=VB_IN  
+5774_177 neutral token=run_by POS=VBN_IN  
+5787_215 neutral token=allow_for POS=VB_IN prevWord=standards nextWord=for 
+5789_10 positive token=turn_on POS=NN_IN prevWord=will nextWord=on 
+5824_269 neutral token=show_up POS=VB_RP prevWord=members nextWord=up 
+5828_36 negative token=dry_off POS=JJ_IN  
+5837_235 neutral token=root_for POS=NN_IN prevWord=you nextWord=for 
+5851_77 negative token=put_up POS=VBN_RP prevWord=to nextWord=up 
+5876_128 negative token=settle_in POS=VB_IN  
+5880_170 neutral token=set_up POS=VBN_RP prevWord=and nextWord=up 
+5887_87 negative token=go_into POS=VB_IN prevWord=you nextWord=into 
+5892_85 neutral token=end_up POS=VB_RP prevWord=you nextWord=up 
+5902_53 negative token=tuck_in POS=VB_IN  
+5920_275 neutral token=come_out POS=VBN_RP prevWord=but nextWord=out 
+5927_241 positive token=play_out POS=VB_RP prevWord=, nextWord=out 
+5927_273 positive token=lay_out POS=VBD_RP  
+5929_248 neutral token=look_at POS=NN_IN prevWord=a nextWord=at 
+5951_156 negative token=eat_in POS=VB_IN  
+6008_319 neutral token=rely_on POS=VB_IN  
+6014_282 negative token=roll_in POS=NN_IN prevWord=and nextWord=in 
+6067_225 neutral token=get_on POS=VB_IN prevWord=can nextWord=on 
+6067_253 negative token=come_up POS=VBN_RP prevWord=never nextWord=up 
+6086_103 neutral token=take_in POS=VB_RP  
+6110_84 neutral token=play_with POS=NN_IN prevWord=morality nextWord=with 
+6120_176 neutral token=go_down POS=VB_RP prevWord=to nextWord=down 
+6148_6 neutral token=wake_up POS=NN_IN prevWord=you nextWord=up 
+6153_294 negative token=sit_through POS=VB_IN prevWord=to nextWord=through 
+6164_123 neutral token=come_on POS=VBN_IN  
+6183_12 neutral token=put_in POS=VBN_IN prevWord=has nextWord=in 
+6193_39 neutral token=pile_up POS=VB_RP prevWord=Falsehoods nextWord=up 
+6204_103 neutral token=take_in POS=VB_RP prevWord=characters nextWord=in 
+6215_166 negative token=pay_off POS=VB_RP prevWord=or nextWord=off 
+6224_196 neutral token=stand_out POS=VB_RP prevWord=people nextWord=out 
+6244_251 neutral token=make_up POS=VB_RP prevWord=n't nextWord=up 
+6246_269 neutral token=show_up POS=VB_RP prevWord=to nextWord=up 
+6282_248 neutral token=look_at POS=NN_IN prevWord=another nextWord=at 
+6288_295 negative token=churn_out POS=VB_RP prevWord=to nextWord=out 
+6304_266 neutral token=get_in POS=VB_IN  
+6309_193 negative token=dumb_down POS=JJ_IN prevWord=to nextWord=down 
+6324_245 neutral token=lay_by POS=VBN_IN  
+6345_321 neutral token=go_out POS=VB_RP prevWord=to nextWord=out 
+6347_182 neutral token=gross_out POS=JJ_IN prevWord=than nextWord=out 
+6355_14 neutral token=melt_away POS=VB_RB prevWord=to nextWord=away 
+6377_104 neutral token=grow_up POS=VB_RP prevWord=they nextWord=up 
+6386_278 neutral token=come_to POS=VBN_TO prevWord=, nextWord=to 
+6397_208 neutral token=win_over POS=VB_IN prevWord=to nextWord=over 
+6412_276 very_negative token=drag_on POS=NN_IN prevWord=to nextWord=on 
+6423_189 negative token=stick_to POS=NN_TO prevWord=should nextWord=to 
+6430_278 neutral token=come_to POS=VBN_TO prevWord=truly nextWord=to 
+6430_304 neutral token=wind_up POS=NN_IN prevWord='ll nextWord=up 
+6432_253 negative token=come_up POS=VBN_RP prevWord=n't nextWord=up 
+6451_318 positive token=take_on POS=VB_RP prevWord=dismissive nextWord=on 
+6477_119 very_negative token=doze_off POS=VB_RP prevWord=likely nextWord=off 
+6482_147 neutral token=try_out POS=VB_RP prevWord=him nextWord=out 
+6486_156 negative token=eat_in POS=VB_IN  
+6488_233 neutral token=ring_up POS=NN_IN  
+6520_150 negative token=play_in POS=NN_IN  
+6539_304 neutral token=wind_up POS=NN_IN prevWord=stupidities nextWord=up 
+6543_127 negative token=go_back POS=VB_RB prevWord=did nextWord=back 
+6543_259 neutral token=check_out POS=VB_RP prevWord=and nextWord=out 
+6554_258 negative token=keel_over POS=NN_IN prevWord=to nextWord=over 
+6565_253 negative token=come_up POS=VBN_RP prevWord=will nextWord=up 
+6566_232 positive token=ring_out POS=NN_IN  
+6581_190 neutral token=count_on POS=NN_IN prevWord=to nextWord=on 
+6581_278 neutral token=come_to POS=VBN_TO prevWord=have nextWord=to 
+6600_133 negative token=drink_to POS=NN_TO prevWord=men nextWord=to 
+6600_204 neutral token=put_on POS=VBN_IN prevWord=and nextWord=on 
+6603_203 positive token=account_to POS=NN_TO prevWord=wonderful nextWord=to 
+6610_175 negative token=eke_out POS=VB_RP prevWord=to nextWord=out 
+6663_9 negative token=put_off POS=VBN_RP prevWord=may nextWord=off 
+6683_84 neutral token=play_with POS=NN_IN  
+6686_182 neutral token=gross_out POS=JJ_IN prevWord=these nextWord=out 
+6698_102 negative token=live_up POS=VB_RP prevWord=will nextWord=up 
+6700_93 neutral token=pore_over POS=NN_IN prevWord=to nextWord=over 
+6704_64 negative token=show_off POS=VB_RP prevWord=to nextWord=off 
+6705_174 negative token=get_back POS=VB_RB prevWord=you nextWord=back 
+6706_70 neutral token=lie_down POS=VB_RP prevWord=to nextWord=down 
+6726_221 neutral token=talk_down POS=NN_IN prevWord=n't nextWord=down 
+6792_243 neutral token=hook_up POS=NN_IN  
+6826_102 negative token=live_up POS=VB_RP prevWord=not nextWord=up 
+6833_17 neutral token=kick_out POS=NN_RP prevWord=a nextWord=out 
+6836_50 negative token=figure_out POS=NN_IN prevWord=not nextWord=out 
+6837_63 negative token=dress_up POS=NN_IN prevWord=to nextWord=up 
+6841_294 negative token=sit_through POS=VB_IN prevWord=to nextWord=through 
+6844_278 neutral token=come_to POS=VBN_TO  
+6850_294 negative token=sit_through POS=VB_IN prevWord=to nextWord=through 
+6878_313 negative token=hold_on POS=VB_RP prevWord=a nextWord=on 
+6879_263 neutral token=pop_up POS=NN_IN prevWord=to nextWord=up 
+6880_119 very_negative token=doze_off POS=VB_RP prevWord=to nextWord=off 
+6886_228 neutral token=mess_with POS=NN_IN prevWord=this nextWord=with 
+6906_278 neutral token=come_to POS=VBN_TO prevWord=have nextWord=to 
+6922_278 neutral token=come_to POS=VBN_TO prevWord=have nextWord=to 
+6940_142 negative token=climb_down POS=VB_RP prevWord=listless nextWord=down 
+6946_200 negative token=walk_through POS=NN_IN  
+6959_248 neutral token=look_at POS=NN_IN prevWord=to nextWord=at 
+6993_127 negative token=go_back POS=VB_RB prevWord=and nextWord=back 
+7001_140 neutral token=go_with POS=VB_IN prevWord=to nextWord=with 
+7009_7 negative token=play_at POS=NN_IN  
+7012_88 neutral token=look_into POS=VB_IN prevWord=uneven nextWord=into 
+7019_119 very_negative token=doze_off POS=VB_RP prevWord=you nextWord=off 
+7019_156 negative token=eat_in POS=VB_IN  
+7023_60 neutral token=fight_off POS=VB_RP prevWord=, nextWord=off 
+7023_161 neutral token=run_through POS=VBN_IN prevWord=them nextWord=through 
+7024_229 neutral token=pick_up POS=VB_RP prevWord=to nextWord=up 
+7042_23 positive token=ask_in POS=VB_IN  
+7054_44 neutral token=come_by POS=VBN_IN prevWord=to nextWord=by 
+7056_125 neutral token=stand_by POS=NN_IN prevWord=to nextWord=by 
+7067_208 neutral token=win_over POS=VB_IN prevWord=to nextWord=over 
+7068_226 neutral token=burn_out POS=VBP_RP prevWord=to nextWord=out 
+7072_210 neutral token=come_in POS=VBN_IN  
+7074_120 neutral token=come_of POS=VBN_IN  
+7074_298 neutral token=come_off POS=VBN_RP prevWord=but nextWord=off 
+7108_59 negative token=run_out POS=VBN_RP prevWord=ever nextWord=out 
+7161_206 neutral token=ring_off POS=NN_IN  
+7161_279 neutral token=bring_off POS=VB_RP prevWord=to nextWord=off 
+7195_50 negative token=figure_out POS=NN_IN prevWord=to nextWord=out 
+7202_129 neutral token=ring_in POS=NN_IN  
+7209_278 neutral token=come_to POS=VBN_TO  
+7213_85 neutral token=end_up POS=VB_RP prevWord=You nextWord=up 
+7219_317 neutral token=depend_on POS=VB_IN prevWord=will nextWord=on 
+7241_220 neutral token=live_on POS=VB_IN  
+7259_197 neutral token=add_up POS=VB_RP prevWord=n't nextWord=up 
+7271_245 neutral token=lay_by POS=VBN_IN  
+7294_26 neutral token=go_through POS=VB_IN prevWord=to nextWord=through 
+7301_131 neutral token=grow_into POS=VB_IN prevWord=to nextWord=into 
+7303_259 neutral token=check_out POS=VB_RP prevWord=to nextWord=out 
+7323_186 negative token=keep_from POS=VB_IN prevWord=to nextWord=from 
+7354_225 neutral token=get_on POS=VB_IN  
+7412_317 neutral token=depend_on POS=VB_IN prevWord=may nextWord=on 
+7415_308 neutral token=come_back POS=VBN_RB prevWord=to nextWord=back 
+7452_158 negative token=blow_up POS=NN_IN prevWord=you nextWord=up 
+7453_117 neutral token=get_off POS=VB_RP prevWord=to nextWord=off 
+7477_197 neutral token=add_up POS=VB_RP prevWord=ultimately nextWord=up 
+7483_123 neutral token=come_on POS=VBN_IN prevWord=Oh nextWord=on 
+7490_101 neutral token=go_along POS=VB_IN prevWord=to nextWord=along 
+7508_2 neutral token=get_to POS=VB_TO prevWord=to nextWord=to 
+7519_2 neutral token=get_to POS=VB_TO prevWord=to nextWord=to 
+7520_274 neutral token=back_in POS=RB_IN prevWord=wincing nextWord=in 
+7545_267 negative token=pay_for POS=NN_IN prevWord=to nextWord=for 
+7574_52 neutral token=believe_in POS=VB_IN prevWord=n't nextWord=in 
+7580_32 negative token=care_for POS=NN_IN prevWord=n't nextWord=for 
+7591_294 negative token=sit_through POS=VB_IN prevWord=to nextWord=through 
+7600_294 negative token=sit_through POS=VB_IN prevWord=to nextWord=through 
+7617_197 neutral token=add_up POS=VB_RP prevWord=n't nextWord=up 
+7618_178 negative token=take_off POS=VB_RP prevWord=to nextWord=off 
+7622_294 negative token=sit_through POS=VB_IN prevWord=to nextWord=through 
+7624_248 neutral token=look_at POS=NN_IN prevWord=intriguing nextWord=at 
+7625_90 neutral token=stick_with POS=NN_IN prevWord='ll nextWord=with 
+7637_209 negative token=take_to POS=VB_TO prevWord=to nextWord=to 
+7643_87 negative token=go_into POS=VB_IN prevWord=likely nextWord=into 
+7677_5 negative token=balance_out POS=NN_IN prevWord=to nextWord=out 
+7690_248 neutral token=look_at POS=NN_IN prevWord=close-up nextWord=at 
+7716_18 negative token=cash_in POS=NN_IN prevWord=to nextWord=in 
+7764_154 negative token=hang_on POS=VB_IN  
+7764_267 negative token=pay_for POS=NN_IN prevWord=to nextWord=for 
+7765_103 neutral token=take_in POS=VB_RP  
+7796_257 neutral token=walk_into POS=NN_IN prevWord=you nextWord=into 
+7799_2 neutral token=get_to POS=VB_TO prevWord=you nextWord=to 
+7806_236 neutral token=serve_up POS=VB_RP prevWord=n't nextWord=up 
+7825_102 negative token=live_up POS=VB_RP prevWord=to nextWord=up 
+7827_2 neutral token=get_to POS=VB_TO prevWord=to nextWord=to 
+7832_29 neutral token=settle_for POS=VB_IN prevWord=n't nextWord=for 
+7935_232 positive token=ring_out POS=NN_IN  
+7940_90 neutral token=stick_with POS=NN_IN  
+7963_61 neutral token=dress_down POS=NN_IN prevWord=play nextWord=down 
+7990_248 neutral token=look_at POS=NN_IN prevWord=heartrending nextWord=at 
+8081_305 neutral token=come_away POS=VB_RB prevWord=have nextWord=away 
+8085_266 neutral token=get_in POS=VB_IN  
+8091_19 neutral token=come_across POS=VBN_IN prevWord=Seagal nextWord=across 
+8097_54 negative token=run_over POS=VBN_IN prevWord=to nextWord=over 
+8109_246 negative token=pile_on POS=NN_IN prevWord=n't nextWord=on 
+8114_272 neutral token=knock_on POS=VB_IN prevWord=to nextWord=on 
+8115_253 negative token=come_up POS=VBN_RP prevWord=to nextWord=up 
+8138_319 neutral token=rely_on POS=VB_IN  
+8161_278 neutral token=come_to POS=VBN_TO prevWord='ve nextWord=to 
+8171_197 neutral token=add_up POS=VB_RP prevWord=gags nextWord=up 
+8175_289 very_negative token=drone_on POS=NN_IN prevWord=windbags nextWord=on 
+8184_42 very_negative token=puke_up POS=VB_RP prevWord=and nextWord=up 
+8184_253 negative token=come_up POS=VBN_RP prevWord=Why nextWord=up 
+8190_176 neutral token=go_down POS=VB_RP prevWord=should nextWord=down 
+8200_51 negative token=buy_into POS=VB_IN prevWord=actually nextWord=into 
+8204_197 neutral token=add_up POS=VB_RP prevWord=never nextWord=up 
+8227_319 neutral token=rely_on POS=VB_IN prevWord=and nextWord=on 
+8246_130 negative token=roll_over POS=NN_IN prevWord=could nextWord=over 
+8247_197 neutral token=add_up POS=VB_RP prevWord=n't nextWord=up 
+8263_85 neutral token=end_up POS=VB_RP prevWord=would nextWord=up 
+8272_69 negative token=pass_off POS=VB_RP prevWord=to nextWord=off 
+8275_185 neutral token=hand_in POS=NN_IN prevWord=upper nextWord=in 
+8277_314 negative token=run_in POS=VBN_IN  
+8277_322 negative token=run_into POS=VBN_IN prevWord=has nextWord=into 
+8355_51 negative token=buy_into POS=VB_IN prevWord=to nextWord=into 
+8413_291 neutral token=break_up POS=VB_RP prevWord=to nextWord=up 
+8426_235 neutral token=root_for POS=NN_IN prevWord=to nextWord=for 
+8429_315 negative token=power_on POS=NN_IN prevWord=star nextWord=on 
+8457_129 neutral token=ring_in POS=NN_IN  
+8489_90 neutral token=stick_with POS=NN_IN prevWord=just nextWord=with 
+8493_197 neutral token=add_up POS=VB_RP prevWord=n't nextWord=up 
+8496_204 neutral token=put_on POS=VBN_IN prevWord=it nextWord=on 
+8498_13 positive token=look_forward POS=NN_RB prevWord=us nextWord=forward 
+8498_320 positive token=look_for POS=NN_IN  
+8505_91 negative token=cover_up POS=VB_RP prevWord=can nextWord=up 
+8518_213 neutral token=do_for POS=VB_IN prevWord=will nextWord=for 
+8522_19 neutral token=come_across POS=VBN_IN prevWord=sometimes nextWord=across 
+8524_253 negative token=come_up POS=VBN_RP prevWord='d nextWord=up 
+8543_286 neutral token=walk_off POS=VB_RP prevWord=goats nextWord=off 
+8570_184 negative token=sort_out POS=NN_IN prevWord=to nextWord=out 
+8606_167 negative token=pit_out POS=NN_IN  
+8632_288 negative token=tie_up POS=VB_RP prevWord=to nextWord=up 
+8634_197 neutral token=add_up POS=VB_RP prevWord=quite nextWord=up 
+8638_153 negative token=beat_off POS=VB_RP prevWord=half nextWord=off 
+8652_271 positive token=come_along POS=VBN_IN prevWord=to nextWord=along 
+8668_2 neutral token=get_to POS=VB_TO prevWord=and nextWord=to 
+8668_86 very_negative token=hurry_up POS=VB_RP prevWord=to nextWord=up 
+8669_103 neutral token=take_in POS=VB_RP prevWord=boys nextWord=in 
+8675_178 negative token=take_off POS=VB_RP prevWord=never nextWord=off 
+8684_270 negative token=fish_out POS=NN_IN prevWord=` nextWord=out 
+8700_102 negative token=live_up POS=VB_RP prevWord=n't nextWord=up 
+8701_248 neutral token=look_at POS=NN_IN prevWord=multifaceted nextWord=at 
+8728_266 neutral token=get_in POS=VB_IN prevWord=mechanics nextWord=in 
+8730_124 very_negative token=lock_on POS=NN_IN prevWord=a nextWord=on 
+8738_25 neutral token=come_from POS=VBN_IN prevWord=only nextWord=from 
+8769_146 negative token=break_through POS=NN_IN prevWord=n't nextWord=through 
+8789_263 neutral token=pop_up POS=NN_IN prevWord=to nextWord=up 
+8801_53 negative token=tuck_in POS=VB_IN  
+8820_240 negative token=gloss_over POS=VB_IN prevWord=to nextWord=over 
+8821_275 neutral token=come_out POS=VBN_RP prevWord=to nextWord=out 
+8839_235 neutral token=root_for POS=NN_IN prevWord=to nextWord=for 
+8845_251 neutral token=make_up POS=VB_RP prevWord=n't nextWord=up 
+8855_12 neutral token=put_in POS=VBN_IN prevWord=someone nextWord=in 
+8855_253 negative token=come_up POS=VBN_RP prevWord=to nextWord=up 
+8864_50 negative token=figure_out POS=NN_IN prevWord=audience nextWord=out 
+8880_209 negative token=take_to POS=VB_TO  
+8882_114 neutral token=turn_out POS=VB_RP prevWord=, nextWord=out 
+8912_249 neutral token=get_about POS=VB_IN  
+8928_71 negative token=pitch_in POS=NN_IN  
+8936_253 negative token=come_up POS=VBN_RP prevWord=n't nextWord=up 
+8948_198 negative token=walk_out POS=NN_IN prevWord=you nextWord=out 
+8963_248 neutral token=look_at POS=NN_IN prevWord=to nextWord=at 
+8993_38 negative token=weigh_down POS=VB_RP prevWord=Santa nextWord=down 
+9001_285 positive token=tap_in POS=NN_IN  
+9002_140 neutral token=go_with POS=VB_IN prevWord=to nextWord=with 
+9014_30 negative token=let_down POS=VB_RP prevWord=ultimately nextWord=down 
+9020_242 positive token=eat_up POS=VB_RP  
+9020_265 neutral token=heat_up POS=NN_IN prevWord=things nextWord=up 
+9029_201 negative token=come_down POS=VB_RP  
+9052_103 neutral token=take_in POS=VB_RP  
+9057_83 negative token=come_into POS=VBN_IN prevWord=never nextWord=into 
+9057_210 neutral token=come_in POS=VBN_IN  
+9061_176 neutral token=go_down POS=VB_RP prevWord=to nextWord=down 
+9061_204 neutral token=put_on POS=VBN_IN prevWord=and nextWord=on 
+9067_50 negative token=figure_out POS=NN_IN prevWord=n't nextWord=out 
+9067_201 negative token=come_down POS=VB_RP prevWord=, nextWord=down 
+9100_129 neutral token=ring_in POS=NN_IN  
+9119_305 neutral token=come_away POS=VB_RB prevWord=You nextWord=away 
+9133_266 neutral token=get_in POS=VB_IN prevWord=agents nextWord=in 
+9137_223 neutral token=time_out POS=NN_IN prevWord=next nextWord=out 
+9151_65 neutral token=think_about POS=VB_IN prevWord=you nextWord=about 
+9160_129 neutral token=ring_in POS=NN_IN  
+9186_247 negative token=sneak_out POS=VB_RP prevWord=to nextWord=out 
+9195_1 negative token=lay_on POS=VBN_IN  
+9195_121 negative token=play_on POS=VB_IN  
+9215_278 neutral token=come_to POS=VBN_TO prevWord=to nextWord=to 
+9228_197 neutral token=add_up POS=VB_RP prevWord=script nextWord=up 
+9243_266 neutral token=get_in POS=VB_IN  
+9245_173 negative token=pull_off POS=VB_RP prevWord=quite nextWord=off 
+9247_114 neutral token=turn_out POS=VB_RP prevWord=will nextWord=out 
+9268_67 neutral token=go_for POS=VB_IN prevWord=should nextWord=for 
+9270_194 negative token=touch_on POS=NN_IN prevWord=to nextWord=on 
+9307_256 negative token=fall_apart POS=NN_RB prevWord=things nextWord=apart 
+9308_303 negative token=step_down POS=VB_RP prevWord=a nextWord=down 
+9332_294 negative token=sit_through POS=VB_IN prevWord=to nextWord=through 
+9359_55 neutral token=stave_off POS=VB_RP prevWord=to nextWord=off 
+9368_85 neutral token=end_up POS=VB_RP prevWord=just nextWord=up 
+9397_156 negative token=eat_in POS=VB_IN  
+9406_66 negative token=slip_into POS=NN_IN prevWord=to nextWord=into 
+9406_277 negative token=slip_in POS=NN_IN  
+9424_97 negative token=log_on POS=NN_IN prevWord=and nextWord=on 
+9438_149 negative token=knock_back POS=VB_RB prevWord=to nextWord=back 
+9456_269 neutral token=show_up POS=VB_RP prevWord=to nextWord=up 
+9475_151 neutral token=act_on POS=NN_IN  
+9487_216 neutral token=have_in POS=VB_IN  
+9489_216 neutral token=have_in POS=VB_IN prevWord=to nextWord=in 
+9494_120 neutral token=come_of POS=VBN_IN  
+9494_298 neutral token=come_off POS=VBN_RP prevWord=to nextWord=off 
+9507_81 negative token=fall_in POS=NN_IN  
+9507_169 negative token=fall_into POS=NN_IN prevWord=even nextWord=into 
+9521_248 neutral token=look_at POS=NN_IN prevWord=plodding nextWord=at 
+9527_317 neutral token=depend_on POS=VB_IN prevWord=well nextWord=on 
+9570_183 negative token=turn_into POS=VB_IN prevWord=abrupt nextWord=into 
+9570_302 neutral token=turn_in POS=NN_IN  
+9601_132 neutral token=get_out POS=VB_RP prevWord=to nextWord=out 
+9603_218 neutral token=play_off POS=VB_RP prevWord=weaknesses nextWord=off 
+9603_252 neutral token=lay_off POS=VBD_RP  
+9614_197 neutral token=add_up POS=VB_RP prevWord=turns nextWord=up 
+9633_50 negative token=figure_out POS=NN_IN prevWord=trying nextWord=out 
+9635_2 neutral token=get_to POS=VB_TO  
+9638_319 neutral token=rely_on POS=VB_IN prevWord=to nextWord=on 
+9639_197 neutral token=add_up POS=VB_RP prevWord=not nextWord=up 
+9665_120 neutral token=come_of POS=VBN_IN  
+9672_271 positive token=come_along POS=VBN_IN prevWord=one nextWord=along 
+9675_214 neutral token=rise_up POS=VB_RP prevWord='s nextWord=up 
+9734_196 neutral token=stand_out POS=VB_RP prevWord=to nextWord=out 
+9740_294 negative token=sit_through POS=VB_IN prevWord=to nextWord=through 
+9743_2 neutral token=get_to POS=VB_TO prevWord=can nextWord=to 
+9754_11 negative token=happen_along POS=VB_IN prevWord=that nextWord=along 
+9759_25 neutral token=come_from POS=VBN_IN prevWord=have nextWord=from 
+9798_102 negative token=live_up POS=VB_RP prevWord=n't nextWord=up 
+9821_65 neutral token=think_about POS=VB_IN prevWord=n't nextWord=about 
+9833_91 negative token=cover_up POS=VB_RP prevWord=to nextWord=up 
+9842_53 negative token=tuck_in POS=VB_IN  
+9851_35 negative token=split_up POS=VBN_RP prevWord=to nextWord=up 
+9890_12 neutral token=put_in POS=VBN_IN prevWord=is nextWord=in 
+9899_323 negative token=wear_down POS=VB_RP prevWord=to nextWord=down 
+9903_104 neutral token=grow_up POS=VB_RP prevWord=to nextWord=up 
+9904_207 neutral token=own_up POS=VB_RP  
+9921_318 positive token=take_on POS=VB_RP prevWord='s nextWord=on 
+9935_238 neutral token=catch_on POS=NN_IN prevWord=does nextWord=on 
+9940_102 negative token=live_up POS=VB_RP prevWord=to nextWord=up 
+9953_59 negative token=run_out POS=VBN_RP prevWord=probably nextWord=out 
+9959_275 neutral token=come_out POS=VBN_RP prevWord=colors nextWord=out 
+9983_220 neutral token=live_on POS=VB_IN  
+10002_57 negative token=dope_out POS=NN_IN prevWord=to nextWord=out 
+10006_304 neutral token=wind_up POS=NN_IN prevWord=but nextWord=up 
+10026_274 neutral token=back_in POS=RB_IN prevWord=, nextWord=in 
+10045_248 neutral token=look_at POS=NN_IN prevWord=to nextWord=at 
+10054_274 neutral token=back_in POS=RB_IN prevWord=thrown nextWord=in 
+10072_248 neutral token=look_at POS=NN_IN prevWord=to nextWord=at 
+10075_197 neutral token=add_up POS=VB_RP prevWord=really nextWord=up 
+10100_210 neutral token=come_in POS=VBN_IN prevWord=you nextWord=in 
+10143_66 negative token=slip_into POS=NN_IN prevWord=writers nextWord=into 
+10143_277 negative token=slip_in POS=NN_IN  
+10158_107 neutral token=squeeze_out POS=NN_IN prevWord=to nextWord=out 
+10183_313 negative token=hold_on POS=VB_RP  
+10213_103 neutral token=take_in POS=VB_RP  
+10235_321 neutral token=go_out POS=VB_RP prevWord='ll nextWord=out 
+10251_248 neutral token=look_at POS=NN_IN prevWord=repetitive nextWord=at 
+10252_76 negative token=arrive_at POS=VB_IN prevWord=to nextWord=at 
+10288_321 neutral token=go_out POS=VB_RP prevWord=n't nextWord=out 
+10323_25 neutral token=come_from POS=VBN_IN prevWord=have nextWord=from 
+10345_73 neutral token=suck_up POS=VB_RP prevWord=will nextWord=up 
+10365_248 neutral token=look_at POS=NN_IN prevWord=, nextWord=at 
+10388_294 negative token=sit_through POS=VB_IN prevWord=to nextWord=through 
+10391_50 negative token=figure_out POS=NN_IN prevWord=to nextWord=out 
+10425_46 negative token=pass_for POS=NN_IN prevWord=to nextWord=for 
+10439_185 neutral token=hand_in POS=NN_IN prevWord=go nextWord=in 
+10469_145 neutral token=trot_out POS=NN_IN prevWord=they nextWord=out 
+10497_170 neutral token=set_up POS=VBN_RP  
+10504_104 neutral token=grow_up POS=VB_RP prevWord=they nextWord=up 
+10508_312 neutral token=peter_out POS=NN_IN prevWord=things nextWord=out 
+10520_65 neutral token=think_about POS=VB_IN prevWord=and nextWord=about 
+10520_248 neutral token=look_at POS=NN_IN prevWord=to nextWord=at 
+10542_52 neutral token=believe_in POS=VB_IN prevWord=really nextWord=in 
+10552_210 neutral token=come_in POS=VBN_IN prevWord=would nextWord=in 
+10575_49 negative token=foul_up POS=JJ_IN prevWord=twists nextWord=up 
+10584_222 neutral token=speak_up POS=VB_IN prevWord=to nextWord=up 
+10617_237 neutral token=belt_out POS=NN_IN prevWord=DeNiro nextWord=out 
+10620_69 negative token=pass_off POS=VB_RP prevWord=to nextWord=off 
+10632_144 neutral token=pull_out POS=VB_RP prevWord=actors nextWord=out 
+10643_138 negative token=smack_of POS=VB_IN prevWord=to nextWord=of 
+10654_278 neutral token=come_to POS=VBN_TO  
+10655_138 negative token=smack_of POS=VB_IN prevWord=movements nextWord=of 
+10659_197 neutral token=add_up POS=VB_RP prevWord=n't nextWord=up 
+10677_294 negative token=sit_through POS=VB_IN prevWord=to nextWord=through 
+10700_151 neutral token=act_on POS=NN_IN  
+10719_172 neutral token=run_to POS=VBN_TO  
+10729_318 positive token=take_on POS=VB_RP prevWord=to nextWord=on 
+10751_25 neutral token=come_from POS=VBN_IN prevWord=laughs nextWord=from 
+10774_150 negative token=play_in POS=NN_IN prevWord=classroom nextWord=in 
+10776_213 neutral token=do_for POS=VB_IN prevWord=can nextWord=for 
+10782_1 negative token=lay_on POS=VBN_IN  
+10782_121 negative token=play_on POS=VB_IN prevWord=to nextWord=on 
+10799_231 neutral token=jump_in POS=NN_IN prevWord=to nextWord=in 
+10842_294 negative token=sit_through POS=VB_IN prevWord=might nextWord=through 
+10854_232 positive token=ring_out POS=NN_IN  
+10855_313 negative token=hold_on POS=VB_RP  
+10863_50 negative token=figure_out POS=NN_IN prevWord=really nextWord=out 
+10875_120 neutral token=come_of POS=VBN_IN  
+10875_298 neutral token=come_off POS=VBN_RP prevWord=characters nextWord=off 
+10887_25 neutral token=come_from POS=VBN_IN prevWord=shocks nextWord=from 
+10912_8 positive token=keep_on POS=VB_IN prevWord=to nextWord=on 
+10927_98 neutral token=shake_up POS=VB_RP prevWord=to nextWord=up 
+10937_224 positive token=do_in POS=VB_IN  
+10983_46 negative token=pass_for POS=NN_IN prevWord=could nextWord=for 
+10985_319 neutral token=rely_on POS=VB_IN  
+10992_165 neutral token=bring_on POS=VB_RP prevWord=Just nextWord=on 
+10993_248 neutral token=look_at POS=NN_IN prevWord=to nextWord=at 
+10995_21 neutral token=wade_through POS=VB_IN prevWord=to nextWord=through 
+11010_280 very_negative token=put_through POS=VBN_IN prevWord=was nextWord=through 
+11012_248 neutral token=look_at POS=NN_IN prevWord=One nextWord=at 
+11047_127 negative token=go_back POS=VB_RB prevWord=would nextWord=back 
+11089_248 neutral token=look_at POS=NN_IN prevWord=to nextWord=at 
+11093_229 neutral token=pick_up POS=VB_RP prevWord=and nextWord=up 
+11115_32 negative token=care_for POS=NN_IN prevWord=truly nextWord=for 
+11126_135 negative token=seek_out POS=VB_RP prevWord=alone nextWord=out 
+11126_294 negative token=sit_through POS=VB_IN prevWord=Why nextWord=through 
+11156_300 positive token=step_in POS=NN_IN prevWord=a nextWord=in 
+11166_304 neutral token=wind_up POS=NN_IN prevWord=will nextWord=up 
+11174_278 neutral token=come_to POS=VBN_TO  
+11185_176 neutral token=go_down POS=VB_RP prevWord=may nextWord=down 
+11196_102 negative token=live_up POS=VB_RP prevWord=n't nextWord=up 
+11202_251 neutral token=make_up POS=VB_RP prevWord=to nextWord=up 
+11211_116 negative token=take_for POS=VB_IN prevWord=you nextWord=for 
+11229_314 negative token=run_in POS=VBN_IN prevWord=bad nextWord=in 
+11244_266 neutral token=get_in POS=VB_IN prevWord=we nextWord=in 
+11252_248 neutral token=look_at POS=NN_IN prevWord=all-too-human nextWord=at 
+11259_50 negative token=figure_out POS=NN_IN prevWord=to nextWord=out 
+11264_78 negative token=edge_up POS=NN_IN  
+11264_290 negative token=dredge_up POS=VB_RP prevWord=could nextWord=up 
+11273_262 negative token=dip_into POS=NN_IN prevWord=will nextWord=into 
+11296_132 neutral token=get_out POS=VB_RP prevWord=n't nextWord=out 
+11299_284 neutral token=head_up POS=NN_IN prevWord=its nextWord=up 
+11303_59 negative token=run_out POS=VBN_RP prevWord=filmmakers nextWord=out 
+11307_85 neutral token=end_up POS=VB_RP  
+11323_212 negative token=drown_out POS=VB_RP prevWord=can nextWord=out 
+11331_85 neutral token=end_up POS=VB_RP prevWord=n't nextWord=up 
+11338_317 neutral token=depend_on POS=VB_IN prevWord=, nextWord=on 
+11341_162 negative token=team_up POS=NN_RB prevWord=that nextWord=up 
+11352_111 neutral token=put_away POS=VB_RP prevWord=you nextWord=away 
+11380_256 negative token=fall_apart POS=NN_RB prevWord=things nextWord=apart 
+11383_268 negative token=turn_away POS=VB_RP prevWord=and nextWord=away 
+11394_110 neutral token=get_into POS=VB_IN prevWord=friend nextWord=into 
+11394_266 neutral token=get_in POS=VB_IN  
+11411_105 neutral token=will_on POS=MD_IN  
+11414_249 neutral token=get_about POS=VB_IN prevWord=professionals nextWord=about 
+11416_114 neutral token=turn_out POS=VB_RP prevWord=will nextWord=out 
+11427_309 negative token=see_in POS=VB_IN prevWord=they nextWord=in 
+11428_227 neutral token=strip_down POS=NN_IN prevWord=they nextWord=down 
+11429_179 negative token=drop_in POS=NN_IN prevWord=abrupt nextWord=in 
+11473_29 neutral token=settle_for POS=VB_IN prevWord=we nextWord=for 
+11489_301 neutral token=go_about POS=VB_RB prevWord=them nextWord=about 
+11509_201 negative token=come_down POS=VB_RP prevWord=possibly nextWord=down 
+11512_207 neutral token=own_up POS=VB_RP  
+11519_305 neutral token=come_away POS=VB_RB prevWord=You nextWord=away 
+11523_180 negative token=build_up POS=VB_RP prevWord=to nextWord=up 
+11533_294 negative token=sit_through POS=VB_IN prevWord=to nextWord=through 
+11541_318 positive token=take_on POS=VB_RP prevWord=' nextWord=on 
+11552_94 neutral token=set_out POS=VBN_RP prevWord=men nextWord=out 
+11552_248 neutral token=look_at POS=NN_IN prevWord=A nextWord=at 
+11558_310 neutral token=deal_with POS=NN_IN prevWord=LaBute nextWord=with 
+11586_197 neutral token=add_up POS=VB_RP prevWord=n't nextWord=up 
+11612_197 neutral token=add_up POS=VB_RP prevWord=n't nextWord=up 
+11620_281 neutral token=hold_over POS=VB_RP prevWord='s nextWord=over 
