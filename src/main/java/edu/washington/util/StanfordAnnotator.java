@@ -38,7 +38,7 @@ public class StanfordAnnotator {
     }
 
     public List<String> lemmatize(String documentText) {
-        List<String> lemmas = new LinkedList<String>();
+        List<String> lemmas = new LinkedList<>();
 
         // create an empty Annotation just with the given text
         Annotation document = new Annotation(documentText);
@@ -61,7 +61,7 @@ public class StanfordAnnotator {
     }
 
     public List<CoreLabel> annotate(String documentText) {
-        List<CoreLabel> lemmas = new LinkedList<CoreLabel>();
+        List<CoreLabel> lemmas = new LinkedList<>();
 
         // create an empty Annotation just with the given text
         Annotation document = new Annotation(documentText);

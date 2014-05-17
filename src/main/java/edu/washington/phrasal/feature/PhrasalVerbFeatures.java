@@ -5,16 +5,17 @@
  */
 package edu.washington.phrasal.feature;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Set;
-
 import com.google.common.base.Joiner;
-
 import edu.stanford.nlp.ie.machinereading.common.SimpleTokenize;
 import edu.stanford.nlp.ling.HasWord;
 import edu.stanford.nlp.ling.TaggedWord;
 import edu.stanford.nlp.ling.Word;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Set;
+import java.util.function.Function;
 
 /**
  *
@@ -22,33 +23,29 @@ import edu.stanford.nlp.ling.Word;
  */
 public class PhrasalVerbFeatures {
 
-    private final FeatureGenerator fg;
-    private final Integer sentenceId;
-    private final Integer phrasalVerbId;
-    private final ArrayList<String> sentenceTokens;
+    public static HashMap<String, Function<SentenceIdPhrasalVerbId, String>> functionToMap = new HashMap<>();
 
-    public PhrasalVerbFeatures(FeatureGenerator fg, Integer sentenceId, Integer phrasalVerbId) {
-        this.fg = fg;
-        this.sentenceId = sentenceId;
-        this.phrasalVerbId = phrasalVerbId;
-        this.sentenceTokens = SimpleTokenize.tokenize(fg.sentenceList.getSentence(sentenceId));
-    }
-
-    public String phrasalVerbContextualClassification() {
+    static Function<SentenceIdPhrasalVerbId, String> phrasalVerbContextualClassification = sp -> {
         /* XXX for now, just return classification base on phrase sentiment, but it should be the classification of the phrasalVerb */
-        Set<Integer> phrase_ids = fg.phrasalVerbIdToStanfordPhraseId.get(phrasalVerbId);
+        FeatureGenerator fg = sp.getFG();
+        Set<Integer> phrase_ids = fg.phrasalVerbIdToStanfordPhraseId.get(sp.getPhrasalVerbId());
         return fg.getClassBySentiment(phrase_ids.stream().map((spid) -> {
             return fg.nlpDict.getPhraseSentimentById(spid);
         }).reduce((x, y) -> x + y).get() / phrase_ids.size());
-    }
+    };
 
-    public String phrasalVerbToken() {
-        return "token" + FeatureGenerator.FEATURE_VALUE_SEPARATOR + String.join("_", fg.getPhrasalVerbTokensById(phrasalVerbId));
-    }
+    static Function<SentenceIdPhrasalVerbId, String> phraseId = sp -> {
+        return sp.getSentenceId() + "_" + sp.getPhrasalVerbId();
+    };
 
-    public String phrasalVerbPOS() {
-        String tagged = fg.getTagger().tagString(fg.getPhrasalVerbById(phrasalVerbId));
-        ArrayList<String> pv = SimpleTokenize.tokenize(fg.getPhrasalVerbById(phrasalVerbId));
+    static Function<SentenceIdPhrasalVerbId, String> phrasalVerbToken = sp -> {
+        FeatureGenerator fg = sp.getFG();
+        return "token" + FeatureGenerator.FEATURE_VALUE_SEPARATOR + String.join("_", fg.getPhrasalVerbTokensById(sp.getPhrasalVerbId()));
+    };
+
+    static Function<SentenceIdPhrasalVerbId, String> phrasalVerbPOS = sp -> {
+        FeatureGenerator fg = sp.getFG();
+        ArrayList<String> pv = SimpleTokenize.tokenize(fg.getPhrasalVerbById(sp.getPhrasalVerbId()));
         ArrayList<HasWord> hw = new ArrayList<>();
         pv.stream().forEach((w) -> {
             hw.add(new Word(w));
@@ -60,30 +57,43 @@ public class PhrasalVerbFeatures {
             pv.add(t.tag());
         });
         return "POS" + FeatureGenerator.FEATURE_VALUE_SEPARATOR + joiner.join(pv);
-    }
+    };
 
-    public String phrasalVerbContext() {
-        ArrayList<String> pv = SimpleTokenize.tokenize(fg.getPhrasalVerbById(phrasalVerbId));
-        int index = Collections.indexOfSubList(sentenceTokens, pv);
+    static Function<SentenceIdPhrasalVerbId, String> phrasalVerbContext = sp -> {
+        FeatureGenerator fg = sp.getFG();
+        ArrayList<String> pv = SimpleTokenize.tokenize(fg.getPhrasalVerbById(sp.getPhrasalVerbId()));
+        int index = Collections.indexOfSubList(sp.getSentenceTokens(), pv);
         if (index >= 0) {
             StringBuilder sb = new StringBuilder();
             if (index > 0) {
                 sb.append("prevWord");
                 sb.append(FeatureGenerator.FEATURE_VALUE_SEPARATOR);
-                sb.append(sentenceTokens.get(index - 1));
+                sb.append(sp.getSentenceTokens().get(index - 1));
                 sb.append(FeatureGenerator.FEATURE_SEPARATOR);
             }
-            if (index < sentenceTokens.size()) {
+            if (index < (sp.getSentenceTokens().size() - 1)) {
                 sb.append("nextWord");
                 sb.append(FeatureGenerator.FEATURE_VALUE_SEPARATOR);
-                sb.append(sentenceTokens.get(index + pv.size()));
+                sb.append(sp.getSentenceTokens().get(index + pv.size() - 1));
             }
             return sb.toString().trim();
         }
         return "";
+    };
+
+    static {
+        functionToMap.put("ID", phraseId);
+        functionToMap.put("phrasalVerbContextualClassification", phrasalVerbContextualClassification);
+        functionToMap.put("phrasalVerbToken", phrasalVerbToken);
+        functionToMap.put("phrasalVerbPOS", phrasalVerbPOS);
+        functionToMap.put("phrasalVerbContext", phrasalVerbContext);
     }
 
-    public String phrasalVerbPriorPolarity() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public static List<Function<SentenceIdPhrasalVerbId, String>> getFeatureFunctions(ArrayList<String> al) {
+        List<Function<SentenceIdPhrasalVerbId, String>> fl = new ArrayList<>();
+        for (String l : al) {
+            fl.add(functionToMap.get(l));
+        }
+        return fl;
     }
 }

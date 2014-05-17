@@ -1,6 +1,5 @@
 package edu.washington.config;
 
-import edu.washington.data.sentimentreebank.StanfordSentimentTreebankInfo;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;

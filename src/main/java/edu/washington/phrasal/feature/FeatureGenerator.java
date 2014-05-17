@@ -6,22 +6,23 @@
 package edu.washington.phrasal.feature;
 
 import edu.stanford.nlp.tagger.maxent.MaxentTagger;
+import edu.washington.config.StanfordSentimentTreebankInfo;
 import edu.washington.data.sentimentreebank.SentenceList;
 import edu.washington.data.sentimentreebank.StanfordNLPDict;
-import edu.washington.data.sentimentreebank.StanfordSentimentTreebankInfo;
-
-import java.io.BufferedReader;
+import edu.washington.util.Counter;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.function.Function;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -51,9 +52,39 @@ public class FeatureGenerator {
         phrasalVerbIdToPhrase = new HashMap<>();
         phrasalVerbIdToStanfordPhraseId = new HashMap<>();
         tagger = new MaxentTagger(
-                    "edu/stanford/nlp/models/pos-tagger/english-left3words/english-left3words-distsim.tagger");
+                "edu/stanford/nlp/models/pos-tagger/english-left3words/english-left3words-distsim.tagger");
 
-        populateSentenceSentiments(basepath, basepath + "supplementary/phrasal_verb_lists/fig.txt");
+        populateSentenceSentiments(basepath, basepath + "supplementary/phrasal_verb_lists/simple_phrasal_verbs.txt");
+
+
+    }
+
+    public String generateFeature(String featureList) {
+        ArrayList<SentenceIdPhrasalVerbId> spl = new ArrayList<>();
+        sentenceIdToPhrasalVerbId.keySet().stream().sorted().forEach((sentenceId) -> {
+            sentenceIdToPhrasalVerbId.get(sentenceId).stream().sorted().forEach((phrasalVerbId) -> {
+                spl.add(new SentenceIdPhrasalVerbId(sentenceId, phrasalVerbId, this));
+            });
+        });
+
+        List<Function<SentenceIdPhrasalVerbId, String>> fs = PhrasalVerbFeatures.getFeatureFunctions(new ArrayList<>(Arrays.asList(featureList.split(","))));
+
+        return generateFunctionalFeatureDocument(fs, spl);
+    }
+
+    public String generateFunctionalFeatureDocument(List<Function<SentenceIdPhrasalVerbId, String>> fs, List<SentenceIdPhrasalVerbId> spl) {
+        StringBuilder sb = new StringBuilder();
+        spl.stream().forEach((sp) -> {
+            StringBuilder sb_inner = new StringBuilder();
+            fs.stream().forEach((f) -> {
+                sb_inner.append(f.apply(sp));
+                sb_inner.append(FEATURE_SEPARATOR);
+            });
+            System.out.println(sb_inner.toString());
+            sb.append(sb_inner).append("\n");
+        });
+        return sb.toString();
+
     }
 
     private void populateSentenceSentiments(String basepath, String phrasal_filepath) {
@@ -66,7 +97,7 @@ public class FeatureGenerator {
             f.phrases.stream().forEach((String phrasal_verb) -> {
                 try {
                     Set<Integer> sentenceIds = new HashSet<>(sentenceList.findSentencesWithPhrase(phrasal_verb));
-                    
+
                     if (sentenceIds.size() > 0) {
                         keepPhrasalVerb.merge(phrasal_verb, sentenceIds, (value, newValue) -> {
                             if (value == null) {
@@ -123,31 +154,6 @@ public class FeatureGenerator {
         }
     }
 
-    /* print out feature in mallet format to */
-    public void generateFeatureDocument() {
-        /* format is id classification key:value key:value */
-        sentenceIdToPhrasalVerbId.keySet().stream().sorted().forEach((sentenceId) -> {
-            sentenceIdToPhrasalVerbId.get(sentenceId).stream().sorted().forEach((phrasalVerbId) -> {
-                StringBuilder sb = new StringBuilder();
-                sb.append(sentenceId);
-                sb.append("_");
-                sb.append(phrasalVerbId);
-                sb.append(" ");
-                
-                PhrasalVerbFeatures pvf = new PhrasalVerbFeatures(this, sentenceId, phrasalVerbId);
-                sb.append(pvf.phrasalVerbContextualClassification()).append(FEATURE_SEPARATOR);
-                sb.append(pvf.phrasalVerbToken()).append(FEATURE_SEPARATOR);
-                sb.append(pvf.phrasalVerbPOS()).append(FEATURE_SEPARATOR);
-                sb.append(pvf.phrasalVerbContext()).append(FEATURE_SEPARATOR);
-//                sb.append(pvf.phrasalVerbPriorPolarity()).append(" ");
-
-                System.out.println(sb.toString());
-            });
-
-        });
-
-    }
-
     public StanfordNLPDict getNLPDict() {
         return nlpDict;
     }
@@ -184,45 +190,4 @@ public class FeatureGenerator {
         return phrasalVerbIdToPhrase.get(phrasalVerbId);
     }
 
-    /* temporary fig.txt reader */
-    public class FigReader {
-
-        /**
-         *
-         */
-        public final Set<String> phrases;
-
-        public FigReader(String filepath) throws IOException {
-            this.phrases = new HashSet<>();
-            Path path = Paths.get(filepath);
-            BufferedReader reader = Files.newBufferedReader(path, StandardCharsets.UTF_8);
-            /* read the heading */
-            String line = reader.readLine();
-            while ((line = reader.readLine()) != null) {
-                line = line.trim();
-                if (line.contains(":") || !line.contains(" ")) {
-                    continue;
-                }
-                phrases.add(line);
-            }
-
-        }
-    }
-
-    public class Counter {
-
-        private int count;
-
-        public Counter() {
-            this(0);
-        }
-
-        public Counter(int count) {
-            this.count = count;
-        }
-
-        public int next() {
-            return ++count;
-        }
-    }
 }

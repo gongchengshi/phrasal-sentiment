@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Prepositions {
 
-    private static List<String> preps = new ArrayList<String>();
+    private static final List<String> preps = new ArrayList<>();
 
     static {
         preps.add("abroad");

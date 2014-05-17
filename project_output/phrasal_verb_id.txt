@@ -1,1097 +1,324 @@
-1	slap in the face
-2	on air
-3	by any means
-4	put up with
-5	fall to pieces
-6	tie up loose ends
-7	as a whole
-8	ins and outs
-9	bad boy
-10	wake up
-11	to say nothing of
-12	first love
-13	ring rat
-14	look forward
-15	happen along
-16	make a splash
-17	behind the scenes
-18	run with
-19	something like
-20	all there
-21	black and white
-22	one under
-23	in front of
-24	on top
-25	such as
-26	cash in
-27	in a flash
-28	ask in
-29	what gives
-30	all that jazz
-31	kick in
-32	settle for
-33	close in on
-34	red light
-35	up and down
-36	throw off
-37	not even
-38	new standard
-39	work out
-40	the finger
-41	all over
-42	split up
-43	according to
-44	weigh down
-45	have at
-46	the hell
-47	fast and furious
-48	on the cheap
-49	if you will
-50	fourth wall
-51	not to mention
-52	come down on
-53	bull session
-54	stave off
-55	for that matter
-56	of a
-57	take for granted
-58	in the here and now
-59	at the very least
-60	rock and roll
-61	hard up
-62	hold sway
-63	sit still
-64	dress up
-65	call the police
-66	sum of its parts
-67	at the helm
-68	the upper hand
-69	pull a
-70	suck up
-71	at stake
-72	put up
-73	of sorts
-74	more like it
-75	fall in
-76	well done
-77	in fact
-78	on end
-79	I wish
-80	heart and soul
-81	bad joke
-82	day and age
-83	kick in the pants
-84	take a look
-85	piece of crap
-86	sweet tooth
-87	cover up
-88	back on to
-89	set out
-90	too clever by half
-91	San Fran
-92	come in handy
-93	under the microscope
-94	in light of
-95	at will
-96	get at
-97	come to think of it
-98	if that
-99	go wrong
-100	rip into
-101	slip out
-102	cold fish
-103	of shame
-104	you what
-105	take for
-106	chances are
-107	come of
-108	you think
-109	old school
-110	cut a swath
-111	come on
-112	go away
-113	lock on
-114	now and then
-115	great deal
-116	get by
-117	you win
-118	if you like
-119	an hero
-120	grow into
-121	alive and kicking
-122	speak for
-123	draw out
-124	under the influence
-125	bottom line
-126	get wet
-127	yard ape
-128	but for the grace of God
-129	climb down
-130	Hollywood moment
-131	pull out
-132	knock back
-133	shake off
-134	for the most part
-135	man flu
-136	make it
-137	hang on
-138	descend upon
-139	team up
-140	but then
-141	on course
-142	go over
-143	as of
-144	not quite
-145	pit out
-146	step back
-147	ice cool
-148	warm up
-149	up against
-150	fall into
-151	selling point
-152	as long as
-153	party favor
-154	or else
-155	more like
-156	other than
-157	at sea
-158	to the rescue
-159	or something
-160	get back
-161	home run
-162	get some
-163	all along
-164	against all odds
-165	to a T
-166	grab bag
-167	on the street
-168	drop in
-169	have it both ways
-170	turn into
-171	let alone
-172	three-ring circus
-173	thick and thin
-174	over and over
-175	dumb down
-176	fine line
-177	class warfare
-178	for the love of
-179	come full circle
-180	once again
-181	at long last
-182	why not
-183	abstract idea
-184	to the
-185	account to
-186	put on
-187	to say the least
-188	on the go
-189	dirty word
-190	ring hollow
-191	here lies
-192	drown out
-193	and all that
-194	in character
-195	allow for
-196	in spades
-197	hang together
-198	carry forward
-199	after the fact
-200	stand in for
-201	stand tall
-202	at once
-203	strip down
-204	parting shot
-205	and then some
-206	talk up
-207	larger than life
-208	make like
-209	all over the place
-210	ring up
-211	eat up
-212	pile on
-213	look at
-214	and that
-215	at first
-216	get about
-217	good and
-218	come up
-219	talk about
-220	window dressing
-221	let slip
-222	on the level
-223	sit in
-224	come to terms
-225	to date
-226	out of place
-227	end of
-228	you bet
-229	come along
-230	high time
-231	off the beaten path
-232	back in
-233	for good
-234	fact is
-235	bring off
-236	come to
-237	nary a
-238	long since
-239	and the like
-240	party school
-241	think twice
-242	head and shoulders
-243	drone on
-244	come out in
-245	dirty old man
-246	pretty pictures
-247	other side
-248	can do with
-249	creature feature
-250	in the way
-251	dig deep
-252	ups and downs
-253	in business
-254	at peace
-255	go about
-256	step down
-257	turn in
-258	side out
-259	wind up
-260	in the least
-261	not in the least
-262	dirty look
-263	by no means
-264	hammer home
-265	slippery slope
-266	all wet
-267	pitch into
-268	filter out
-269	power on
-270	labour of love
-271	slow down
-272	open doors
-273	uphill battle
-274	after all
-275	at work
-276	look for
-277	go out
-278	get there
-279	cross swords
-280	small talk
-281	wear thin
-282	get to
-283	cope with
-284	rip off
-285	and how
-286	ice cube
-287	washed out
-288	in general
-289	night out
-290	as yet
-291	in line
-292	around the corner
-293	is it
-294	working girl
-295	get up
-296	do a
-297	wade through
-298	is that so
-299	round out
-300	have on
-301	film out
-302	on demand
-303	loose ends
-304	stand on its own
-305	by far
-306	let down
-307	push on
-308	on the game
-309	beside the point
-310	on the verge
-311	run away
-312	by the book
-313	dry off
-314	as much
-315	on the radar
-316	in bed
-317	much less
-318	puke up
-319	in order to
-320	at that
-321	say wha
-322	piece of work
-323	foul up
-324	figure out
-325	buy into
-326	watch it
-327	all the same
-328	too much
-329	something fierce
-330	real deal
-331	cat and mouse
-332	as it stands
-333	sum up
-334	a lot
-335	by the time
-336	get a kick out of
-337	my word
-338	pitch in
-339	I know
-340	hang out
-341	el cheapo
-342	as it is
-343	deal in
-344	arrive at
-345	on paper
-346	as well
-347	face value
-348	used to
-349	chew on
-350	think too much
-351	play with
-352	as soon as
-353	go into
-354	small potatoes
-355	a good deal
-356	come to life
-357	have a heart
-358	ringside seat
-359	long run
-360	sight to behold
-361	nothing to write home about
-362	rocket scientist
-363	in need
-364	to death
-365	bent on
-366	log on
-367	at best
-368	down the road
-369	few and far between
-370	recent memory
-371	shake up
-372	by heart
-373	popcorn movie
-374	talking head
-375	from time to time
-376	squeeze out
-377	make sense
-378	any more
-379	mull over
-380	happily ever after
-381	take heart
-382	rake in
-383	turn out
-384	white trash
-385	in the first place
-386	never mind
-387	full of it
-388	little go
-389	what with
-390	doze off
-391	household name
-392	in spite of
-393	a great deal
-394	ring in
-395	you wish
-396	wire fu
-397	sexual relation
-398	big fat
-399	out of nowhere
-400	bounce off
-401	hit on
-402	far cry
-403	trot out
-404	to do with
-405	dead end
-406	all at once
-407	know what
-408	fit into
-409	drug deal
-410	make sure
-411	on the up
-412	off the rails
-413	find out
-414	run through
-415	ghetto fabulous
-416	just about
-417	on the rise
-418	crash course
-419	oh my
-420	not half
-421	pull off
-422	in favor of
-423	stand a chance
-424	kiss of death
-425	up on
-426	big guy
-427	run by
-428	on the brink
-429	out of gas
-430	nothing special
-431	take off
-432	up and
-433	build up
-434	gross out
-435	sort out
-436	at the hands of
-437	hand in
-438	I would
-439	push the envelope
-440	keep from
-441	the quality
-442	in fee
-443	look forward to
-444	I am
-445	on ice
-446	look to
-447	young Turk
-448	make head or tail of
-449	keep up with
-450	down for the count
-451	up there
-452	walk out
-453	test of time
-454	carry on
-455	comedy of errors
-456	sweet spot
-457	come to terms with
-458	labor of love
-459	able for
-460	put together
-461	for good measure
-462	win over
-463	take to
-464	rise up
-465	see the forest for the trees
-466	have in
-467	about to
-468	on hand
-469	time out
-470	mug shot
-471	get on
-472	rose-colored glasses
-473	mess with
-474	kiddie flick
-475	thumbs up
-476	pick up
-477	on the outs
-478	X marks the spot
-479	out of shape
-480	ring out
-481	old lady
-482	in the act
-483	belt out
-484	catch on
-485	play out
-486	hook up
-487	ferret out
-488	for the sake of
-489	silver bullet
-490	on and off
-491	at home
-492	pick up the slack
-493	keep it up
-494	aim at
-495	make up
-496	hot air
-497	bring out
-498	look like
-499	walk into
-500	verge on
-501	check out
-502	no entry
-503	pop up
-504	in order
-505	get in
-506	but good
-507	over the top
-508	on a shoestring
-509	get it
-510	go along with
-511	come out
-512	wreak havoc
-513	hold over
-514	on about
-515	head up
-516	old woman
-517	shake it
-518	daily grind
-519	rainy day
-520	turf war
-521	will do
-522	cold comfort
-523	at all
-524	see over
-525	ask for
-526	happy ending
-527	fast asleep
-528	real time
-529	silver screen
-530	come away
-531	there are
-532	I do
-533	beat down
-534	fall short
-535	every time
-536	of course
-537	stay on
-538	keep watch
-539	deal with
-540	peter out
-541	run in
-542	by the way
-543	loved one
-544	take on
-545	adult movie
-546	rely on
-547	who cares
-548	wear down
-549	in touch
-550	shrug off
-551	say what
-552	run out of steam
-553	lay on
-554	right on
-555	worked up
-556	out of it
-557	go the distance
-558	melt away
-559	for the ages
-560	save the day
-561	in the world
-562	at the mercy of
-563	in a state
-564	drag queen
-565	no prob
-566	modus operandi
-567	front and center
-568	on the other hand
-569	come across
-570	in the works
-571	up for
-572	reduced circumstances
-573	get together
-574	carried away
-575	in no time
-576	go through
-577	rest assured
-578	mixed bag
-579	have a go
-580	in love with
-581	go hand in hand
-582	kind of
-583	in the post
-584	care for
-585	out of character
-586	false step
-587	reel in
-588	long haul
-589	like shooting fish in a barrel
-590	alternative lifestyle
-591	carry out
-592	pass for
-593	march to the beat of a different drum
-594	cut it
-595	set on
-596	have in mind
-597	believe in
-598	run over
-599	tuck in
-600	on the whole
-601	have got
-602	wishful thinking
-603	then again
-604	one another
-605	what it do
-606	do what
-607	short of
-608	American Dream
-609	in the making
-610	run out
-611	pay attention
-612	dress down
-613	rough trade
-614	cup of tea
-615	become of
-616	tune in
-617	slip into
-618	go for
-619	tug of war
-620	dead weight
-621	creep into
-622	seal the deal
-623	lie down
-624	pass off
-625	rough out
-626	high note
-627	broad shoulders
-628	edge up
-629	hold up
-630	said and done
-631	come into
-632	on top of
-633	hurry up
-634	on message
-635	get out of
-636	something terrible
-637	get ready
-638	free ride
-639	look into
-640	to be sure
-641	in focus
-642	reflect on
-643	martial art
-644	bite in
-645	put down
-646	live up
-647	take in
-648	grow up
-649	will on
-650	plan on
-651	by George
-652	backhanded compliment
-653	memory lane
-654	no score
-655	out of central casting
-656	sort of
-657	social ladder
-658	what it is
-659	shoot the messenger
-660	wide awake
-661	fall together
-662	top notch
-663	too bad
-664	on the warpath
-665	at the expense of
-666	dead on
-667	play on
-668	patience of Job
-669	next to
-670	top shelf
-671	not very
-672	believe it or not
-673	get out
-674	drink to
-675	smack of
-676	from the get-go
-677	add up to
-678	go with
-679	hit the skids
-680	old flame
-681	again and again
-682	my eye
-683	bogged down
-684	beat off
-685	so long as
-686	in control
-687	up the wazoo
-688	wipe away
-689	hate on
-690	sink in
-691	get with
-692	first and last
-693	shut up
-694	pay off
-695	wing it
-696	going on
-697	push it
-698	set up
-699	stand up
-700	run to
-701	off of
-702	arm up
-703	in trouble
-704	change the channel
-705	below the belt
-706	the bomb
-707	feast for the eyes
-708	return to form
-709	one up
-710	one side
-711	by the numbers
-712	so far
-713	in the wind
-714	middle of the road
-715	so much as
-716	touch on
-717	work at
-718	kitchen sink
-719	at last
-720	speak to
-721	stand out
-722	add up
-723	to die for
-724	come down
-725	walk through
-726	do it
-727	look down on
-728	pull together
-729	ring off
-730	not much of anything
-731	hot on
-732	own up
-733	Dolly Parton
-734	the one
-735	of an
-736	have a good time
-737	string together
-738	spot on
-739	one and only
-740	pink slip
-741	hold a candle
-742	play off
-743	loose end
-744	hood rat
-745	ever so
-746	drug on the market
-747	speak up
-748	go to
-749	do in
-750	back and forth
-751	be careful what you wish for
-752	with regard to
-753	mixed message
-754	free rein
-755	root for
-756	down the line
-757	food for thought
-758	gloss over
-759	have to
-760	lay by
-761	in the lead
-762	lay off
-763	make fun of
-764	small change
-765	by way of
-766	ride roughshod over
-767	fall apart
-768	in and out
-769	brush up
-770	in the dark
-771	heat up
-772	par for the course
-773	pay for
-774	best of both worlds
-775	turn away
-776	show up
-777	fish out
-778	smash hit
-779	on the way
-780	against the grain
-781	knock on
-782	raise the bar
-783	bound to
-784	at it
-785	drag on
-786	slip in
-787	in kind
-788	a la
-789	roll in
-790	laundry list
-791	tap in
-792	walk off
-793	sleep with the fishes
-794	pass up
-795	mind you
-796	make for
-797	go straight
-798	break up
-799	go on
-800	sit through
-801	bad name
-802	sleep with
-803	left field
-804	come off
-805	in the name of
-806	step in
-807	long time
-808	back into
-809	pill to swallow
-810	chick flick
-811	end of the world
-812	across the board
-813	no go
-814	in the way of
-815	come back
-816	see in
-817	hold on
-818	no way
-819	take a chance
-820	depend on
-821	put to sleep
-822	do do
-823	lead nowhere
-824	his butt
-825	out of this world
-826	as far as
-827	and finally
-828	with it
-829	a notch above
-830	big ole
-831	go out on a limb
-832	out there
-833	what the hell
-834	Elysian Fields
-835	balance out
-836	brain candy
-837	of all things
-838	moral compass
-839	keep on
-840	it bag
-841	second fiddle
-842	some people
-843	play at
-844	put off
-845	the story goes
-846	turn on
-847	business as usual
-848	once or twice
-849	put in
-850	to the max
-851	the devil
-852	breath of fresh air
-853	look back
-854	politically correct
-855	way to go
-856	kick out
-857	sign in
-858	not at all
-859	to the brim
-860	come from
-861	see the point
-862	take part
-863	long shot
-864	to the power of
-865	to go
-866	there is
-867	what the
-868	root cause
-869	soft spot
-870	as if
-871	you know it
-872	the man
-873	to a fault
-874	the pants off
-875	street cred
-876	about time
-877	big one
-878	pile up
-879	out the window
-880	old college try
-881	breathe out
-882	drum up
-883	step forward
-884	old man
-885	come by
-886	nothing to sneeze at
-887	as is
-888	clear up
-889	like that
-890	run amok
-891	make do
-892	same old same old
-893	book in
-894	every bit
-895	dope out
-896	done up
-897	as you do
-898	fight off
-899	as opposed to
-900	last thing
-901	pissed off
-902	good books
-903	show off
-904	bodily function
-905	think about
-906	scratch the surface
-907	hand in hand
-908	safe and sound
-909	country mile
-910	lit up
-911	turn to
-912	poster boy
-913	on a roll
-914	sit back
-915	same old story
-916	end up
-917	supposed to
-918	blow it
-919	to the point
-920	ring back
-921	on the loose
-922	stick with
-923	game plan
-924	look ahead
-925	in the face of
-926	pore over
-927	company man
-928	little old
-929	gulp down
-930	go along
-931	the change
-932	or what
-933	here and there
-934	if only
-935	get into
-936	put away
-937	boiling point
-938	get along
-939	have a few
-940	eye candy
-941	get off
-942	her ass
-943	something awful
-944	and change
-945	behind bars
-946	make the most of
-947	stand by
-948	sit down
-949	on and on
-950	go back
-951	settle in
-952	roll over
-953	go home
-954	play second fiddle
-955	seek out
-956	hog heaven
-957	give in
-958	as well as
-959	in this day and age
-960	on behalf of
-961	running on empty
-962	go around
-963	young man
-964	go through the motions
-965	get back to
-966	break through
-967	try out
-968	under way
-969	play in
-970	act on
-971	reality check
-972	eat in
-973	blow up
-974	to pieces
-975	one-trick pony
-976	bring on
-977	funny stuff
-978	in your face
-979	legal eagle
-980	party to
-981	turn of phrase
-982	lose it
-983	on hold
-984	very well
-985	eke out
-986	go down
-987	out loud
-988	walk away
-989	run the gamut
-990	haunted house
-991	very good
-992	at heart
-993	write home about
-994	big picture
-995	bubble up
-996	in vain
-997	tick off
-998	that does it
-999	in your dreams
-1000	get you
-1001	all over the map
-1002	funny bone
-1003	take away
-1004	keep up
-1005	road movie
-1006	stick to
-1007	spaghetti western
-1008	count on
-1009	case in point
-1010	with child
-1011	being that
-1012	quite a bit
-1013	cut out
-1014	train wreck
-1015	sign on
-1016	you never know
-1017	and all
-1018	in addition
-1019	come in
-1020	do for
-1021	come it
-1022	live on
-1023	talk down
-1024	acquired taste
-1025	make the cut
-1026	bad trip
-1027	burn out
-1028	all that
-1029	guilty pleasure
-1030	for once
-1031	jump in
-1032	give me
-1033	turn down
-1034	serve up
-1035	helping hand
-1036	do justice
-1037	hinge on
-1038	hot with
-1039	make a point
-1040	sneak out
-1041	bitter end
-1042	come up with
-1043	cross over
-1044	ham it up
-1045	keel over
-1046	now and again
-1047	on purpose
-1048	fit in
-1049	fall from grace
-1050	spring to life
-1051	dip into
-1052	true believer
-1053	close to home
-1054	by all means
-1055	feel for
-1056	in detail
-1057	jump ship
-1058	good job
-1059	lay out
-1060	who knows
-1061	I can tell you
-1062	put through
-1063	stand the test of time
-1064	pick apart
-1065	matter of time
-1066	once in a while
-1067	full circle
-1068	spectator sport
-1069	tie up
-1070	dredge up
-1071	act up
-1072	deal out
-1073	churn out
-1074	on the fly
-1075	rhyme or reason
-1076	New Wave
-1077	at odds
-1078	off the hook
-1079	crack a smile
-1080	go off
-1081	big deal
-1082	by a long shot
-1083	straight face
-1084	as all get-out
-1085	stepping stone
-1086	that one
-1087	out of
-1088	how so
-1089	of fame
-1090	a cut above
-1091	or so
-1092	pull out all the stops
-1093	up a storm
-1094	on the button
-1095	not bad
-1096	get lost
-1097	run into
+1	lay on
+2	get to
+3	cope with
+4	rip off
+5	balance out
+6	wake up
+7	play at
+8	keep on
+9	put off
+10	turn on
+11	happen along
+12	put in
+13	look forward
+14	melt away
+15	look back
+16	run with
+17	kick out
+18	cash in
+19	come across
+20	get up
+21	wade through
+22	round out
+23	ask in
+24	get together
+25	come from
+26	go through
+27	film out
+28	kick in
+29	settle for
+30	let down
+31	push on
+32	care for
+33	work out
+34	run away
+35	split up
+36	dry off
+37	reel in
+38	weigh down
+39	pile up
+40	drum up
+41	breathe out
+42	puke up
+43	step forward
+44	come by
+45	clear up
+46	pass for
+47	carry out
+48	set on
+49	foul up
+50	figure out
+51	buy into
+52	believe in
+53	tuck in
+54	run over
+55	stave off
+56	book in
+57	dope out
+58	sum up
+59	run out
+60	fight off
+61	dress down
+62	become of
+63	dress up
+64	show off
+65	think about
+66	slip into
+67	go for
+68	creep into
+69	pass off
+70	lie down
+71	pitch in
+72	rough out
+73	suck up
+74	hang out
+75	deal in
+76	arrive at
+77	put up
+78	edge up
+79	hold up
+80	chew on
+81	fall in
+82	sit back
+83	come into
+84	play with
+85	end up
+86	hurry up
+87	go into
+88	look into
+89	ring back
+90	stick with
+91	cover up
+92	look ahead
+93	pore over
+94	set out
+95	reflect on
+96	bite in
+97	log on
+98	shake up
+99	put down
+100	gulp down
+101	go along
+102	live up
+103	take in
+104	grow up
+105	will on
+106	plan on
+107	squeeze out
+108	get at
+109	mull over
+110	get into
+111	put away
+112	slip out
+113	rake in
+114	turn out
+115	get along
+116	take for
+117	get off
+118	fall together
+119	doze off
+120	come of
+121	play on
+122	go away
+123	come on
+124	lock on
+125	stand by
+126	sit down
+127	go back
+128	settle in
+129	ring in
+130	roll over
+131	grow into
+132	get out
+133	drink to
+134	speak for
+135	seek out
+136	draw out
+137	give in
+138	smack of
+139	go around
+140	go with
+141	bounce off
+142	climb down
+143	hit on
+144	pull out
+145	trot out
+146	break through
+147	try out
+148	shake off
+149	knock back
+150	play in
+151	act on
+152	fit into
+153	beat off
+154	hang on
+155	descend upon
+156	eat in
+157	wipe away
+158	blow up
+159	sink in
+160	hate on
+161	run through
+162	team up
+163	shut up
+164	go over
+165	bring on
+166	pay off
+167	pit out
+168	warm up
+169	fall into
+170	set up
+171	stand up
+172	run to
+173	pull off
+174	get back
+175	eke out
+176	go down
+177	run by
+178	take off
+179	drop in
+180	build up
+181	bubble up
+182	gross out
+183	turn into
+184	sort out
+185	hand in
+186	keep from
+187	take away
+188	keep up
+189	stick to
+190	count on
+191	look to
+192	work at
+193	dumb down
+194	touch on
+195	speak to
+196	stand out
+197	add up
+198	walk out
+199	cut out
+200	walk through
+201	come down
+202	carry on
+203	account to
+204	put on
+205	pull together
+206	ring off
+207	own up
+208	win over
+209	take to
+210	come in
+211	string together
+212	drown out
+213	do for
+214	rise up
+215	allow for
+216	have in
+217	hang together
+218	play off
+219	carry forward
+220	live on
+221	talk down
+222	speak up
+223	time out
+224	do in
+225	get on
+226	burn out
+227	strip down
+228	mess with
+229	pick up
+230	talk up
+231	jump in
+232	ring out
+233	ring up
+234	turn down
+235	root for
+236	serve up
+237	belt out
+238	catch on
+239	hinge on
+240	gloss over
+241	play out
+242	eat up
+243	hook up
+244	ferret out
+245	lay by
+246	pile on
+247	sneak out
+248	look at
+249	get about
+250	aim at
+251	make up
+252	lay off
+253	come up
+254	cross over
+255	bring out
+256	fall apart
+257	walk into
+258	keel over
+259	check out
+260	verge on
+261	fit in
+262	dip into
+263	pop up
+264	brush up
+265	heat up
+266	get in
+267	pay for
+268	turn away
+269	show up
+270	fish out
+271	come along
+272	knock on
+273	lay out
+274	back in
+275	come out
+276	drag on
+277	slip in
+278	come to
+279	bring off
+280	put through
+281	hold over
+282	roll in
+283	pick apart
+284	head up
+285	tap in
+286	walk off
+287	pass up
+288	tie up
+289	drone on
+290	dredge up
+291	break up
+292	act up
+293	deal out
+294	sit through
+295	churn out
+296	see over
+297	ask for
+298	come off
+299	go off
+300	step in
+301	go about
+302	turn in
+303	step down
+304	wind up
+305	come away
+306	back into
+307	beat down
+308	come back
+309	see in
+310	deal with
+311	filter out
+312	peter out
+313	hold on
+314	run in
+315	power on
+316	slow down
+317	depend on
+318	take on
+319	rely on
+320	look for
+321	go out
+322	run into
+323	wear down
+324	shrug off

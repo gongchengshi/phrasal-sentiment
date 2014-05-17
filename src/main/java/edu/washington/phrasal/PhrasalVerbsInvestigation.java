@@ -3,7 +3,7 @@ package edu.washington.phrasal;
 import edu.washington.data.sentimentreebank.PhraseIdDict;
 import edu.washington.data.sentimentreebank.PhraseIdSentimentList;
 import edu.washington.data.sentimentreebank.SentenceList;
-import edu.washington.data.sentimentreebank.StanfordSentimentTreebankInfo;
+import edu.washington.config.StanfordSentimentTreebankInfo;
 import edu.washington.util.Utils;
 
 import java.io.BufferedReader;

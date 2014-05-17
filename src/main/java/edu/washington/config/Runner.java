@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.washington.phrasal.feature;
+package edu.washington.config;
 
+import edu.washington.phrasal.feature.FeatureGenerator;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -16,13 +17,13 @@ import java.util.logging.Logger;
 public class Runner {
 
     public static void main(String[] args) {
+        String features = "";
+        FeatureGenerator f;
         try {
-            FeatureGenerator f = new FeatureGenerator("/Users/nickchen/ling/LING575/phrasal-sentiment/");
-            f.generateFeatureDocument();
-
+            f = new FeatureGenerator("/Users/nickchen/ling/LING575/phrasal-sentiment/");
+            f.generateFeature("ID,phrasalVerbContextualClassification,phrasalVerbToken,phrasalVerbPOS,phrasalVerbContext");
         } catch (IOException ex) {
-            Logger.getLogger(FeatureGenerator.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Runner.class.getName()).log(Level.SEVERE, null, ex);
         }
-
     }
 }

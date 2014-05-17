@@ -1,4 +1,4 @@
-package edu.washington.data.sentimentreebank;
+package edu.washington.config;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
