@@ -1,3 +1,7 @@
+'m prepared	0.500000
+'re in for	0.833330
+'s all about	0.444440
+'ve got	0.166670
 a cut above	0.833330
 a good deal	0.750000
 a great deal	0.750000
@@ -6,22 +10,30 @@ a notch above	0.652780
 about time	0.500000
 about to	0.500000
 abstract idea	0.486110
+abstract ideas	0.486110
 according to	0.569440
 account to	0.597220
 acquired taste	0.444440
 across the board	0.500000
 act on	0.500000
 act out	0.555560
+acted out	0.555560
+acting on	0.500000
 add up	0.541670
 add up to	0.500000
+adds up	0.555560
+adds up to	0.625000
 adult movie	0.388890
+adult movies	0.388890
 after all	0.500000
 after the fact	0.500000
 again and again	0.513890
 against all odds	0.666670
 against the grain	0.541670
 aim at	0.333330
+aimed at	0.333330
 air out	0.500000
+airs out	0.500000
 alive and kicking	0.541670
 all along	0.500000
 all at once	0.500000
@@ -45,9 +57,13 @@ and that	0.500000
 and the like	0.444440
 and then some	0.833330
 ante up	0.555560
+anteing up	0.555560
 any more	0.500000
+are along	0.500000
 around the corner	0.500000
 arrive at	0.444440
+arrives at	0.500000
+arriving at	0.500000
 as a whole	0.541670
 as all get-out	0.500000
 as far as	0.500000
@@ -65,6 +81,7 @@ as yet	0.180560
 as you do	0.458330
 ask for	0.611110
 ask the question	0.347220
+asks the question	0.347220
 at all	0.513890
 at best	0.527780
 at first	0.500000
@@ -89,9 +106,11 @@ back and forth	0.500000
 back in	0.486110
 back into	0.513890
 back off	0.361110
+backed off	0.361110
 backhanded compliment	0.708330
 bad boy	0.500000
 bad joke	0.277780
+bad jokes	0.277780
 bad name	0.361110
 bad news	0.500000
 bad trip	0.277780
@@ -106,16 +125,21 @@ be in for	0.833330
 be on about	0.541670
 be prepared	0.500000
 bear out	0.541670
+bears out	0.500000
 beat down	0.472220
 beat off	0.500000
 beat to a pulp	0.361110
+beaten to a pulp	0.361110
 beauty and the beast	0.388890
 become of	0.486110
+been around	0.402780
 behind bars	0.625000
 behind the scenes	0.500000
 being that	0.513890
 believe in	0.500000
 believe it or not	0.444440
+believed in	0.652780
+believing in	0.500000
 below the belt	0.402780
 belt out	0.500000
 bent on	0.277780
@@ -127,34 +151,49 @@ big daddy	0.500000
 big deal	0.555560
 big fat	0.500000
 big guy	0.500000
+big guys	0.500000
 big ole	0.625000
 big one	0.458330
 big picture	0.500000
 bite in	0.180560
 bite off	0.236110
+bites off	0.500000
+biting off	0.500000
+bitten off	0.236110
 bitter end	0.388890
 black and white	0.500000
 black out	0.333330
+blacked out	0.333330
 blind date	0.569440
 blow it	0.486110
 blow up	0.500000
+blown up	0.500000
 bodily function	0.527780
+bodily functions	0.527780
 bog down	0.388890
 bogged down	0.388890
+bogging down	0.375000
+bogs down	0.569440
 boil down	0.513890
 boiling point	0.388890
+boils down	0.513890
 book in	0.625000
+born out	0.541670
 bottom line	0.500000
 bounce back	0.263890
 bounce off	0.541670
+bouncing back	0.263890
 bound to	0.750000
 brain candy	0.527780
 branch out	0.513890
+branched out	0.513890
 break new ground	0.694440
 break out	0.597220
 break through	0.625000
 break up	0.388890
 break with	0.458330
+breaking new ground	0.694440
+breaking out	0.583330
 breath of fresh air	0.652780
 breathe out	0.500000
 bring about	0.402780
@@ -164,19 +203,39 @@ bring off	0.625000
 bring on	0.500000
 bring out	0.569440
 bring to light	0.611110
+bringing off	0.500000
+brings back	0.555560
+brings out	0.569440
 broad shoulders	0.541670
+broke out	0.597220
+broken with	0.458330
+brought about	0.402780
+brought back	0.500000
+brought down	0.291670
+brought off	0.500000
+brought out	0.500000
+brought to light	0.611110
 brush up	0.500000
 bubble up	0.625000
+bubbles up	0.625000
 build up	0.500000
+building up	0.500000
+builds up	0.555560
 bull session	0.361110
+bull sessions	0.361110
 bump up	0.500000
+bumps up	0.500000
 burn out	0.625000
+burns out	0.388890
+burnt out	0.319440
 business as usual	0.375000
 bust out	0.583330
+busts out	0.583330
 but for the grace of god	0.500000
 but good	0.791670
 but then	0.722220
 buy into	0.541670
+buying into	0.277780
 by a long shot	0.444440
 by all means	0.666670
 by and large	0.500000
@@ -191,34 +250,52 @@ by the time	0.486110
 by the way	0.500000
 by way of	0.750000
 call the police	0.430560
+came at	0.416670
+came back	0.472220
+came to	0.555560
+came up	0.500000
+came up with	0.722220
 can do with	0.222220
 care for	0.472220
+caring for	0.500000
 carried away	0.444440
+carried out	0.625000
+carries on	0.458330
 carry away	0.444440
 carry forward	0.513890
 carry off	0.500000
 carry on	0.458330
 carry out	0.625000
+carrying off	0.500000
 case in point	0.500000
 cash in	0.500000
+cashing in	0.555560
 cat and mouse	0.500000
 catch fire	0.500000
 catch it	0.500000
 catch on	0.472220
 catch up	0.527780
+catches fire	0.500000
+caught up	0.527780
 cave in	0.472220
+caved in	0.472220
 chances are	0.513890
 change the channel	0.236110
 cheat on	0.486110
+cheats on	0.486110
 check out	0.500000
+checking out	0.486110
 chew on	0.500000
 chick flick	0.500000
+chick flicks	0.527780
 chime in	0.500000
+chimes in	0.500000
 churn out	0.430560
 class warfare	0.333330
 clear up	0.611110
 climb down	0.333330
 clock in	0.486110
+clocks in	0.486110
 close in on	0.541670
 close to home	0.500000
 cold comfort	0.444440
@@ -256,54 +333,137 @@ come together	0.611110
 come up	0.500000
 come up with	0.722220
 comedy of errors	0.736110
+comes across	0.527780
+comes along	0.513890
+comes at	0.500000
+comes away	0.833330
+comes back	0.500000
+comes down	0.319440
+comes down to	0.319440
+comes from	0.319440
+comes in	0.819440
+comes into	0.722220
+comes off	0.527780
+comes out	0.500000
+comes through	0.402780
+comes to	0.111110
+comes to life	0.597220
+comes to mind	0.111110
+comes to terms	0.583330
+comes to terms with	0.583330
+comes together	0.611110
+comes up	0.500000
+comes up with	0.388890
+coming apart	0.416670
+coming away	0.458330
+coming back	0.500000
+coming down	0.500000
+coming from	0.305560
+coming into	0.458330
+coming of	0.611110
+coming through	0.569440
+coming to	0.444440
+coming to a head	0.500000
+coming to terms	0.444440
+coming to terms with	0.444440
+coming together	0.597220
+coming up	0.500000
 conjure up	0.500000
+conjured up	0.500000
+conjures up	0.569440
+conjuring up	0.597220
 cope with	0.472220
+coping with	0.472220
 count on	0.666670
 country mile	0.500000
 cover up	0.500000
 crack a smile	0.722220
 crack up	0.722220
+cracking up	0.722220
 crank out	0.416670
+cranked out	0.416670
 crash course	0.527780
 creature feature	0.791670
+creature features	0.513890
 creep into	0.388890
+creeping into	0.388890
+creeps into	0.708330
 cross off	0.500000
 cross over	0.500000
 cross swords	0.569440
+crossed off	0.500000
 cup of tea	0.583330
 cut corners	0.277780
 cut it	0.416670
 cut out	0.500000
 cut to the chase	0.652780
+cuts corners	0.277780
+cuts to the chase	0.652780
 daily grind	0.486110
 day and age	0.527780
 dead end	0.388890
+dead ends	0.388890
 dead on	0.305560
 dead weight	0.402780
 deal in	0.277780
 deal with	0.666670
+dealing in	0.277780
+dealing with	0.430560
+deals with	0.652780
+dealt with	0.500000
 deep down	0.500000
 deliver the goods	0.763890
+delivers the goods	0.763890
 depend on	0.500000
+depends on	0.500000
 descend upon	0.444440
+did an	0.736110
+did in	0.500000
+did it	0.513890
+did what	0.402780
 dig deep	0.236110
+digs deep	0.555560
 dip into	0.541670
+dips into	0.541670
 dirty look	0.500000
 dirty old man	0.361110
 dirty word	0.527780
+dirty words	0.527780
 dish out	0.583330
+dished out	0.513890
+dishes out	0.583330
 do a	0.430560
 do for	0.513890
 do in	0.500000
 do it	0.555560
 do justice	0.611110
+do n't want	0.333330
 do not want	0.333330
 do the right thing	0.500000
 do the trick	0.680560
 do up	0.472220
 do what	0.722220
+does a	0.333330
+does an	0.611110
+does for	0.500000
+does in	0.500000
+does it	0.541670
+does justice	0.652780
+does n't want	0.375000
+does not want	0.583330
+does the trick	0.680560
+does what	0.722220
+doing a	0.430560
+doing in	0.486110
+doing it	0.763890
+doing what	0.444440
 dole out	0.500000
+doles out	0.500000
 dolly parton	0.500000
+done a	0.069444
+done an	0.847220
+done in	0.500000
+done it	0.458330
 done up	0.472220
 dope out	0.458330
 down for the count	0.402780
@@ -314,32 +474,53 @@ drag down	0.388890
 drag on	0.222220
 drag out	0.291670
 drag queen	0.500000
+dragged down	0.388890
+dragged on	0.208330
+drags on	0.222220
+drags out	0.291670
 draw in	0.583330
 draw on	0.805560
 draw out	0.444440
+drawing on	0.763890
+drawn in	0.583330
+draws on	0.805560
+draws out	0.555560
 dream up	0.458330
+dreamed up	0.611110
+dreaming up	0.458330
 dredge up	0.319440
 dress down	0.513890
 dress up	0.500000
+dressed up	0.500000
 drink to	0.486110
 drone on	0.194440
 drop in	0.236110
 drop the ball	0.138890
+drops the ball	0.138890
 drown out	0.388890
+drowned out	0.388890
+drowns out	0.388890
 drug on the market	0.500000
 drum up	0.388890
 dry out	0.333330
+drying out	0.333330
 duke it out	0.500000
+duking it out	0.500000
 dumb down	0.250000
 dump on	0.555560
+dumped on	0.555560
 dwell on	0.222220
+dwells on	0.222220
 eat up	0.500000
+eats up	0.500000
 eke out	0.583330
 el cheapo	0.444440
 elysian fields	0.500000
 end of	0.500000
 end of the world	0.347220
 end up	0.444440
+ended up	0.500000
+ends up	0.444440
 ever so	0.388890
 every bit	0.500000
 every time	0.500000
@@ -361,20 +542,44 @@ fall short	0.208330
 fall to pieces	0.236110
 fall together	0.513890
 fall under	0.555560
+fallen under	0.680560
+falling in	0.666670
+falling into	0.305560
+falling into place	0.527780
+falling over	0.500000
+falling short	0.305560
+falls about	0.347220
+falls apart	0.222220
+falls asleep	0.486110
+falls back	0.333330
+falls down	0.305560
+falls into	0.694440
+falls short	0.208330
+falls under	0.555560
 false step	0.458330
+false steps	0.458330
 far cry	0.388890
 fast and furious	0.555560
 fast asleep	0.402780
 feast for the eyes	0.777780
 feel for	0.513890
 feel free	0.166670
+feels free	0.388890
+fell apart	0.277780
 ferret out	0.500000
 few and far between	0.305560
 fight back	0.500000
 fight off	0.430560
+fighting off	0.500000
+fights back	0.500000
 figure out	0.583330
+figured out	0.444440
+figures out	0.555560
+figuring out	0.500000
 fill in	0.500000
 fill out	0.527780
+filled out	0.527780
+filling in	0.500000
 filter out	0.555560
 find out	0.555560
 fine line	0.500000
@@ -384,11 +589,20 @@ fish out	0.555560
 fit in	0.541670
 fit into	0.819440
 fit the bill	0.611110
+fits in	0.541670
+fits into	0.819440
+fits the bill	0.611110
 flesh out	0.583330
+fleshed out	0.583330
 float around	0.500000
+floating around	0.500000
 fog up	0.416670
+fogging up	0.416670
 follow through	0.611110
 follow up	0.500000
+followed through	0.611110
+following up	0.500000
+follows up	0.500000
 food for thought	0.888890
 for good	0.666670
 for good measure	0.569440
@@ -401,19 +615,27 @@ for the sake of	0.541670
 foul up	0.361110
 fourth wall	0.500000
 freak out	0.388890
+freaking out	0.388890
 free rein	0.500000
 free ride	0.555560
 freshen up	0.583330
+freshened up	0.583330
 fritter away	0.347220
+frittered away	0.375000
+fritters away	0.347220
 from the get-go	0.500000
 from time to time	0.666670
 front and center	0.527780
 full circle	0.611110
+full montied	0.541670
 full monty	0.569440
 funny bone	0.763890
+funny bones	0.722220
 funny stuff	0.722220
 game plan	0.277780
 gather dust	0.263890
+gathering dust	0.263890
+gave me	0.500000
 get a kick out of	0.708330
 get about	0.541670
 get along	0.500000
@@ -451,6 +673,33 @@ get used	0.611110
 get wet	0.416670
 get with	0.500000
 get you	0.611110
+get your	0.486110
+gets around	0.500000
+gets around to	0.611110
+gets at	0.402780
+gets better	0.625000
+gets by	0.583330
+gets even	0.666670
+gets off	0.555560
+gets off the ground	0.597220
+gets off with	0.722220
+gets over	0.500000
+gets there	0.569440
+gets to	0.500000
+gets used	0.611110
+gets you	0.736110
+getting around	0.500000
+getting at	0.500000
+getting away	0.486110
+getting away with	0.486110
+getting busy	0.597220
+getting in	0.500000
+getting into	0.277780
+getting laid	0.527780
+getting the better of	0.388890
+getting there	0.444440
+getting to	0.652780
+getting together	0.500000
 give away	0.555560
 give by	0.736110
 give chase	0.500000
@@ -460,7 +709,17 @@ give out	0.625000
 give the lie to	0.305560
 give up	0.388890
 give way	0.500000
+given by	0.736110
+given up	0.388890
+gives away	0.555560
+gives out	0.625000
+gives the lie to	0.305560
+gives way	0.500000
+giving chase	0.500000
+giving in	0.500000
+giving up	0.291670
 gloss over	0.416670
+glosses over	0.319440
 go a long way	0.625000
 go about	0.500000
 go after	0.347220
@@ -498,35 +757,107 @@ go up	0.555560
 go wild	0.500000
 go with	0.500000
 go wrong	0.388890
+goes a long way	0.597220
+goes about	0.694440
+goes after	0.347220
+goes along	0.569440
+goes by	0.722220
+goes down	0.458330
+goes downhill	0.263890
+goes for	0.458330
+goes into	0.597220
+goes native	0.444440
+goes nowhere	0.472220
+goes off	0.500000
+goes on	0.500000
+goes out	0.444440
+goes overboard	0.305560
+goes straight	0.388890
+goes to	0.513890
+goes up	0.555560
+goes with	0.513890
+goes wrong	0.166670
+going for	0.680560
+going for it	0.694440
+going home	0.486110
+going nowhere	0.166670
 going on	0.500000
+going out	0.541670
+going through	0.277780
+going through the motions	0.277780
+going to	0.638890
+going wrong	0.250000
+gone a long way	0.625000
+gone for	0.555560
+gone for broke	0.555560
+gone in for	0.500000
+gone into	0.500000
+gone straight	0.291670
+gone the way of	0.500000
+gone to	0.472220
+gone wild	0.500000
+gone wrong	0.222220
 gong show	0.513890
 good and	0.611110
 good books	0.569440
 good job	0.847220
+got back	0.513890
+got into	0.527780
+got it	0.500000
+got lost	0.291670
+got some	0.611110
+got to	0.194440
+gotten to	0.500000
 grab bag	0.500000
 great deal	0.770830
+grew up	0.500000
 gross out	0.222220
+gross outs	0.375000
 grow into	0.569440
 grow on	0.666670
 grow up	0.444440
+growing up	0.555560
+grown up	0.638890
+grows into	0.777780
+grows on	0.666670
+grows up	0.694440
 guilty pleasure	0.597220
+guilty pleasures	0.736110
 gulp down	0.500000
+had been around	0.527780
+had in	0.500000
+had to	0.333330
 ham it up	0.638890
 hammer home	0.388890
+hammering home	0.500000
+hammers home	0.388890
+hamming it up	0.513890
 hand down	0.388890
 hand in	0.375000
 hand in hand	0.652780
 hand out	0.569440
+handed down	0.388890
 hands down	0.541670
+hands in	0.375000
+hands out	0.569440
 hang out	0.500000
 hang over	0.458330
 hang together	0.583330
+hanging out	0.500000
+hanging over	0.458330
 happen along	0.513890
 happen on	0.500000
+happens on	0.500000
 happily ever after	0.625000
 happy ending	0.722220
 hard up	0.527780
 hark back	0.555560
+harks back	0.555560
+has a few	0.652780
+has an eye for	0.583330
+has at	0.500000
+has in	0.541670
+has to	0.500000
 haunted house	0.500000
 have a few	0.652780
 have a good time	0.722220
@@ -539,21 +870,30 @@ have in	0.402780
 have in mind	0.402780
 have it both ways	0.500000
 have to	0.500000
+having to	0.111110
 head and shoulders	0.500000
 head up	0.541670
 heart and soul	0.583330
 heart of gold	0.805560
+hearts of gold	0.805560
 heat up	0.652780
+held back	0.500000
 helping hand	0.472220
 here and there	0.500000
 hew out	0.500000
+hews out	0.500000
 high note	0.777780
+high notes	0.777780
 high time	0.625000
 hinge on	0.500000
+hinged on	0.500000
+hinges on	0.527780
 his butt	0.500000
 hit home	0.611110
 hit on	0.388890
 hit the skids	0.361110
+hits home	0.611110
+hitting on	0.388890
 hold a candle	0.388890
 hold back	0.500000
 hold it	0.500000
@@ -562,18 +902,27 @@ hold over	0.583330
 hold sway	0.416670
 hold true	0.527780
 hold up	0.555560
+holding it	0.500000
+holds sway	0.416670
+holds true	0.527780
+holds up	0.666670
 hollywood moment	0.513890
+hollywood moments	0.513890
 home run	0.513890
 hood rat	0.236110
+hood rats	0.236110
 hook up	0.500000
+hook ups	0.500000
 hot air	0.291670
 hot on	0.513890
 hot with	0.722220
 household name	0.611110
 how so	0.111110
 hurry up	0.500000
+i 'd	0.319440
 i am	0.500000
 i can tell you	0.166670
+i did	0.291670
 i do	0.291670
 i know	0.375000
 i wish	0.375000
@@ -582,6 +931,7 @@ ice cube	0.361110
 if only	0.486110
 if that	0.277780
 if you like	0.500000
+if you liked	0.500000
 if you will	0.513890
 in a state	0.430560
 in addition	0.111110
@@ -607,6 +957,7 @@ in other words	0.500000
 in spades	0.444440
 in spite of	0.638890
 in the act	0.500000
+in the acting	0.500000
 in the dark	0.569440
 in the face of	0.611110
 in the first place	0.500000
@@ -627,14 +978,22 @@ in vain	0.472220
 in your dreams	0.458330
 in your face	0.361110
 ins and outs	0.500000
+is a man	0.666670
+is all about	0.708330
 is it	0.486110
+is on about	0.541670
 it bag	0.430560
+it bags	0.430560
 jerk off	0.361110
+jerking off	0.361110
 join in	0.597220
+joined in	0.597220
 jump around	0.305560
 jump in	0.500000
 jump off	0.805560
 jump ship	0.263890
+jumps around	0.305560
+jumps off	0.805560
 just about	0.500000
 keel over	0.513890
 keep an eye out	0.500000
@@ -643,59 +1002,98 @@ keep it up	0.833330
 keep on	0.500000
 keep up	0.500000
 keep up with	0.597220
+keep upping	0.569440
 keep watch	0.736110
+keep watching	0.736110
+keeping an eye out	0.500000
+keeps on	0.597220
 kick around	0.486110
 kick in	0.583330
 kick in the pants	0.583330
 kick off	0.541670
 kick out	0.722220
+kicking around	0.486110
+kicking off	0.500000
+kicks in	0.583330
+kicks off	0.541670
 kiddie flick	0.555560
+kiddie flicks	0.500000
 kind of	0.500000
+kinds of	0.847220
 kiss of death	0.250000
 kitchen sink	0.500000
+knew what	0.500000
 knock back	0.430560
 knock on	0.500000
 know what	0.500000
+knows what	0.569440
 labor of love	0.736110
 labour of love	0.861110
 ladies and gentlemen	0.513890
 larger than life	0.694440
 lash out	0.055556
+lashing out	0.055556
 last thing	0.500000
 latch onto	0.472220
+latches onto	0.472220
 laundry list	0.486110
 lay out	0.500000
+laying out	0.513890
+lays out	0.500000
 lead nowhere	0.333330
 leaf through	0.555560
+leafing through	0.555560
 leak out	0.486110
+leaks out	0.486110
 lean on	0.277780
+leaning on	0.277780
 leave behind	0.291670
 leave off	0.541670
 leave out	0.500000
 leave over	0.388890
 leave well enough alone	0.444440
+leaving behind	0.583330
+leaving off	0.458330
+left behind	0.291670
 left field	0.500000
+left off	0.541670
+left out	0.500000
+left over	0.388890
+left well enough alone	0.444440
 legal eagle	0.513890
+legal eagles	0.513890
 lend itself to	0.319440
+lends itself to	0.319440
 let alone	0.486110
 let down	0.125000
 let go	0.333330
 let sleeping dogs lie	0.472220
 let slip	0.500000
 let up	0.597220
+lets go	0.777780
+lets up	0.597220
+letting go	0.333330
+letting sleeping dogs lie	0.472220
 lie down	0.472220
 lie with	0.500000
+lies with	0.500000
 like shooting fish in a barrel	0.361110
 like that	0.541670
 little go	0.250000
+little going	0.250000
 little green man	0.500000
+little green men	0.500000
 live down	0.472220
 live up	0.597220
+lives down	0.472220
+lives up	0.722220
 lock in	0.361110
 lock on	0.069444
+locked in	0.361110
 log on	0.500000
 long haul	0.486110
 long run	0.361110
+long running	0.361110
 long shot	0.416670
 long since	0.541670
 long time	0.513890
@@ -712,13 +1110,39 @@ look out	0.500000
 look over	0.513890
 look through	0.500000
 look to	0.527780
+looked at	0.430560
+looked into	0.500000
+looked like	0.500000
+looking at	0.500000
+looking back	0.500000
+looking for	0.500000
+looking like	0.347220
+looking out	0.500000
+looking over	0.513890
+looking through	0.500000
+looking to	0.527780
+looks at	0.500000
+looks back	0.500000
+looks like	0.500000
+looks to	0.236110
 looney tunes	0.486110
 loose end	0.402780
 loose ends	0.402780
 lose touch	0.430560
+loses touch	0.430560
 loved one	0.625000
+loved ones	0.666670
 luck out	0.458330
+lucks out	0.458330
 lucky break	0.555560
+made a difference	0.611110
+made a point	0.666670
+made for	0.486110
+made it	0.500000
+made off	0.500000
+made off with	0.222220
+made to	0.375000
+made up	0.458330
 make a difference	0.611110
 make a meal of	0.611110
 make a point	0.666670
@@ -742,36 +1166,70 @@ make time	0.569440
 make to	0.375000
 make up	0.500000
 make water	0.500000
+makes a meal of	0.611110
+makes for	0.250000
+makes it	0.500000
+makes sense	0.597220
+makes sure	0.666670
+makes the grade	0.208330
+makes time	0.569440
+makes up	0.500000
+making for	0.500000
+making fun of	0.416670
+making it	0.500000
+making sense	0.527780
+making up	0.500000
+making water	0.500000
 march to the beat of a different drum	0.541670
 martial art	0.680560
+martial arts	0.680560
 matter of time	0.500000
+me would	0.513890
 melt away	0.583330
+melted away	0.458330
 memory lane	0.500000
 mess around	0.430560
 mess with	0.416670
+messing around	0.430560
+messing with	0.444440
 middle of the road	0.500000
 mind you	0.541670
 miss the boat	0.291670
 miss the mark	0.236110
 miss the point	0.222220
+missed the boat	0.291670
+missed the point	0.222220
+misses the mark	0.236110
 mix up	0.319440
 mixed bag	0.500000
 mixed message	0.444440
+mixed messages	0.444440
+mixed up	0.319440
 modus operandi	0.472220
 mop up	0.638890
+mopping up	0.638890
 moral compass	0.597220
 more like	0.527780
 more like it	0.638890
 much less	0.486110
 mug shot	0.388890
+mug shots	0.388890
 mull over	0.444440
 my eye	0.500000
+my eyes	0.500000
+my feet	0.500000
 my foot	0.500000
 my goodness	0.500000
+n't even	0.444440
+n't quite	0.527780
+n't to say	0.333330
+n't very	0.319440
 nary a	0.583330
+nary an	0.111110
 needless to say	0.375000
 never mind	0.708330
 new standard	0.652780
+new standards	0.652780
 new wave	0.513890
 next to	0.500000
 night out	0.625000
@@ -804,6 +1262,7 @@ off the beaten path	0.333330
 off the hook	0.652780
 off the rails	0.166670
 offer up	0.583330
+offering up	0.583330
 oh my	0.652780
 old college try	0.375000
 old flame	0.444440
@@ -814,6 +1273,7 @@ old woman	0.444440
 on a shoestring	0.444440
 on about	0.402780
 on air	0.555560
+on airs	0.555560
 on and off	0.500000
 on and on	0.500000
 on behalf of	0.555560
@@ -823,6 +1283,7 @@ on ice	0.500000
 on paper	0.430560
 on purpose	0.500000
 on the back of	0.458330
+on the backs of	0.458330
 on the brink	0.555560
 on the button	0.625000
 on the cheap	0.416670
@@ -852,7 +1313,10 @@ one side	0.500000
 one-trick pony	0.319440
 open doors	0.583330
 open up	0.611110
+opened up	0.500000
+opening up	0.611110
 opt out	0.402780
+opting out	0.402780
 or else	0.430560
 or so	0.500000
 or something	0.444440
@@ -871,26 +1335,36 @@ out of sight	0.666670
 out of this world	0.333330
 out the window	0.263890
 out there	0.444440
+outs of	0.625000
 over and over	0.416670
 over the top	0.277780
+paid for	0.472220
 par for the course	0.527780
 pare down	0.513890
+pared down	0.513890
 parting shot	0.541670
 party favor	0.305560
+party favors	0.305560
 party to	0.541670
 pass for	0.500000
 pass off	0.416670
 pass through	0.569440
 pass up	0.347220
+passes for	0.444440
+passes through	0.569440
 patience of job	0.500000
 pay attention	0.500000
 pay for	0.625000
 pay off	0.652780
+paying attention	0.500000
+pays for	0.472220
+pays off	0.652780
 peter out	0.347220
 pick apart	0.680560
 pick up	0.500000
 pick up the pieces	0.500000
 pick up the slack	0.347220
+picking apart	0.680560
 piece of crap	0.111110
 piece of work	0.722220
 pile on	0.250000
@@ -902,6 +1376,7 @@ piss off	0.388890
 pissed off	0.388890
 pit against	0.763890
 pitch into	0.416670
+pitted against	0.763890
 plan on	0.812500
 play in	0.472220
 play off	0.500000
@@ -910,11 +1385,21 @@ play out	0.500000
 play second fiddle	0.472220
 play up	0.583330
 play with	0.416670
+played in	0.611110
+played out	0.555560
+played with	0.250000
+playing out	0.486110
+playing with	0.416670
+plays out	0.500000
+plays up	0.583330
 poetry in motion	0.875000
 point out	0.527780
+points out	0.527780
 politically correct	0.583330
 pop up	0.500000
 popcorn movie	0.458330
+popcorn movies	0.569440
+popped up	0.500000
 pore over	0.555560
 poster boy	0.541670
 power on	0.236110
@@ -922,6 +1407,7 @@ pretty pictures	0.708330
 problem child	0.388890
 puke up	0.083333
 pull a	0.555560
+pull an	0.500000
 pull back	0.430560
 pull off	0.541670
 pull on	0.805560
@@ -930,10 +1416,21 @@ pull out all the stops	0.722220
 pull the plug	0.597220
 pull together	0.555560
 pull up	0.527780
+pulled a	0.430560
+pulled off	0.486110
+pulling off	0.541670
+pulling on	0.805560
+pulling the plug	0.597220
+pulls a	0.500000
+pulls back	0.430560
+pulls off	0.541670
+pulls up	0.527780
 punch in	0.583330
+punches in	0.583330
 push it	0.500000
 push on	0.500000
 push the envelope	0.236110
+pushing the envelope	0.569440
 put away	0.375000
 put down	0.388890
 put in	0.402780
@@ -946,24 +1443,36 @@ put to sleep	0.111110
 put together	0.513890
 put up	0.500000
 put up with	0.222220
+puts on	0.416670
+puts on airs	0.416670
+puts the kibosh on	0.569440
+putting together	0.513890
 quelle surprise	0.569440
 quite a bit	0.555560
 rainy day	0.347220
+rainy days	0.541670
 raise eyebrows	0.444440
 raise the bar	0.666670
+raising eyebrows	0.444440
 rake in	0.541670
+ran out	0.458330
 ratchet up	0.458330
+ratchets up	0.458330
 read my lips	0.388890
 real deal	0.597220
 real time	0.500000
 reality check	0.527780
 recent memory	0.541670
 red light	0.500000
+red lights	0.500000
 reduced circumstances	0.500000
 reel in	0.666670
 reflect on	0.430560
+relies on	0.222220
 rely on	0.222220
+relying on	0.583330
 remain to be seen	0.319440
+remains to be seen	0.319440
 rest assured	0.500000
 return to form	0.652780
 rhyme or reason	0.569440
@@ -971,10 +1480,14 @@ ride roughshod over	0.486110
 ring false	0.222220
 ring hollow	0.347220
 ring true	0.597220
+rings false	0.222220
+rings true	0.597220
 ringside seat	0.638890
 rip off	0.208330
+rips off	0.208330
 rise up	0.319440
 road movie	0.500000
+road movies	0.569440
 road warrior	0.500000
 rock and roll	0.833330
 rock on	0.347220
@@ -984,8 +1497,13 @@ roll around	0.430560
 roll in	0.333330
 roll on	0.444440
 roll over	0.500000
+rolling over	0.388890
+rolls around	0.430560
+rolls on	0.444440
 root cause	0.555560
+root causes	1.000000
 root for	0.319440
+rooting for	0.319440
 rose-colored glasses	0.555560
 rough trade	0.416670
 round out	0.569440
@@ -1003,15 +1521,31 @@ run the gamut	0.541670
 run through	0.541670
 run to	0.152780
 run with	0.527780
+running around	0.500000
+running off	0.388890
+running on	0.291670
 running on empty	0.291670
+running out	0.444440
+runs around	0.444440
+runs away	0.472220
+runs on	0.180560
+runs out	0.444440
+runs out of steam	0.250000
+runs the gamut	0.541670
+runs through	0.791670
+runs to	0.152780
+runs with	0.527780
 rush hour	0.500000
 safe and sound	0.680560
 said and done	0.444440
 same old same old	0.222220
 same old story	0.250000
 save the day	0.416670
+saw in	0.500000
 say what	0.541670
+saying what	0.583330
 scratch the surface	0.513890
+scratches the surface	0.444440
 seal the deal	0.666670
 second fiddle	0.361110
 see in	0.500000
@@ -1022,32 +1556,58 @@ see things	0.541670
 see through	0.666670
 see to	0.333330
 see you	0.263890
+seeing things	0.541670
 seek out	0.500000
+seeking out	0.500000
+seen in	0.444440
+seen through	0.666670
+seen to	0.333330
 selling point	0.555560
 send up	0.500000
+sending up	0.500000
 serve up	0.500000
+served up	0.527780
+serves up	0.500000
+serving up	0.569440
 set off	0.611110
 set on	0.763890
 set out	0.500000
 set up	0.500000
+set ups	0.500000
+sets out	0.625000
+sets up	0.500000
+setting off	0.611110
 settle for	0.375000
 settle in	0.500000
 settle on	0.500000
+settled for	0.361110
+settles for	0.388890
+settles in	0.500000
+settles on	0.500000
 shake it	0.625000
 shake off	0.430560
 shake up	0.597220
+shaking up	0.500000
 shoot the messenger	0.458330
 shoot through	0.500000
 short and sweet	0.694440
 short of	0.194440
+shot through	0.500000
 show off	0.388890
 show up	0.500000
+showing off	0.388890
+shown up	0.500000
+shows off	0.430560
+shows up	0.500000
 shrug off	0.527780
+shrugging off	0.527780
 shut up	0.166670
 sight to behold	0.569440
 sign in	0.291670
 sign on	0.513890
+signs on	0.513890
 silver bullet	0.597220
+silver bullets	0.597220
 silver screen	0.555560
 since when	0.444440
 sink in	0.479170
@@ -1056,7 +1616,12 @@ sit down	0.555560
 sit in	0.500000
 sit still	0.500000
 sit through	0.555560
+sits in	0.347220
+sitting in	0.500000
+sitting still	0.500000
+sitting through	0.569440
 skirt around	0.097222
+skirts around	0.097222
 slap in the face	0.361110
 sleep with	0.458330
 sleep with the fishes	0.458330
@@ -1064,44 +1629,64 @@ slip into	0.277780
 slip out	0.500000
 slippery slope	0.375000
 slow down	0.347220
+slowed down	0.444440
 smack of	0.236110
+smacks of	0.347220
 small change	0.472220
 small potatoes	0.319440
 small talk	0.500000
 smash hit	0.513890
 smoke signal	0.611110
+smoke signals	0.611110
 smooth over	0.458330
+smoothed over	0.458330
 sneak out	0.555560
 sneak up	0.444440
 sneak up on	0.625000
+sneaks up	0.444440
+sneaks up on	0.625000
 so far	0.444440
 so long as	0.347220
 so much as	0.500000
 so what	0.180560
 soak up	0.500000
+soaked up	0.500000
 social ladder	0.500000
 soft spot	0.555560
 soften up	0.513890
+softens up	0.513890
 some people	0.527780
 something fierce	0.180560
 something like	0.555560
 something terrible	0.472220
 sort of	0.500000
 sort out	0.500000
+sorts of	0.611110
 spaghetti western	0.388890
 speak for	0.666670
 speak to	0.500000
 speak up	0.472220
 speak volumes	0.680560
+speaking to	0.500000
+speaks for	0.666670
+speaks to	0.555560
+speaks volumes	0.680560
 spectator sport	0.500000
 speed up	0.652780
+speeds up	0.652780
 spell out	0.500000
+spelled out	0.500000
 spiff up	0.555560
+spiffing up	0.555560
 spin out	0.513890
+spinning out	0.513890
 split up	0.444440
 spot on	0.722220
 spring out	0.583330
 spring to life	0.555560
+springing out	0.583330
+springs to life	0.555560
+sprung to life	0.722220
 squeeze out	0.458330
 stand a chance	0.500000
 stand by	0.583330
@@ -1112,45 +1697,78 @@ stand out	0.652780
 stand tall	0.638890
 stand the test of time	0.666670
 stand up	0.527780
+standing by	0.486110
+stands for	0.277780
+stands out	0.777780
 start off	0.500000
 start out	0.666670
+started out	0.472220
+starts off	0.500000
+starts out	0.666670
 stave off	0.486110
 stay on	0.597220
 stay put	0.500000
+staying on	0.458330
+stays put	0.500000
 steal the show	0.611110
+steals the show	0.611110
 steer clear	0.597220
+steering clear	0.597220
+steers clear	0.597220
 step back	0.444440
 step down	0.388890
 step forward	0.666670
 step in	0.770830
 step out	0.527780
+stepped out	0.527780
+stepping in	0.500000
 stepping stone	0.513890
 stick around	0.527780
 stick out	0.555560
 stick to	0.333330
 stick together	0.500000
 stick with	0.458330
+sticking out	0.555560
+sticking to	0.638890
+sticks with	0.666670
 stock up	0.625000
 stop on a dime	0.416670
+stops on a dime	0.416670
 straight face	0.513890
 strap on a pair	0.500000
 stretch out	0.541670
+stretched out	0.541670
+stretching out	0.513890
 strike back	0.555560
 strike out	0.333330
+strikes back	0.555560
+striking out	0.333330
 string together	0.527780
 strip away	0.458330
 strip down	0.444440
+stripped away	0.458330
+strung together	0.527780
+stuck around	0.527780
+stuck to	0.513890
+stuck together	0.500000
+stuck with	0.138890
 stumble upon	0.597220
+stumbles upon	0.597220
 such as	0.500000
 suck face	0.444440
 suck up	0.388890
+sucked up	0.305560
+sucking face	0.444440
 sum of its parts	0.500000
 sum up	0.500000
+sums up	0.500000
 supposed to	0.500000
 sweep away	0.805560
 sweep up	0.555560
 sweet spot	0.750000
 sweet tooth	0.569440
+swept away	0.805560
+swept up	0.555560
 take a back seat	0.513890
 take a chance	0.555560
 take a look	0.611110
@@ -1173,27 +1791,62 @@ take the cake	0.555560
 take to	0.486110
 take to task	0.500000
 take up	0.513890
+taken away	0.444440
+taken for	0.402780
+taken in	0.430560
+taken over	0.597220
+takes a back seat	0.513890
+takes a look	0.388890
+takes a stand	0.791670
+takes aim	0.500000
+takes off	0.583330
+takes on	0.638890
+takes over	0.541670
+takes the cake	0.555560
+takes to	0.500000
+takes to task	0.500000
+takes up	0.500000
+taking a look	0.555560
+taking a risk	0.694440
+taking on	0.472220
+taking over	0.444440
+taking up	0.513890
 talk about	0.777780
 talk down	0.430560
 talk the talk	0.569440
 talk up	0.583330
+talking about	0.513890
 talking head	0.500000
+talking heads	0.500000
+talks about	0.777780
+talks the talk	0.569440
 tart up	0.486110
+tarted up	0.486110
 team up	0.625000
 tear apart	0.277780
 tear away	0.375000
 tear into	0.847220
 tear up	0.513890
+tearing into	0.847220
+tearing up	0.513890
 test of time	0.680560
 that be it	0.458330
 that one	0.500000
+that were it	0.458330
 the change	0.555560
+the changes	0.500000
+the changing	0.555560
 the end	0.444440
+the ending	0.569440
 the finger	0.500000
+the fingers	0.500000
 the hell	0.347220
 the man	0.625000
+the men	0.500000
 the one	0.500000
+the ones	0.500000
 the pants off	0.722220
+the qualities	0.611110
 the quality	0.611110
 the story goes	0.222220
 the upper hand	0.500000
@@ -1207,6 +1860,10 @@ think through	0.750000
 think too much	0.472220
 think twice	0.500000
 think up	0.500000
+thinking about	0.458330
+thinking over	0.500000
+thinking up	0.500000
+thought through	0.750000
 three-ring circus	0.527780
 throw away	0.611110
 throw caution to the wind	0.500000
@@ -1214,8 +1871,16 @@ throw in	0.458330
 throw off	0.583330
 throw out	0.402780
 throw up	0.222220
+throwing caution to the wind	0.500000
+throwing in	0.458330
+throwing out	0.402780
+throwing up	0.222220
+thrown in	0.500000
+throws away	0.611110
+throws in	0.388890
 thumbs up	0.750000
 tick off	0.500000
+ticks off	0.500000
 tie up	0.472220
 tie up loose ends	0.388890
 time out	0.402780
@@ -1237,25 +1902,43 @@ to the point	0.555560
 to the power of	0.708330
 to the rescue	0.694440
 tone down	0.555560
+tones down	0.555560
 too bad	0.347220
 too clever by half	0.527780
 too much	0.333330
+took five	0.500000
+took in	0.541670
+took off	0.652780
+took out	0.486110
+took to	0.486110
 top notch	0.986110
 top shelf	0.777780
+torn apart	0.277780
+torn away	0.375000
 toss around	0.319440
 toss off	0.361110
+tossed off	0.361110
+tosses around	0.319440
+tossing around	0.500000
 touch on	0.388890
 track down	0.458330
+tracking down	0.458330
 trade in	0.458330
+trades in	0.458330
 trailer trash	0.305560
 train wreck	0.291670
 trot out	0.444440
+trots out	0.500000
+trotting out	0.444440
 true believer	0.652780
 try on	0.444440
 try out	0.513890
+trying on	0.444440
 tug of war	0.583330
 tune in	0.583330
+tuned in	0.583330
 turf war	0.500000
+turf wars	0.500000
 turn a blind eye	0.305560
 turn away	0.500000
 turn down	0.361110
@@ -1267,6 +1950,17 @@ turn out	0.416670
 turn over	0.500000
 turn up	0.569440
 turn upside down	0.569440
+turned down	0.361110
+turned out	0.416670
+turned upside down	0.569440
+turning in	0.013889
+turning into	0.222220
+turning over	0.500000
+turns a blind eye	0.305560
+turns in	0.652780
+turns into	0.236110
+turns out	0.541670
+turns up	0.569440
 under the influence	0.430560
 under the microscope	0.500000
 under the rug	0.500000
@@ -1281,16 +1975,24 @@ up the ante	0.666670
 up the wazoo	0.138890
 up there	0.597220
 uphill battle	0.541670
+upping the ante	0.666670
+ups and	0.569440
 ups and downs	0.541670
 used to	0.444440
 usher in	0.500000
+ushered in	0.500000
+ushers in	0.236110
 valley boy	0.458330
 verge on	0.444440
+verges on	0.444440
+verging on	0.388890
 very good	0.791670
 very well	0.736110
 wade through	0.347220
+wades through	0.208330
 wait for it	0.402780
 wake up	0.472220
+waking up	0.472220
 walk around	0.500000
 walk away	0.291670
 walk away from	0.111110
@@ -1298,24 +2000,51 @@ walk into	0.500000
 walk off	0.444440
 walk out	0.069444
 walk out on	0.166670
+walked away	0.291670
+walked away from	0.111110
+walked out	0.069444
+walked out on	0.166670
+walking around	0.500000
+walking out	0.527780
 warm up	0.430560
+warmed up	0.430560
 wash away	0.375000
 wash out	0.277780
+washed away	0.375000
 washed out	0.277780
 waste away	0.291670
+wasting away	0.291670
 watch it	0.500000
+watching it	0.500000
 water down	0.277780
+watered down	0.277780
+waters down	0.138890
 way to go	0.333330
 wear down	0.319440
 wear off	0.444440
 wear out	0.333330
 wear thin	0.333330
+wears down	0.361110
+wears off	0.444440
+wears out	0.333330
+wears thin	0.347220
 weigh down	0.347220
+weighed down	0.458330
+weighs down	0.347220
 well done	0.805560
 well up	0.541670
+welled up	0.541670
+went along	0.500000
+went along for the ride	0.527780
+went back	0.638890
+went out	0.500000
+went over	0.458330
+went to	0.222220
+went wrong	0.277780
 what a pity	0.333330
 what gives	0.611110
 what it do	0.500000
+what it does	0.500000
 what it is	0.500000
 what the	0.500000
 what the hell	0.375000
@@ -1330,34 +2059,56 @@ why not	0.472220
 wide awake	0.513890
 will do	0.277780
 wimp out	0.305560
+wimps out	0.305560
 win over	0.611110
 wind down	0.430560
 wind up	0.555560
+winding up	0.500000
 window dressing	0.319440
+winds down	0.430560
+winds up	0.555560
 wipe away	0.500000
 wire fu	0.500000
 wishful thinking	0.486110
 with it	0.611110
 with regard to	0.527780
+wore out	0.597220
 work at	0.527780
 work out	0.541670
 work over	0.486110
 work wonders	0.888890
+worked out	0.583330
 worked up	0.513890
+worked wonders	0.888890
+working at	0.722220
 working girl	0.597220
+working out	0.541670
+working over	0.486110
+works out	0.638890
+works wonders	0.708330
 world war	0.638890
 wrap up	0.500000
+wrapped up	0.500000
+wraps up	0.625000
 wreak havoc	0.500000
 write down	0.500000
 write home about	0.569440
 write in	0.500000
 write off	0.388890
+written down	0.500000
+written in	0.500000
+written off	0.388890
 x marks the spot	0.625000
 yard ape	0.500000
+yard apes	0.500000
 you bet	0.500000
 you know it	0.625000
+you never knew	0.583330
 you never know	0.805560
 you think	0.500000
+you thinking	0.500000
+you thought	0.500000
 you what	0.500000
 you wish	0.166670
 young man	0.513890
+young men	0.513890

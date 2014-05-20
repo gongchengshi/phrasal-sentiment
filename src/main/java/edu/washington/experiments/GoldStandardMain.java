@@ -19,6 +19,7 @@ public class GoldStandardMain {
                 for(Map.Entry<String, Double> expressionSentiment: gs.phraseSentiment.entrySet()) {
                     writer.write(String.format("%s\t%f\n", expressionSentiment.getKey(), expressionSentiment.getValue()));
                 }
+                writer.close();
             }
         } catch (IOException e) {
             e.printStackTrace();

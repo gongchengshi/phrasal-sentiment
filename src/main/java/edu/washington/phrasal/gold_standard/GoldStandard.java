@@ -54,31 +54,34 @@ public class GoldStandard {
 //                sentence = "A great ending does n't make up for a weak movie , and Crazy as Hell does n't even have a great ending .";
             List<IMWE<IToken>> mwes = detector.detect(sentence);
             for(IMWE<IToken> token: mwes) {
-                List<String> origExpression = Arrays.asList(token.getForm().split("_"));
+                List<String> origExpressionTokens = Arrays.asList(token.getForm().split("_"));
                 String foundExpression = token.getEntry().getForm().replace('_', ' ');
 
                 // Find the smallest phrase in the dictionary that came from this sentence and contains this phrase.
                 // Note: It isn't guaranteed that this phraseId is from the current sentence.
-                Integer shortestPhraseId = SentimentDataset.getPhraseId(origExpression);
+                Integer shortestPhraseId = SentimentDataset.getPhraseId(origExpressionTokens);
 
                 if(shortestPhraseId == null) {
                     int currMinLen = Integer.MAX_VALUE;
                     for(Integer phraseId: SentimentDataset.phrasesInSentences.get(sentenceId)) {
                         List<String> phraseTokens = SentimentDataset.idLowerCasePhraseMap.get(phraseId);
 
-                        if(phraseTokens.size() < currMinLen && Utils.listContains(phraseTokens, origExpression)) {
+                        if(phraseTokens.size() < currMinLen && Utils.listContains(phraseTokens, origExpressionTokens)) {
                             shortestPhraseId = phraseId;
                             currMinLen = phraseTokens.size();
                         }
                     }
                 }
 
+                String origExpression = String.join(" ", origExpressionTokens);
                 try {
                     // Use the phrase ID to look up the sentiment value.
-                    // Todo: What about cases where the same expression is found in multiple sentences/phrases
-                    phraseSentiment.put(foundExpression, phraseIdSentimentList.sentimentList.get(shortestPhraseId));
+                    // Todo: What about cases where the same expression is found in multiple sentences/phrases?
+                    Double sentimentScore = phraseIdSentimentList.sentimentList.get(shortestPhraseId);
+                    phraseSentiment.put(foundExpression, sentimentScore);
+                    phraseSentiment.put(origExpression, sentimentScore);
                 } catch(Exception ex) {
-                    String phraseText = String.join(" ", origExpression);
+                    String phraseText = String.join(" ", origExpressionTokens);
                     System.out.println("<" + phraseText + "> could not be found in dictionary\n" + sentence);
                 }
             }
