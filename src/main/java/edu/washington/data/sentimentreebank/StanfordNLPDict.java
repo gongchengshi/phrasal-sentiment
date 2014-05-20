@@ -29,7 +29,7 @@ public class StanfordNLPDict {
     }
 
     public double getPhraseSentiment(String sentence) {
-        return id_sentiment.sentimentDict.get(phrase_id_dict.idDict.get(sentence));
+        return id_sentiment.sentimentDict.get(phrase_id_dict.phraseToId.get(sentence));
     }
 
     public Set<String> getAllPharses() {

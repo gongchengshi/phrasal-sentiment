@@ -14,7 +14,7 @@ public class SentenceList {
     public final Map<Integer, String> sentenceList;
     private static final int DEFAULT_ARRAY_SIZE = 11855;
 
-    private static final Splitter PIPE_SPLITTER = Splitter.on('\t')
+    private static final Splitter TAB_SPLITTER = Splitter.on('\t')
             .trimResults()
             .omitEmptyStrings();
 
@@ -32,10 +32,10 @@ public class SentenceList {
         /* read the heading */
         String line = reader.readLine();
         while ((line = reader.readLine()) != null) {
-            Iterable<String> tokens = PIPE_SPLITTER.split(line);
+            Iterable<String> tokens = TAB_SPLITTER.split(line);
             Iterator<String> tokensIter = tokens.iterator();
             int index = Integer.parseInt(tokensIter.next());
-            sentenceList.put(index, tokensIter.next());
+            sentenceList.put(index, tokensIter.next().replace("-LRB-", "(").replace("-RRB-", ")"));
         }
     }
     

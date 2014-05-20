@@ -1,0 +1,1363 @@
+a cut above	0.833330
+a good deal	0.750000
+a great deal	0.750000
+a lot	0.513890
+a notch above	0.652780
+about time	0.500000
+about to	0.500000
+abstract idea	0.486110
+according to	0.569440
+account to	0.597220
+acquired taste	0.444440
+across the board	0.500000
+act on	0.500000
+act out	0.555560
+add up	0.541670
+add up to	0.500000
+adult movie	0.388890
+after all	0.500000
+after the fact	0.500000
+again and again	0.513890
+against all odds	0.666670
+against the grain	0.541670
+aim at	0.333330
+air out	0.500000
+alive and kicking	0.541670
+all along	0.500000
+all at once	0.500000
+all over	0.527780
+all over the map	0.305560
+all over the place	0.486110
+all that	0.500000
+all that jazz	0.500000
+all the same	0.513890
+all there	0.500000
+all wet	0.500000
+allow for	0.569440
+alternative lifestyle	0.444440
+american dream	0.555560
+and all	0.500000
+and all that	0.500000
+and change	0.388890
+and finally	0.888890
+and how	0.430560
+and that	0.500000
+and the like	0.444440
+and then some	0.833330
+ante up	0.555560
+any more	0.500000
+around the corner	0.500000
+arrive at	0.444440
+as a whole	0.541670
+as all get-out	0.500000
+as far as	0.500000
+as if	0.500000
+as is	0.513890
+as it is	0.513890
+as it stands	0.583330
+as long as	0.458330
+as much	0.527780
+as opposed to	0.500000
+as soon as	0.555560
+as well	0.500000
+as well as	0.500000
+as yet	0.180560
+as you do	0.458330
+ask for	0.611110
+ask the question	0.347220
+at all	0.513890
+at best	0.527780
+at first	0.500000
+at heart	0.458330
+at home	0.500000
+at it	0.500000
+at last	0.611110
+at long last	0.555560
+at odds	0.388890
+at once	0.500000
+at sea	0.500000
+at stake	0.513890
+at that	0.444440
+at the expense of	0.361110
+at the hand of	0.611110
+at the hands of	0.611110
+at the helm	0.666670
+at the mercy of	0.347220
+at the very least	0.375000
+at work	0.500000
+back and forth	0.500000
+back in	0.486110
+back into	0.513890
+back off	0.361110
+backhanded compliment	0.708330
+bad boy	0.500000
+bad joke	0.277780
+bad name	0.361110
+bad news	0.500000
+bad trip	0.277780
+balance out	0.625000
+ball and chain	0.402780
+be a man	0.666670
+be all about	0.444440
+be along	0.500000
+be around	0.402780
+be careful what you wish for	0.388890
+be in for	0.833330
+be on about	0.541670
+be prepared	0.500000
+bear out	0.541670
+beat down	0.472220
+beat off	0.500000
+beat to a pulp	0.361110
+beauty and the beast	0.388890
+become of	0.486110
+behind bars	0.625000
+behind the scenes	0.500000
+being that	0.513890
+believe in	0.500000
+believe it or not	0.444440
+below the belt	0.402780
+belt out	0.500000
+bent on	0.277780
+beside the point	0.486110
+best of both worlds	0.833330
+big boy	0.500000
+big boys	0.500000
+big daddy	0.500000
+big deal	0.555560
+big fat	0.500000
+big guy	0.500000
+big ole	0.625000
+big one	0.458330
+big picture	0.500000
+bite in	0.180560
+bite off	0.236110
+bitter end	0.388890
+black and white	0.500000
+black out	0.333330
+blind date	0.569440
+blow it	0.486110
+blow up	0.500000
+bodily function	0.527780
+bog down	0.388890
+bogged down	0.388890
+boil down	0.513890
+boiling point	0.388890
+book in	0.625000
+bottom line	0.500000
+bounce back	0.263890
+bounce off	0.541670
+bound to	0.750000
+brain candy	0.527780
+branch out	0.513890
+break new ground	0.694440
+break out	0.597220
+break through	0.625000
+break up	0.388890
+break with	0.458330
+breath of fresh air	0.652780
+breathe out	0.500000
+bring about	0.402780
+bring back	0.555560
+bring down	0.291670
+bring off	0.625000
+bring on	0.500000
+bring out	0.569440
+bring to light	0.611110
+broad shoulders	0.541670
+brush up	0.500000
+bubble up	0.625000
+build up	0.500000
+bull session	0.361110
+bump up	0.500000
+burn out	0.625000
+business as usual	0.375000
+bust out	0.583330
+but for the grace of god	0.500000
+but good	0.791670
+but then	0.722220
+buy into	0.541670
+by a long shot	0.444440
+by all means	0.666670
+by and large	0.500000
+by any means	0.500000
+by far	0.500000
+by george	0.500000
+by heart	0.500000
+by no means	0.472220
+by the book	0.500000
+by the numbers	0.500000
+by the time	0.486110
+by the way	0.500000
+by way of	0.750000
+call the police	0.430560
+can do with	0.222220
+care for	0.472220
+carried away	0.444440
+carry away	0.444440
+carry forward	0.513890
+carry off	0.500000
+carry on	0.458330
+carry out	0.625000
+case in point	0.500000
+cash in	0.500000
+cat and mouse	0.500000
+catch fire	0.500000
+catch it	0.500000
+catch on	0.472220
+catch up	0.527780
+cave in	0.472220
+chances are	0.513890
+change the channel	0.236110
+cheat on	0.486110
+check out	0.500000
+chew on	0.500000
+chick flick	0.500000
+chime in	0.500000
+churn out	0.430560
+class warfare	0.333330
+clear up	0.611110
+climb down	0.333330
+clock in	0.486110
+close in on	0.541670
+close to home	0.500000
+cold comfort	0.444440
+cold fish	0.277780
+cold turkey	0.388890
+come across	0.527780
+come along	0.500000
+come apart	0.416670
+come at	0.500000
+come away	0.500000
+come back	0.555560
+come by	0.555560
+come down	0.500000
+come down on	0.513890
+come down to	0.319440
+come from	0.333330
+come full circle	0.569440
+come in	0.569440
+come in handy	0.569440
+come into	0.722220
+come of	0.611110
+come off	0.527780
+come on	0.500000
+come out	0.500000
+come out in	0.388890
+come through	0.402780
+come to	0.444440
+come to a head	0.500000
+come to life	0.736110
+come to mind	0.111110
+come to terms	0.444440
+come to terms with	0.444440
+come to think of it	0.513890
+come together	0.611110
+come up	0.500000
+come up with	0.722220
+comedy of errors	0.736110
+conjure up	0.500000
+cope with	0.472220
+count on	0.666670
+country mile	0.500000
+cover up	0.500000
+crack a smile	0.722220
+crack up	0.722220
+crank out	0.416670
+crash course	0.527780
+creature feature	0.791670
+creep into	0.388890
+cross off	0.500000
+cross over	0.500000
+cross swords	0.569440
+cup of tea	0.583330
+cut corners	0.277780
+cut it	0.416670
+cut out	0.500000
+cut to the chase	0.652780
+daily grind	0.486110
+day and age	0.527780
+dead end	0.388890
+dead on	0.305560
+dead weight	0.402780
+deal in	0.277780
+deal with	0.666670
+deep down	0.500000
+deliver the goods	0.763890
+depend on	0.500000
+descend upon	0.444440
+dig deep	0.236110
+dip into	0.541670
+dirty look	0.500000
+dirty old man	0.361110
+dirty word	0.527780
+dish out	0.583330
+do a	0.430560
+do for	0.513890
+do in	0.500000
+do it	0.555560
+do justice	0.611110
+do not want	0.333330
+do the right thing	0.500000
+do the trick	0.680560
+do up	0.472220
+do what	0.722220
+dole out	0.500000
+dolly parton	0.500000
+done up	0.472220
+dope out	0.458330
+down for the count	0.402780
+down the line	0.500000
+down the road	0.500000
+doze off	0.236110
+drag down	0.388890
+drag on	0.222220
+drag out	0.291670
+drag queen	0.500000
+draw in	0.583330
+draw on	0.805560
+draw out	0.444440
+dream up	0.458330
+dredge up	0.319440
+dress down	0.513890
+dress up	0.500000
+drink to	0.486110
+drone on	0.194440
+drop in	0.236110
+drop the ball	0.138890
+drown out	0.388890
+drug on the market	0.500000
+drum up	0.388890
+dry out	0.333330
+duke it out	0.500000
+dumb down	0.250000
+dump on	0.555560
+dwell on	0.222220
+eat up	0.500000
+eke out	0.583330
+el cheapo	0.444440
+elysian fields	0.500000
+end of	0.500000
+end of the world	0.347220
+end up	0.444440
+ever so	0.388890
+every bit	0.500000
+every time	0.500000
+eye candy	0.583330
+face value	0.486110
+fact is	0.694440
+fair play	0.541670
+fall about	0.347220
+fall apart	0.291670
+fall asleep	0.486110
+fall back	0.333330
+fall down	0.305560
+fall from grace	0.597220
+fall in	0.666670
+fall into	0.500000
+fall into place	0.527780
+fall over	0.500000
+fall short	0.208330
+fall to pieces	0.236110
+fall together	0.513890
+fall under	0.555560
+false step	0.458330
+far cry	0.388890
+fast and furious	0.555560
+fast asleep	0.402780
+feast for the eyes	0.777780
+feel for	0.513890
+feel free	0.166670
+ferret out	0.500000
+few and far between	0.305560
+fight back	0.500000
+fight off	0.430560
+figure out	0.583330
+fill in	0.500000
+fill out	0.527780
+filter out	0.555560
+find out	0.555560
+fine line	0.500000
+first and last	0.500000
+first love	0.680560
+fish out	0.555560
+fit in	0.541670
+fit into	0.819440
+fit the bill	0.611110
+flesh out	0.583330
+float around	0.500000
+fog up	0.416670
+follow through	0.611110
+follow up	0.500000
+food for thought	0.888890
+for good	0.666670
+for good measure	0.569440
+for once	0.652780
+for that matter	0.500000
+for the ages	0.833330
+for the love of	0.541670
+for the most part	0.569440
+for the sake of	0.541670
+foul up	0.361110
+fourth wall	0.500000
+freak out	0.388890
+free rein	0.500000
+free ride	0.555560
+freshen up	0.583330
+fritter away	0.347220
+from the get-go	0.500000
+from time to time	0.666670
+front and center	0.527780
+full circle	0.611110
+full monty	0.569440
+funny bone	0.763890
+funny stuff	0.722220
+game plan	0.277780
+gather dust	0.263890
+get a kick out of	0.708330
+get about	0.541670
+get along	0.500000
+get around	0.500000
+get around to	0.611110
+get at	0.402780
+get away	0.486110
+get away with	0.486110
+get back	0.597220
+get back to	0.194440
+get better	0.625000
+get busy	0.597220
+get by	0.333330
+get even	0.666670
+get in	0.500000
+get into	0.625000
+get it	0.750000
+get laid	0.527780
+get lost	0.319440
+get off	0.555560
+get off the ground	0.597220
+get off with	0.722220
+get on	0.611110
+get out	0.319440
+get out of	0.500000
+get over	0.500000
+get ready	0.555560
+get some	0.611110
+get the better of	0.388890
+get there	0.444440
+get to	0.194440
+get together	0.694440
+get up	0.500000
+get used	0.611110
+get wet	0.416670
+get with	0.500000
+get you	0.611110
+give away	0.555560
+give by	0.736110
+give chase	0.500000
+give in	0.500000
+give me	0.500000
+give out	0.625000
+give the lie to	0.305560
+give up	0.388890
+give way	0.500000
+gloss over	0.416670
+go a long way	0.625000
+go about	0.500000
+go after	0.347220
+go along	0.569440
+go along for the ride	0.527780
+go along with	0.458330
+go around	0.500000
+go away	0.277780
+go back	0.555560
+go by	0.722220
+go down	0.500000
+go downhill	0.263890
+go for	0.458330
+go for broke	0.555560
+go for it	0.694440
+go hand in hand	0.611110
+go home	0.500000
+go in for	0.500000
+go into	0.500000
+go native	0.444440
+go nowhere	0.472220
+go off	0.500000
+go on	0.500000
+go out	0.500000
+go out on a limb	0.527780
+go over	0.458330
+go overboard	0.305560
+go straight	0.500000
+go the distance	0.750000
+go the way of	0.500000
+go through	0.277780
+go through the motions	0.277780
+go to	0.500000
+go up	0.555560
+go wild	0.500000
+go with	0.500000
+go wrong	0.388890
+going on	0.500000
+gong show	0.513890
+good and	0.611110
+good books	0.569440
+good job	0.847220
+grab bag	0.500000
+great deal	0.770830
+gross out	0.222220
+grow into	0.569440
+grow on	0.666670
+grow up	0.444440
+guilty pleasure	0.597220
+gulp down	0.500000
+ham it up	0.638890
+hammer home	0.388890
+hand down	0.388890
+hand in	0.375000
+hand in hand	0.652780
+hand out	0.569440
+hands down	0.541670
+hang out	0.500000
+hang over	0.458330
+hang together	0.583330
+happen along	0.513890
+happen on	0.500000
+happily ever after	0.625000
+happy ending	0.722220
+hard up	0.527780
+hark back	0.555560
+haunted house	0.500000
+have a few	0.652780
+have a good time	0.722220
+have a heart	0.513890
+have an eye for	0.583330
+have at	0.666670
+have been around	0.527780
+have got	0.166670
+have in	0.402780
+have in mind	0.402780
+have it both ways	0.500000
+have to	0.500000
+head and shoulders	0.500000
+head up	0.541670
+heart and soul	0.583330
+heart of gold	0.805560
+heat up	0.652780
+helping hand	0.472220
+here and there	0.500000
+hew out	0.500000
+high note	0.777780
+high time	0.625000
+hinge on	0.500000
+his butt	0.500000
+hit home	0.611110
+hit on	0.388890
+hit the skids	0.361110
+hold a candle	0.388890
+hold back	0.500000
+hold it	0.500000
+hold on	0.472220
+hold over	0.583330
+hold sway	0.416670
+hold true	0.527780
+hold up	0.555560
+hollywood moment	0.513890
+home run	0.513890
+hood rat	0.236110
+hook up	0.500000
+hot air	0.291670
+hot on	0.513890
+hot with	0.722220
+household name	0.611110
+how so	0.111110
+hurry up	0.500000
+i am	0.500000
+i can tell you	0.166670
+i do	0.291670
+i know	0.375000
+i wish	0.375000
+i would	0.166670
+ice cube	0.361110
+if only	0.486110
+if that	0.277780
+if you like	0.500000
+if you will	0.513890
+in a state	0.430560
+in addition	0.111110
+in and out	0.500000
+in bed	0.500000
+in black and white	0.500000
+in business	0.541670
+in character	0.500000
+in control	0.680560
+in detail	0.902780
+in fact	0.500000
+in favor of	0.555560
+in front of	0.500000
+in general	0.513890
+in light of	0.597220
+in line	0.569440
+in love with	0.361110
+in need	0.388890
+in no time	0.611110
+in order	0.597220
+in order to	0.444440
+in other words	0.500000
+in spades	0.444440
+in spite of	0.638890
+in the act	0.500000
+in the dark	0.569440
+in the face of	0.611110
+in the first place	0.500000
+in the here and now	0.500000
+in the lead	0.611110
+in the least	0.472220
+in the making	0.569440
+in the name of	0.444440
+in the wake of	0.472220
+in the way	0.444440
+in the way of	0.652780
+in the works	0.472220
+in the world	0.500000
+in this day and age	0.500000
+in touch	0.500000
+in trouble	0.444440
+in vain	0.472220
+in your dreams	0.458330
+in your face	0.361110
+ins and outs	0.500000
+is it	0.486110
+it bag	0.430560
+jerk off	0.361110
+join in	0.597220
+jump around	0.305560
+jump in	0.500000
+jump off	0.805560
+jump ship	0.263890
+just about	0.500000
+keel over	0.513890
+keep an eye out	0.500000
+keep from	0.277780
+keep it up	0.833330
+keep on	0.500000
+keep up	0.500000
+keep up with	0.597220
+keep watch	0.736110
+kick around	0.486110
+kick in	0.583330
+kick in the pants	0.583330
+kick off	0.541670
+kick out	0.722220
+kiddie flick	0.555560
+kind of	0.500000
+kiss of death	0.250000
+kitchen sink	0.500000
+knock back	0.430560
+knock on	0.500000
+know what	0.500000
+labor of love	0.736110
+labour of love	0.861110
+ladies and gentlemen	0.513890
+larger than life	0.694440
+lash out	0.055556
+last thing	0.500000
+latch onto	0.472220
+laundry list	0.486110
+lay out	0.500000
+lead nowhere	0.333330
+leaf through	0.555560
+leak out	0.486110
+lean on	0.277780
+leave behind	0.291670
+leave off	0.541670
+leave out	0.500000
+leave over	0.388890
+leave well enough alone	0.444440
+left field	0.500000
+legal eagle	0.513890
+lend itself to	0.319440
+let alone	0.486110
+let down	0.125000
+let go	0.333330
+let sleeping dogs lie	0.472220
+let slip	0.500000
+let up	0.597220
+lie down	0.472220
+lie with	0.500000
+like shooting fish in a barrel	0.361110
+like that	0.541670
+little go	0.250000
+little green man	0.500000
+live down	0.472220
+live up	0.597220
+lock in	0.361110
+lock on	0.069444
+log on	0.500000
+long haul	0.486110
+long run	0.361110
+long shot	0.416670
+long since	0.541670
+long time	0.513890
+look ahead	0.583330
+look at	0.500000
+look back	0.500000
+look down on	0.444440
+look for	0.500000
+look forward	0.569440
+look forward to	0.833330
+look into	0.500000
+look like	0.500000
+look out	0.500000
+look over	0.513890
+look through	0.500000
+look to	0.527780
+looney tunes	0.486110
+loose end	0.402780
+loose ends	0.402780
+lose touch	0.430560
+loved one	0.625000
+luck out	0.458330
+lucky break	0.555560
+make a difference	0.611110
+make a meal of	0.611110
+make a point	0.666670
+make a splash	0.666670
+make do	0.513890
+make for	0.250000
+make fun of	0.486110
+make head or tail of	0.402780
+make it	0.500000
+make like	0.500000
+make love	0.555560
+make no mistake	0.500000
+make off	0.500000
+make off with	0.222220
+make sense	0.597220
+make sure	0.666670
+make the cut	0.500000
+make the grade	0.208330
+make the most of	0.666670
+make time	0.569440
+make to	0.375000
+make up	0.500000
+make water	0.500000
+march to the beat of a different drum	0.541670
+martial art	0.680560
+matter of time	0.500000
+melt away	0.583330
+memory lane	0.500000
+mess around	0.430560
+mess with	0.416670
+middle of the road	0.500000
+mind you	0.541670
+miss the boat	0.291670
+miss the mark	0.236110
+miss the point	0.222220
+mix up	0.319440
+mixed bag	0.500000
+mixed message	0.444440
+modus operandi	0.472220
+mop up	0.638890
+moral compass	0.597220
+more like	0.527780
+more like it	0.638890
+much less	0.486110
+mug shot	0.388890
+mull over	0.444440
+my eye	0.500000
+my foot	0.500000
+my goodness	0.500000
+nary a	0.583330
+needless to say	0.375000
+never mind	0.708330
+new standard	0.652780
+new wave	0.513890
+next to	0.500000
+night out	0.625000
+no entry	0.402780
+no thanks	0.222220
+no way	0.361110
+not at all	0.458330
+not bad	0.527780
+not even	0.444440
+not in the least	0.375000
+not much of anything	0.375000
+not quite	0.527780
+not to mention	0.500000
+not to say	0.333330
+not very	0.319440
+nothing special	0.388890
+nothing to sneeze at	0.611110
+nothing to write home about	0.333330
+now and again	0.500000
+now and then	0.500000
+of a	0.541670
+of all things	0.444440
+of an	0.458330
+of course	0.500000
+of fame	0.513890
+of shame	0.416670
+of sorts	0.500000
+off of	0.444440
+off the beaten path	0.333330
+off the hook	0.652780
+off the rails	0.166670
+offer up	0.583330
+oh my	0.652780
+old college try	0.375000
+old flame	0.444440
+old lady	0.444440
+old man	0.430560
+old school	0.500000
+old woman	0.444440
+on a shoestring	0.444440
+on about	0.402780
+on air	0.555560
+on and off	0.500000
+on and on	0.500000
+on behalf of	0.555560
+on course	0.500000
+on hand	0.500000
+on ice	0.500000
+on paper	0.430560
+on purpose	0.500000
+on the back of	0.458330
+on the brink	0.555560
+on the button	0.625000
+on the cheap	0.416670
+on the fly	0.472220
+on the game	0.430560
+on the heels of	0.513890
+on the level	0.500000
+on the loose	0.500000
+on the other hand	0.430560
+on the radar	0.500000
+on the right track	0.652780
+on the rise	0.569440
+on the street	0.500000
+on the verge	0.277780
+on the warpath	0.527780
+on the way	0.500000
+on the whole	0.555560
+on top	0.694440
+on top of	0.291670
+once again	0.500000
+once in a while	0.500000
+once or twice	0.500000
+one and only	0.333330
+one another	0.500000
+one of these days	0.500000
+one side	0.500000
+one-trick pony	0.319440
+open doors	0.583330
+open up	0.611110
+opt out	0.402780
+or else	0.430560
+or so	0.500000
+or something	0.444440
+other side	0.444440
+other than	0.083333
+out loud	0.500000
+out of	0.652780
+out of central casting	0.444440
+out of character	0.402780
+out of gas	0.347220
+out of it	0.416670
+out of nowhere	0.555560
+out of place	0.291670
+out of shape	0.166670
+out of sight	0.666670
+out of this world	0.333330
+out the window	0.263890
+out there	0.444440
+over and over	0.416670
+over the top	0.277780
+par for the course	0.527780
+pare down	0.513890
+parting shot	0.541670
+party favor	0.305560
+party to	0.541670
+pass for	0.500000
+pass off	0.416670
+pass through	0.569440
+pass up	0.347220
+patience of job	0.500000
+pay attention	0.500000
+pay for	0.625000
+pay off	0.652780
+peter out	0.347220
+pick apart	0.680560
+pick up	0.500000
+pick up the pieces	0.500000
+pick up the slack	0.347220
+piece of crap	0.111110
+piece of work	0.722220
+pile on	0.250000
+pile up	0.500000
+pill to swallow	0.305560
+pink slip	0.500000
+pipe dream	0.513890
+piss off	0.388890
+pissed off	0.388890
+pit against	0.763890
+pitch into	0.416670
+plan on	0.812500
+play in	0.472220
+play off	0.500000
+play on	0.416670
+play out	0.500000
+play second fiddle	0.472220
+play up	0.583330
+play with	0.416670
+poetry in motion	0.875000
+point out	0.527780
+politically correct	0.583330
+pop up	0.500000
+popcorn movie	0.458330
+pore over	0.555560
+poster boy	0.541670
+power on	0.236110
+pretty pictures	0.708330
+problem child	0.388890
+puke up	0.083333
+pull a	0.555560
+pull back	0.430560
+pull off	0.541670
+pull on	0.805560
+pull out	0.444440
+pull out all the stops	0.722220
+pull the plug	0.597220
+pull together	0.555560
+pull up	0.527780
+punch in	0.583330
+push it	0.500000
+push on	0.500000
+push the envelope	0.236110
+put away	0.375000
+put down	0.388890
+put in	0.402780
+put off	0.458330
+put on	0.472220
+put on airs	0.416670
+put the kibosh on	0.569440
+put through	0.111110
+put to sleep	0.111110
+put together	0.513890
+put up	0.500000
+put up with	0.222220
+quelle surprise	0.569440
+quite a bit	0.555560
+rainy day	0.347220
+raise eyebrows	0.444440
+raise the bar	0.666670
+rake in	0.541670
+ratchet up	0.458330
+read my lips	0.388890
+real deal	0.597220
+real time	0.500000
+reality check	0.527780
+recent memory	0.541670
+red light	0.500000
+reduced circumstances	0.500000
+reel in	0.666670
+reflect on	0.430560
+rely on	0.222220
+remain to be seen	0.319440
+rest assured	0.500000
+return to form	0.652780
+rhyme or reason	0.569440
+ride roughshod over	0.486110
+ring false	0.222220
+ring hollow	0.347220
+ring true	0.597220
+ringside seat	0.638890
+rip off	0.208330
+rise up	0.319440
+road movie	0.500000
+road warrior	0.500000
+rock and roll	0.833330
+rock on	0.347220
+rock solid	0.888890
+rocket scientist	0.500000
+roll around	0.430560
+roll in	0.333330
+roll on	0.444440
+roll over	0.500000
+root cause	0.555560
+root for	0.319440
+rose-colored glasses	0.555560
+rough trade	0.416670
+round out	0.569440
+run amok	0.472220
+run around	0.444440
+run away	0.472220
+run in	0.263890
+run into	0.361110
+run off	0.388890
+run on	0.291670
+run out	0.472220
+run out of steam	0.250000
+run over	0.319440
+run the gamut	0.541670
+run through	0.541670
+run to	0.152780
+run with	0.527780
+running on empty	0.291670
+rush hour	0.500000
+safe and sound	0.680560
+said and done	0.444440
+same old same old	0.222220
+same old story	0.250000
+save the day	0.416670
+say what	0.541670
+scratch the surface	0.513890
+seal the deal	0.666670
+second fiddle	0.361110
+see in	0.500000
+see over	0.611110
+see the forest for the trees	0.611110
+see the point	0.500000
+see things	0.541670
+see through	0.666670
+see to	0.333330
+see you	0.263890
+seek out	0.500000
+selling point	0.555560
+send up	0.500000
+serve up	0.500000
+set off	0.611110
+set on	0.763890
+set out	0.500000
+set up	0.500000
+settle for	0.375000
+settle in	0.500000
+settle on	0.500000
+shake it	0.625000
+shake off	0.430560
+shake up	0.597220
+shoot the messenger	0.458330
+shoot through	0.500000
+short and sweet	0.694440
+short of	0.194440
+show off	0.388890
+show up	0.500000
+shrug off	0.527780
+shut up	0.166670
+sight to behold	0.569440
+sign in	0.291670
+sign on	0.513890
+silver bullet	0.597220
+silver screen	0.555560
+since when	0.444440
+sink in	0.479170
+sit back	0.500000
+sit down	0.555560
+sit in	0.500000
+sit still	0.500000
+sit through	0.555560
+skirt around	0.097222
+slap in the face	0.361110
+sleep with	0.458330
+sleep with the fishes	0.458330
+slip into	0.277780
+slip out	0.500000
+slippery slope	0.375000
+slow down	0.347220
+smack of	0.236110
+small change	0.472220
+small potatoes	0.319440
+small talk	0.500000
+smash hit	0.513890
+smoke signal	0.611110
+smooth over	0.458330
+sneak out	0.555560
+sneak up	0.444440
+sneak up on	0.625000
+so far	0.444440
+so long as	0.347220
+so much as	0.500000
+so what	0.180560
+soak up	0.500000
+social ladder	0.500000
+soft spot	0.555560
+soften up	0.513890
+some people	0.527780
+something fierce	0.180560
+something like	0.555560
+something terrible	0.472220
+sort of	0.500000
+sort out	0.500000
+spaghetti western	0.388890
+speak for	0.666670
+speak to	0.500000
+speak up	0.472220
+speak volumes	0.680560
+spectator sport	0.500000
+speed up	0.652780
+spell out	0.500000
+spiff up	0.555560
+spin out	0.513890
+split up	0.444440
+spot on	0.722220
+spring out	0.583330
+spring to life	0.555560
+squeeze out	0.458330
+stand a chance	0.500000
+stand by	0.583330
+stand for	0.277780
+stand in for	0.555560
+stand on its own	0.597220
+stand out	0.652780
+stand tall	0.638890
+stand the test of time	0.666670
+stand up	0.527780
+start off	0.500000
+start out	0.666670
+stave off	0.486110
+stay on	0.597220
+stay put	0.500000
+steal the show	0.611110
+steer clear	0.597220
+step back	0.444440
+step down	0.388890
+step forward	0.666670
+step in	0.770830
+step out	0.527780
+stepping stone	0.513890
+stick around	0.527780
+stick out	0.555560
+stick to	0.333330
+stick together	0.500000
+stick with	0.458330
+stock up	0.625000
+stop on a dime	0.416670
+straight face	0.513890
+strap on a pair	0.500000
+stretch out	0.541670
+strike back	0.555560
+strike out	0.333330
+string together	0.527780
+strip away	0.458330
+strip down	0.444440
+stumble upon	0.597220
+such as	0.500000
+suck face	0.444440
+suck up	0.388890
+sum of its parts	0.500000
+sum up	0.500000
+supposed to	0.500000
+sweep away	0.805560
+sweep up	0.555560
+sweet spot	0.750000
+sweet tooth	0.569440
+take a back seat	0.513890
+take a chance	0.555560
+take a look	0.611110
+take a risk	0.694440
+take a stand	0.791670
+take aim	0.500000
+take away	0.444440
+take care of	0.500000
+take five	0.500000
+take for	0.402780
+take for granted	0.569440
+take heart	0.625000
+take in	0.500000
+take off	0.583330
+take on	0.402780
+take out	0.486110
+take over	0.597220
+take part	0.500000
+take the cake	0.555560
+take to	0.486110
+take to task	0.500000
+take up	0.513890
+talk about	0.777780
+talk down	0.430560
+talk the talk	0.569440
+talk up	0.583330
+talking head	0.500000
+tart up	0.486110
+team up	0.625000
+tear apart	0.277780
+tear away	0.375000
+tear into	0.847220
+tear up	0.513890
+test of time	0.680560
+that be it	0.458330
+that one	0.500000
+the change	0.555560
+the end	0.444440
+the finger	0.500000
+the hell	0.347220
+the man	0.625000
+the one	0.500000
+the pants off	0.722220
+the quality	0.611110
+the story goes	0.222220
+the upper hand	0.500000
+then again	0.500000
+there are	0.375000
+there is	0.500000
+thick and thin	0.500000
+think about	0.583330
+think over	0.500000
+think through	0.750000
+think too much	0.472220
+think twice	0.500000
+think up	0.500000
+three-ring circus	0.527780
+throw away	0.611110
+throw caution to the wind	0.500000
+throw in	0.458330
+throw off	0.583330
+throw out	0.402780
+throw up	0.222220
+thumbs up	0.750000
+tick off	0.500000
+tie up	0.472220
+tie up loose ends	0.388890
+time out	0.402780
+to a fault	0.402780
+to be sure	0.500000
+to date	0.555560
+to death	0.375000
+to die for	0.736110
+to do with	0.500000
+to go	0.500000
+to pieces	0.472220
+to say nothing of	0.416670
+to say the least	0.388890
+to that end	0.500000
+to the	0.513890
+to the brim	0.611110
+to the max	0.611110
+to the point	0.555560
+to the power of	0.708330
+to the rescue	0.694440
+tone down	0.555560
+too bad	0.347220
+too clever by half	0.527780
+too much	0.333330
+top notch	0.986110
+top shelf	0.777780
+toss around	0.319440
+toss off	0.361110
+touch on	0.388890
+track down	0.458330
+trade in	0.458330
+trailer trash	0.305560
+train wreck	0.291670
+trot out	0.444440
+true believer	0.652780
+try on	0.444440
+try out	0.513890
+tug of war	0.583330
+tune in	0.583330
+turf war	0.500000
+turn a blind eye	0.305560
+turn away	0.500000
+turn down	0.361110
+turn in	0.013889
+turn into	0.222220
+turn of phrase	0.569440
+turn on	0.555560
+turn out	0.416670
+turn over	0.500000
+turn up	0.569440
+turn upside down	0.569440
+under the influence	0.430560
+under the microscope	0.500000
+under the rug	0.500000
+under way	0.500000
+up a storm	0.513890
+up against	0.500000
+up and	0.500000
+up and down	0.430560
+up for	0.513890
+up on	0.513890
+up the ante	0.666670
+up the wazoo	0.138890
+up there	0.597220
+uphill battle	0.541670
+ups and downs	0.541670
+used to	0.444440
+usher in	0.500000
+valley boy	0.458330
+verge on	0.444440
+very good	0.791670
+very well	0.736110
+wade through	0.347220
+wait for it	0.402780
+wake up	0.472220
+walk around	0.500000
+walk away	0.291670
+walk away from	0.111110
+walk into	0.500000
+walk off	0.444440
+walk out	0.069444
+walk out on	0.166670
+warm up	0.430560
+wash away	0.375000
+wash out	0.277780
+washed out	0.277780
+waste away	0.291670
+watch it	0.500000
+water down	0.277780
+way to go	0.333330
+wear down	0.319440
+wear off	0.444440
+wear out	0.333330
+wear thin	0.333330
+weigh down	0.347220
+well done	0.805560
+well up	0.541670
+what a pity	0.333330
+what gives	0.611110
+what it do	0.500000
+what it is	0.500000
+what the	0.500000
+what the hell	0.375000
+what time is it	0.430560
+what with	0.333330
+what would jesus do	0.583330
+when all is said and done	0.513890
+white trash	0.402780
+who cares	0.236110
+who knows	0.444440
+why not	0.472220
+wide awake	0.513890
+will do	0.277780
+wimp out	0.305560
+win over	0.611110
+wind down	0.430560
+wind up	0.555560
+window dressing	0.319440
+wipe away	0.500000
+wire fu	0.500000
+wishful thinking	0.486110
+with it	0.611110
+with regard to	0.527780
+work at	0.527780
+work out	0.541670
+work over	0.486110
+work wonders	0.888890
+worked up	0.513890
+working girl	0.597220
+world war	0.638890
+wrap up	0.500000
+wreak havoc	0.500000
+write down	0.500000
+write home about	0.569440
+write in	0.500000
+write off	0.388890
+x marks the spot	0.625000
+yard ape	0.500000
+you bet	0.500000
+you know it	0.625000
+you never know	0.805560
+you think	0.500000
+you what	0.500000
+you wish	0.166670
+young man	0.513890

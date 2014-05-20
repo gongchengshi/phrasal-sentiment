@@ -17,7 +17,7 @@ public class StanfordSentimentTreebankInfo {
         DictionaryPath = Paths.get(dirPath, "dictionary.txt");
         DatasetSplitPath = Paths.get(dirPath, "datasetSplit.txt");
         DatasetSentencesPath = Paths.get(dirPath, "datasetSentences.txt");
-        SOStrPath = Paths.get(dirPath, "SOStr.ext");
+        SOStrPath = Paths.get(dirPath, "SOStr.txt");
         STreePath = Paths.get(dirPath, "STree.txt");
     }
 }

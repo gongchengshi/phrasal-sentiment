@@ -1,0 +1,5 @@
+Adding annotator tokenize
+Adding annotator ssplit
+Adding annotator pos
+Reading POS tagger model from edu/stanford/nlp/models/pos-tagger/english-left3words/english-left3words-distsim.tagger ... done [3.4 sec].
+Adding annotator lemma

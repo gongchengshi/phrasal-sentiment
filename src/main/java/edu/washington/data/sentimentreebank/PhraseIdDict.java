@@ -8,19 +8,19 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.*;
 
 public final class PhraseIdDict {
 
-    public final BiMap<String, Integer> idDict;
+    public final BiMap<String, Integer> phraseToId;
+//    public final BiMap<Integer, String> idToPhrase;
     private static final Splitter PIPE_SPLITTER = Splitter.on('|')
             .trimResults()
             .omitEmptyStrings();
 
     public PhraseIdDict(Path path) throws IOException {
-        this.idDict = HashBiMap.create();
+        this.phraseToId = HashBiMap.create();
+//        this.idToPhrase = HashBiMap.create();
         this.read_dictionary(path);
     }
 
@@ -32,7 +32,10 @@ public final class PhraseIdDict {
             Iterable<String> tokens = PIPE_SPLITTER.split(line);
             Iterator<String> tokens_iter = tokens.iterator();
             try {
-                idDict.put(tokens_iter.next(), Integer.parseInt(tokens_iter.next()));
+                String phrase = tokens_iter.next();
+                Integer id = Integer.parseInt(tokens_iter.next());
+                phraseToId.put(phrase, id);
+//                idToPhrase.put(id, phrase);
             } catch (NumberFormatException nfe) {
                 System.err.printf("failed to parse numbers (dict): line=[%1$s] error=[%1$s]\n", line, nfe.getMessage());
             }
@@ -40,7 +43,20 @@ public final class PhraseIdDict {
     }
 
     public Set<String> getAllPhrase() {
-        return idDict.keySet();
+        return phraseToId.keySet();
+    }
+
+    public Set<Integer> findPhrasesThatContain(String expression) {
+        Set<Integer> ids = new HashSet<>();
+
+        phraseToId.entrySet().stream().forEach(set -> {
+            String phrase = set.getKey();
+            Integer id = set.getValue();
+            if (phrase.contains(expression)) {
+                ids.add(id);
+            }
+        });
+        return ids;
     }
 
     public Integer getPhraseId(String phrase, boolean replaceSpecial) {
@@ -48,10 +64,10 @@ public final class PhraseIdDict {
             phrase = phrase.replaceAll("-LRB-", "(").replace("-RRB-", ")");
         }
 
-        return idDict.get(phrase);
+        return phraseToId.get(phrase);
     }
 
     public BiMap<String, Integer> getBiDict() {
-        return idDict;
+        return phraseToId;
     }
 }

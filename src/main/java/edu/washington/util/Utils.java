@@ -12,6 +12,24 @@ import java.util.List;
 
 public class Utils {
 
+    public static <T> boolean listContains(List<T> largerList, List<T> smallerList) {
+        if(smallerList.size() > largerList.size()) {
+            return false;
+        }
+
+        int li = largerList.indexOf(smallerList.get(0)) + 1;
+        if(li == 0) {
+            return false;
+        }
+        for(int si=1; si<smallerList.size(); ++si, ++li) {
+            if(li >= largerList.size() || !largerList.get(li).equals(smallerList.get(si))) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
     public static int CharCount(String text, char character) {
         int charCount = 0;
         for (int i = 0; i < text.length(); ++i) {

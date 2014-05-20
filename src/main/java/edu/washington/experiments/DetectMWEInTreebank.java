@@ -1,47 +1,62 @@
 package edu.washington.experiments;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
-
 import edu.mit.jmwe.data.IMWE;
+import edu.mit.jmwe.data.IMWEDesc;
 import edu.mit.jmwe.data.IToken;
 import edu.washington.config.FilePaths;
+import edu.washington.data.sentimentreebank.SentenceList;
 import edu.washington.expressionlists.ExpressionFilters;
 import edu.washington.expressionlists.ExpressionList;
 import edu.washington.expressionlists.types.Expression;
 import edu.washington.mwe.MWEDetector;
 
+import java.io.IOException;
+import java.util.*;
+import java.util.Map.Entry;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+
 public class DetectMWEInTreebank {
 
-    public static void main(String[] args) {
-
-        //Where to store the output expression list 
-        Path outputSemcorFile = Paths.get("supplementary/mwe/best.secmor");
-
-//		Generate expression list
+    public static void main(String[] args) throws IOException {
+		//Generate expression list
 //		ExpressionList e = new ExpressionList(FilePaths.baseWordlist);
 //		List<Expression> filteredExprs = e.getExpressions().parallelStream()
 //				.filter(not(ExpressionFilters.isSingleWord))
 //				.collect(Collectors.toList());
 //		ExpressionList filteredList = new ExpressionList(filteredExprs);
 //		System.out.println(filteredList.getExpressions().size() + " expresssions to consider");
-//		filteredList.saveAsSemcor(outputSemcorFile);
-        //Extract MWEs from stanford corpus
-        MWEDetector detector = new MWEDetector(outputSemcorFile.toFile());
-        //Map<String, List<IMWE<IToken>>> results = detector.detectFromTreebank();
+//		filteredList.saveAsSemcor(FilePaths.wikipediaFigSemcorFile);
 
-        //print results
-//		results.entrySet().parallelStream().forEach(System.out::println);
-//		printStaCtistics(results);
+        //Extract MWEs from stanford corpus
+        MWEDetector detector = new MWEDetector(FilePaths.wikipediaFigSemcorFile.toFile());
+        int NUM_SENTENCES_IN_STANFORD = 11856;
+        SentenceList sentences = new SentenceList(FilePaths.SSTPaths.DatasetSentencesPath, NUM_SENTENCES_IN_STANFORD);
+        Map<String, List<IMWE<IToken>>> results = new HashMap<>();
+        for (int sentenceId = 0; sentenceId<sentences.sentenceList.size(); ++sentenceId) {
+            String sentence = sentences.getSentence(sentenceId+1);
+            List<IMWE<IToken>> mwes = detector.detect(sentence);
+            results.put(sentence, mwes);
+        }
+
+        printResults(results);
+    }
+
+    public static void printResults(Map<String, List<IMWE<IToken>>> results) {
+        int count = 0;
+        for (Entry<String, List<IMWE<IToken>>> result : results.entrySet()) {
+            if(result.getValue().size() <= 0) {
+                continue;
+            }
+            System.out.println(result.getKey());
+
+            count += result.getValue().size();
+
+            for(IMWE<IToken> mwe: result.getValue()) {
+                System.out.println("\t" + mwe.getEntry() + " -> " + mwe.getForm());
+            }
+        }
+        System.out.println("Total count = " + count);
     }
 
     public static void printStatistics(Map<String, List<IMWE<IToken>>> results) {
@@ -55,7 +70,6 @@ public class DetectMWEInTreebank {
             numMWEs += extractedExpressions.size();
         }
         System.out.println(numMWEs);
-
     }
 
     public static <T> Predicate<T> not(Predicate<T> t) {
