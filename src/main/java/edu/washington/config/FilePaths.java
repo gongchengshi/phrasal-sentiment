@@ -16,4 +16,7 @@ public class FilePaths {
             .get("supplementary/mwe/best.semcor");
     public static final StanfordSentimentTreebankInfo SSTPaths =
             new StanfordSentimentTreebankInfo("supplementary/stanfordSentimentTreebank");
+    public static final Path subjectivityLexicon = Paths
+            .get("supplementary/mpqaSubjectivityLexicon/subjclueslen1-HLTEMNLP05.tff");
+
 }

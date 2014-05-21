@@ -5,7 +5,10 @@
  */
 package edu.washington.phrasal.feature;
 
+import edu.pitt.cs.mpqa.subjectivity.SubjectivityLexicon;
+import edu.stanford.nlp.process.Tokenizer;
 import edu.stanford.nlp.tagger.maxent.MaxentTagger;
+import edu.washington.config.FilePaths;
 import edu.washington.config.StanfordSentimentTreebankInfo;
 import edu.washington.data.sentimentreebank.SentenceList;
 import edu.washington.data.sentimentreebank.StanfordNLPDict;
@@ -13,6 +16,7 @@ import edu.washington.phrasal.gold_standard.GoldStandard;
 import edu.washington.util.Counter;
 import java.io.BufferedWriter;
 import java.io.IOException;
+import static java.lang.Boolean.TRUE;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -45,8 +49,10 @@ public class FeatureGenerator {
     final public static String FEATURE_SEPARATOR = " ";
     final public static String FEATURE_VALUE_SEPARATOR = "=";
     final public GoldStandard goldStandard = new GoldStandard();
+    final public SubjectivityLexicon subjectivityLexicon;
 
     public FeatureGenerator(String basepath) throws IOException {
+        subjectivityLexicon = new SubjectivityLexicon(FilePaths.subjectivityLexicon);
         stanfordInfo = new StanfordSentimentTreebankInfo(basepath + "supplementary/stanfordSentimentTreebank");
         nlpDict = new StanfordNLPDict(stanfordInfo.DictionaryPath, stanfordInfo.SentimentLabelsPath);
         sentenceList = new SentenceList(stanfordInfo.DatasetSentencesPath);
@@ -56,10 +62,15 @@ public class FeatureGenerator {
         tagger = new MaxentTagger(
                 "edu/stanford/nlp/models/pos-tagger/english-left3words/english-left3words-distsim.tagger");
 
-        populateSentenceSentiments(basepath, basepath + "supplementary/phrasal_verb_lists/simple_phrasal_verbs.txt");
+        populateSentenceSentiments(basepath);
 
     }
 
+    /**
+     *
+     * @param featureList - the desired features in csv format
+     * @return
+     */
     public String generateFeature(String featureList) {
         ArrayList<SentenceIdPhrasalVerbId> spl = new ArrayList<>();
         sentenceIdToPhrasalVerbId.keySet().stream().sorted().forEach((sentenceId) -> {
@@ -88,70 +99,60 @@ public class FeatureGenerator {
 
     }
 
-    private void populateSentenceSentiments(String basepath, String phrasal_filepath) {
-        /* generate initial set of sentences that have phrasal verbs from fig.txt */
-        try {
-            FigReader f = new FigReader(phrasal_filepath);
-            /* phrasal verb to sentence ids */
-            HashMap<String, Set<Integer>> keepPhrasalVerb = new HashMap<>();
-
-            goldStandard.phraseSentiment.keySet().stream().forEach((String phrasal_verb) -> {
+    private void populateSentenceSentiments(String basepath) {
+        HashMap<String, Set<Integer>> keepPhrasalVerb = new HashMap<>();
+        goldStandard.phraseSentiment.keySet().stream().forEach((String phrasal_verb) -> {
+            try {
+                Set<Integer> sentenceIds = new HashSet<>(sentenceList.findSentencesWithPhrase(phrasal_verb));
+                
+                if (sentenceIds.size() > 0) {
+                    keepPhrasalVerb.merge(phrasal_verb, sentenceIds, (value, newValue) -> {
+                        if (value == null) {
+                            value = new HashSet<>();
+                        }
+                        value.addAll(newValue);
+                        return value;
+                    });
+                }
+            } catch (IOException inner_ex) {
+                System.err.printf("ERROR: %1$s", inner_ex.getMessage());
+            }
+        });
+        try (BufferedWriter writer = Files.newBufferedWriter(Paths.get(basepath + "project_output/phrasal_verb_id.txt"),
+                StandardCharsets.UTF_8)) {
+            Counter c = new Counter();
+            keepPhrasalVerb.keySet().stream().forEach((String phrasal_verb) -> {
                 try {
-                    Set<Integer> sentenceIds = new HashSet<>(sentenceList.findSentencesWithPhrase(phrasal_verb));
-
-                    if (sentenceIds.size() > 0) {
-                        keepPhrasalVerb.merge(phrasal_verb, sentenceIds, (value, newValue) -> {
+                    StringBuilder append = new StringBuilder();
+                    int id = c.next();
+                    
+                    phrasalVerbIdToPhrase.put(id, phrasal_verb);
+                    append.append(id);
+                    append.append("\t");
+                    append.append(phrasal_verb);
+                    writer.write(append.toString());
+                    writer.newLine();
+                    ArrayList<Integer> phraseId = nlpDict.findStanfordPhraseIdFromPhasalVerb(phrasal_verb);
+                    phrasalVerbIdToStanfordPhraseId.put(id, new HashSet<>(phraseId));
+                    keepPhrasalVerb.get(phrasal_verb).stream().forEach((sentence_id) -> {
+                        Set<Integer> phrasal_verb_set = new HashSet<>();
+                        phrasal_verb_set.add(id);
+                        sentenceIdToPhrasalVerbId.merge(sentence_id, phrasal_verb_set, (value, newValue) -> {
                             if (value == null) {
                                 value = new HashSet<>();
                             }
                             value.addAll(newValue);
                             return value;
                         });
-                    }
+                    });
                 } catch (IOException inner_ex) {
                     System.err.printf("ERROR: %1$s", inner_ex.getMessage());
                 }
             });
-
-            /* generate id for phrasal verb */
-            try (BufferedWriter writer = Files.newBufferedWriter(Paths.get(basepath + "project_output/phrasal_verb_id.txt"),
-                    StandardCharsets.UTF_8)) {
-                Counter c = new Counter();
-                keepPhrasalVerb.keySet().stream().forEach((String phrasal_verb) -> {
-                    try {
-                        StringBuilder append = new StringBuilder();
-                        int id = c.next();
-
-                        phrasalVerbIdToPhrase.put(id, phrasal_verb);
-                        append.append(id);
-                        append.append("\t");
-                        append.append(phrasal_verb);
-                        writer.write(append.toString());
-                        writer.newLine();
-                        ArrayList<Integer> phraseId = nlpDict.findStanfordPhraseIdFromPhasalVerb(phrasal_verb);
-                        phrasalVerbIdToStanfordPhraseId.put(id, new HashSet<>(phraseId));
-                        keepPhrasalVerb.get(phrasal_verb).stream().forEach((sentence_id) -> {
-                            Set<Integer> phrasal_verb_set = new HashSet<>();
-                            phrasal_verb_set.add(id);
-                            sentenceIdToPhrasalVerbId.merge(sentence_id, phrasal_verb_set, (value, newValue) -> {
-                                if (value == null) {
-                                    value = new HashSet<>();
-                                }
-                                value.addAll(newValue);
-                                return value;
-                            });
-                        });
-                    } catch (IOException inner_ex) {
-                        System.err.printf("ERROR: %1$s", inner_ex.getMessage());
-                    }
-                });
-                writer.flush();
-                writer.close();
-            } catch (IOException x) {
-                System.err.format("IOException: %s%n", x);
-            }
-        } catch (IOException ex) {
-            Logger.getLogger(FeatureGenerator.class.getName()).log(Level.SEVERE, null, ex);
+            writer.flush();
+            writer.close();
+        } catch (IOException x) {
+            System.err.format("IOException: %s%n", x);
         }
     }
 

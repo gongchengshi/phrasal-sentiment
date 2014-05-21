@@ -30,7 +30,18 @@ public class Runner {
             try (BufferedWriter writer = Files.newBufferedWriter(Paths.get(basepath + "project_output/data.txt"),
                     StandardCharsets.UTF_8)) {
 //                writer.write(f.generateFeature("ID,phrasalVerbContextualClassification,phrasalVerbToken,phrasalVerbPOS,phrasalVerbContext"));
-                writer.write(f.generateFeature("ID,phrasalVerbContextualClassification,phrasalVerbPOS,phrasalVerbContext"));
+                writer.write(f.generateFeature("ID,"
+                        + "phrasalVerbContextualClassification,"
+                        + "phrasalVerbPOS,"
+                        + "phrasalVerbContext,"
+                        + "sentencePOSContext,"
+                        + "sentenceAdjectCount,"
+                        + "sentenceAdverbCount,"
+                        + "sentenceHasPronoun,"
+                        + "sentenceHasModal,"
+                        + "sentenceWeakCount,"
+                        + "sentenceStrongCount"));
+
             }
         } catch (IOException ex) {
             Logger.getLogger(Runner.class.getName()).log(Level.SEVERE, null, ex);
