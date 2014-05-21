@@ -173,7 +173,7 @@ public class FeatureGenerator {
             return "positive";
         }
         if (value <= 1) {
-            return "very";
+            return "very_positive";
         }
         return "UNKNOWN";
     }
