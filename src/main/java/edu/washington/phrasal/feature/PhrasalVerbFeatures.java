@@ -71,10 +71,10 @@ public class PhrasalVerbFeatures {
                 sb.append(sp.getSentenceTokens().get(index - 1));
                 sb.append(FeatureGenerator.FEATURE_SEPARATOR);
             }
-            if (index < (sp.getSentenceTokens().size() - 1)) {
+            if ((index + pv.size()) < (sp.getSentenceTokens().size() - 1)) {
                 sb.append("nextWord");
                 sb.append(FeatureGenerator.FEATURE_VALUE_SEPARATOR);
-                sb.append(sp.getSentenceTokens().get(index + pv.size() - 1));
+                sb.append(sp.getSentenceTokens().get(index + pv.size()));
             }
             return sb.toString().trim();
         }

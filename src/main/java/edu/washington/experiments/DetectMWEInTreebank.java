@@ -1,20 +1,15 @@
 package edu.washington.experiments;
 
 import edu.mit.jmwe.data.IMWE;
-import edu.mit.jmwe.data.IMWEDesc;
 import edu.mit.jmwe.data.IToken;
 import edu.washington.config.FilePaths;
 import edu.washington.data.sentimentreebank.SentenceList;
-import edu.washington.expressionlists.ExpressionFilters;
-import edu.washington.expressionlists.ExpressionList;
-import edu.washington.expressionlists.types.Expression;
 import edu.washington.mwe.MWEDetector;
 
 import java.io.IOException;
 import java.util.*;
 import java.util.Map.Entry;
 import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 public class DetectMWEInTreebank {
 
