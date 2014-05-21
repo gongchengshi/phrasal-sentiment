@@ -1,10 +1,7 @@
 package edu.washington.phrasal.gold_standard;
 
 import edu.mit.jmwe.data.IMWE;
-import edu.mit.jmwe.data.IMWEDesc;
 import edu.mit.jmwe.data.IToken;
-import edu.stanford.nlp.trees.Tree;
-import edu.stanford.nlp.util.CollectionUtils;
 import edu.washington.config.FilePaths;
 import edu.washington.data.sentimentreebank.*;
 import edu.washington.expressionlists.ExpressionFilters;
@@ -20,7 +17,7 @@ import java.util.stream.Collectors;
 
 import static edu.washington.expressionlists.ExpressionFilters.not;
 
-public class GoldStandard {
+public final class GoldStandard {
     public final Map<String, Double> phraseSentiment = new TreeMap<>();
 
     public GoldStandard() throws IOException {
@@ -82,7 +79,7 @@ public class GoldStandard {
                     phraseSentiment.put(origExpression, sentimentScore);
                 } catch(Exception ex) {
                     String phraseText = String.join(" ", origExpressionTokens);
-                    System.out.println("<" + phraseText + "> could not be found in dictionary\n" + sentence);
+//XXX               System.out.println("<" + phraseText + "> could not be found in dictionary\n" + sentence);
                 }
             }
         }

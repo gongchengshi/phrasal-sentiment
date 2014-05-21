@@ -19,16 +19,21 @@ public class SentenceIdPhrasalVerbId {
     private final Integer phrasal_verb_id;
     private final FeatureGenerator fg;
     private final ArrayList<String> sentenceTokens;
-
+    private final ArrayList<String> phrasalVerbTokens;
     public SentenceIdPhrasalVerbId(Integer sentence_id, Integer phrasal_verb_id, FeatureGenerator fg) {
         this.sentence_id = sentence_id;
         this.phrasal_verb_id = phrasal_verb_id;
         this.fg = fg;
         this.sentenceTokens = SimpleTokenize.tokenize(fg.sentenceList.getSentence(this.sentence_id));
+        this.phrasalVerbTokens = SimpleTokenize.tokenize(fg.getPhrasalVerbById(phrasal_verb_id));
     }
 
     public Integer getPhrasalVerbId() {
         return phrasal_verb_id;
+    }
+    
+    public List<String> getPhrasalVerbTokens() {
+        return phrasalVerbTokens;
     }
 
     public Integer getSentenceId() {

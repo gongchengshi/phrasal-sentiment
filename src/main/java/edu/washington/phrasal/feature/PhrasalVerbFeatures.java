@@ -35,7 +35,7 @@ public class PhrasalVerbFeatures {
     };
 
     static Function<SentenceIdPhrasalVerbId, String> phraseId = sp -> {
-        return sp.getSentenceId() + "_" + sp.getPhrasalVerbId();
+        return sp.getSentenceId() + "_" + String.join("_", sp.getPhrasalVerbTokens().toArray(new String[]{}));
     };
 
     static Function<SentenceIdPhrasalVerbId, String> phrasalVerbToken = sp -> {

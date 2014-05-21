@@ -9,6 +9,7 @@ import edu.stanford.nlp.tagger.maxent.MaxentTagger;
 import edu.washington.config.StanfordSentimentTreebankInfo;
 import edu.washington.data.sentimentreebank.SentenceList;
 import edu.washington.data.sentimentreebank.StanfordNLPDict;
+import edu.washington.phrasal.gold_standard.GoldStandard;
 import edu.washington.util.Counter;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -43,6 +44,7 @@ public class FeatureGenerator {
     final public MaxentTagger tagger;
     final public static String FEATURE_SEPARATOR = " ";
     final public static String FEATURE_VALUE_SEPARATOR = "=";
+    final public GoldStandard goldStandard = new GoldStandard();
 
     public FeatureGenerator(String basepath) throws IOException {
         stanfordInfo = new StanfordSentimentTreebankInfo(basepath + "supplementary/stanfordSentimentTreebank");
@@ -55,7 +57,6 @@ public class FeatureGenerator {
                 "edu/stanford/nlp/models/pos-tagger/english-left3words/english-left3words-distsim.tagger");
 
         populateSentenceSentiments(basepath, basepath + "supplementary/phrasal_verb_lists/simple_phrasal_verbs.txt");
-
 
     }
 
@@ -94,7 +95,7 @@ public class FeatureGenerator {
             /* phrasal verb to sentence ids */
             HashMap<String, Set<Integer>> keepPhrasalVerb = new HashMap<>();
 
-            f.phrases.stream().forEach((String phrasal_verb) -> {
+            goldStandard.phraseSentiment.keySet().stream().forEach((String phrasal_verb) -> {
                 try {
                     Set<Integer> sentenceIds = new HashSet<>(sentenceList.findSentencesWithPhrase(phrasal_verb));
 
@@ -190,4 +191,7 @@ public class FeatureGenerator {
         return phrasalVerbIdToPhrase.get(phrasalVerbId);
     }
 
+    public String getPhrasalVerbClassificationById(Integer phrasalVerbId) {
+        return getClassBySentiment(goldStandard.phraseSentiment.get(getPhrasalVerbById(phrasalVerbId)));
+    }
 }
