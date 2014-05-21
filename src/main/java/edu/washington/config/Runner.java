@@ -25,7 +25,7 @@ public class Runner {
         String features = "";
         FeatureGenerator f;
         try {
-            String basepath = "/Users/nickchen/ling/LING575/phrasal-sentiment/";
+            String basepath = "./";
             f = new FeatureGenerator(basepath);
             try (BufferedWriter writer = Files.newBufferedWriter(Paths.get(basepath + "project_output/data.txt"),
                     StandardCharsets.UTF_8)) {
