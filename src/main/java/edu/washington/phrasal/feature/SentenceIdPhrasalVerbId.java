@@ -6,10 +6,12 @@
 package edu.washington.phrasal.feature;
 
 import com.google.common.base.Joiner;
+
 import edu.stanford.nlp.ie.machinereading.common.SimpleTokenize;
 import edu.stanford.nlp.ling.HasWord;
 import edu.stanford.nlp.ling.TaggedWord;
 import edu.stanford.nlp.ling.Word;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -22,20 +24,23 @@ import java.util.stream.Collectors;
 public class SentenceIdPhrasalVerbId {
 
     private final Integer sentence_id;
+    private final String sentence;
     private final Integer phrasal_verb_id;
     private final FeatureGenerator fg;
     private final List<String> sentenceTokens;
     private final List<String> phrasalVerbTokens;
     private final List<String> sentencePOS;
     private final List<String> phraseVerbPOS;
+    private final List<Integer> characterOffsets;
     public final Integer pvStartIndex;
     public final Integer pvEndIndex;
 
     public SentenceIdPhrasalVerbId(Integer sentence_id, Integer phrasal_verb_id, FeatureGenerator fg) {
         this.sentence_id = sentence_id;
+        this.sentence = fg.sentenceList.getSentence(this.sentence_id);
         this.phrasal_verb_id = phrasal_verb_id;
         this.fg = fg;
-        this.sentenceTokens = SimpleTokenize.tokenize(fg.sentenceList.getSentence(this.sentence_id));
+        this.sentenceTokens = SimpleTokenize.tokenize(sentence);
         this.phrasalVerbTokens = SimpleTokenize.tokenize(fg.getPhrasalVerbById(phrasal_verb_id));
 
         sentencePOS = tagWordTokens(sentenceTokens);
@@ -45,6 +50,14 @@ public class SentenceIdPhrasalVerbId {
         pvStartIndex = Collections.indexOfSubList(sentenceTokens, phrasalVerbTokens);
         /* end index of phrase in sentence */
         pvEndIndex = pvStartIndex + phrasalVerbTokens.size();
+        
+        /*Compute character based offsets*/
+        characterOffsets = new ArrayList<Integer>();
+		int offset = 0;
+		for(String token : sentenceTokens){
+			characterOffsets.add(offset);
+			offset = offset + token.length() + 1;
+		}
     }
 
     private List<String> tagWordTokens(List<String> tokens) {
@@ -80,5 +93,13 @@ public class SentenceIdPhrasalVerbId {
     public List<String> getPhraseVerbPOS() {
         return phraseVerbPOS;
     }
+
+	public String getSentence() {
+		return sentence;
+	}
+
+	public List<Integer> getCharacterOffsets() {
+		return characterOffsets;
+	}
 
 }

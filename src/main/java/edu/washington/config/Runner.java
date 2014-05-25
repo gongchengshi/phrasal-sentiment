@@ -27,7 +27,7 @@ public class Runner {
         try {
             String basepath = "./";
             f = new FeatureGenerator(basepath);
-            try (BufferedWriter writer = Files.newBufferedWriter(Paths.get(basepath + "project_output/data.txt"),
+            try (BufferedWriter writer = Files.newBufferedWriter(Paths.get(basepath + "project_output/data1.txt"),
                     StandardCharsets.UTF_8)) {
 //                writer.write(f.generateFeature("ID,phrasalVerbContextualClassification,phrasalVerbToken,phrasalVerbPOS,phrasalVerbContext"));
                 writer.write(f.generateFeature("ID,"
@@ -40,7 +40,8 @@ public class Runner {
                         + "sentenceHasPronoun,"
                         + "sentenceHasModal,"
                         + "sentenceWeakCount,"
-                        + "sentenceStrongCount"));
+                        + "sentenceStrongCount,"
+                        + "subjectiveModifierCount"));
 
             }
         } catch (IOException ex) {

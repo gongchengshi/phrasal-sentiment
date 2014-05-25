@@ -27,7 +27,8 @@ public class SubjectivityLexicon {
     public final Set<String> strongsubj;
     public final Set<String> weaksubj;
 
-    private static final Splitter EQUAL_SPACE_SPLITTER = Splitter.on(CharMatcher.anyOf("= "))
+
+	private static final Splitter EQUAL_SPACE_SPLITTER = Splitter.on(CharMatcher.anyOf("= "))
             .trimResults()
             .omitEmptyStrings();
 
