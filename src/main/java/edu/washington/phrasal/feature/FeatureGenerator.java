@@ -160,7 +160,7 @@ public class FeatureGenerator {
         return nlpDict;
     }
 
-    public String getClassBySentiment(double value) {
+    public static String getClassBySentiment(double value) {
         if (value <= .2) {
             return "very_negative";
         }

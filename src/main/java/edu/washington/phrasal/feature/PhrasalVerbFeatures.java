@@ -7,6 +7,7 @@ package edu.washington.phrasal.feature;
 
 import com.google.common.base.Joiner;
 
+import edu.harvard.GeneralInquirer;
 import edu.stanford.nlp.ie.machinereading.common.SimpleTokenize;
 import edu.stanford.nlp.ling.HasWord;
 import edu.stanford.nlp.ling.IndexedWord;
@@ -16,6 +17,7 @@ import edu.stanford.nlp.semgraph.SemanticGraph;
 import edu.stanford.nlp.semgraph.SemanticGraphEdge;
 import edu.washington.util.StanfordAnnotator;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -192,72 +194,87 @@ public class PhrasalVerbFeatures {
 		return sb.toString();
 	};
 
-	static 		List<String> relTypes = Arrays.asList("adj", "mod", "vmod", "advmod", "nsubj");
 	static final Function<SentenceIdPhrasalVerbId, String> subjectiveModifierCount = sp -> {
 		StringBuilder sb = new StringBuilder();
+
+		String input = "The human rights report poses a substantial challenge to interpretation of the us interpretation of good and evil.";
+
+		StanfordAnnotator annotator = StanfordAnnotator.getInstance();
+		SemanticGraph deps = annotator.getDeps(input);
+
+		List<String> relTypes = Arrays.asList("adj", "mod", "vmod");
+		IndexedWord node = deps.getNodeByWordPattern(sp.getSentenceTokens()
+				.get(sp.pvStartIndex));
+		Collection<IndexedWord> childrenAndParents = deps.getChildren(node);
+		childrenAndParents.addAll(deps.getParents(node));
 		boolean modifiesStronbSubj = false;
 		boolean modifiesWeakSubj = false;
-		StanfordAnnotator annotator = StanfordAnnotator.getInstance();
-		SemanticGraph deps = annotator.getDeps(sp.getSentence());
-		System.out.println("base");
-		if (sp.pvStartIndex > 1) {
-			IndexedWord node = deps.getNodeByWordPattern(sp.getSentenceTokens()
-					.get(sp.pvStartIndex));
-			if (node != null) {
-				Collection<IndexedWord> childrenAndParents = deps
-						.getChildren(node);
-				childrenAndParents.addAll(deps.getParents(node));
-				for (IndexedWord word : childrenAndParents) {
-					SemanticGraphEdge edge = deps.getEdge(node, word);
-					if (edge != null && edge.getRelation() != null) {
-						String relType = edge.getRelation().getShortName();
-						if (relTypes.contains(relType)) {
-							if (sp.getFG().subjectivityLexicon.weaksubj
-									.contains(word.originalText())) {
-								modifiesWeakSubj = true;
-							}
-							if (sp.getFG().subjectivityLexicon.strongsubj
-									.contains(word.originalText())) {
-								modifiesStronbSubj = true;
-							}
-						}
-						
-					}
+		for (IndexedWord word : childrenAndParents) {
+			SemanticGraphEdge relType = deps.getEdge(node, word);
+			if (relTypes.contains(relType)) {
+				if (sp.getFG().subjectivityLexicon.weaksubj.contains(word
+						.originalText())) {
+					modifiesWeakSubj = true;
+				}
+				if (sp.getFG().subjectivityLexicon.strongsubj.contains(word
+						.originalText())) {
+					modifiesStronbSubj = true;
 				}
 			}
-			if (modifiesStronbSubj) {
-				sb.append("strongSubjRelation");
-				sb.append(FeatureGenerator.FEATURE_VALUE_SEPARATOR);
-				sb.append(1 + " ");
-			}
-			if (modifiesWeakSubj) {
-				sb.append("weakSubjRelation");
-				sb.append(FeatureGenerator.FEATURE_VALUE_SEPARATOR);
-				sb.append(1 + " ");
-			}
+		}
+		if (modifiesStronbSubj) {
+			sb.append("strongsubjCount");
+			sb.append(FeatureGenerator.FEATURE_VALUE_SEPARATOR);
+			sb.append(1+ " ");
+		}
+		if (modifiesWeakSubj) {
+			sb.append("weakSubjCount");
+			sb.append(FeatureGenerator.FEATURE_VALUE_SEPARATOR);
+			sb.append(1+ " ");
 		}
 		return sb.toString();
 
 	};
 
-	static {
-		functionToMap.put("ID", phraseId);
-		functionToMap.put("phrasalVerbContextualClassification",
-				phrasalVerbContextualClassification);
-		functionToMap.put("phrasalVerbToken", phrasalVerbToken);
-		functionToMap.put("phrasalVerbPOS", phrasalVerbPOS);
-		functionToMap.put("phrasalVerbContext", phrasalVerbContext);
+    static GeneralInquirer generalInquirer = null;
 
-		functionToMap.put("sentencePOSContext", sentencePOSContext);
-		functionToMap.put("sentenceAdjectCount", sentenceAdjectCount);
-		functionToMap.put("sentenceAdverbCount", sentenceAdverbCount);
-		functionToMap.put("sentenceHasPronoun", sentenceHasPronoun);
-		functionToMap.put("sentenceHasModal", sentenceHasModal);
-		functionToMap.put("sentenceWeakCount", sentenceWeakCount);
-		functionToMap.put("sentenceStrongCount", sentenceStrongCount);
-		functionToMap.put("subjectiveModifierCount", subjectiveModifierCount);
+    static final Function<SentenceIdPhrasalVerbId, String> priorPolarity = sp -> {
+        Double sentiment = generalInquirer.getSentimentOfPhrase(sp.getPhrasalVerbTokens());
+        if (sentiment == null) {
+            return "";
+        }
+        return "priorPolarity" + FeatureGenerator.FEATURE_VALUE_SEPARATOR + FeatureGenerator.getClassBySentiment(sentiment);
+    };
 
-	}
+    static final Function<SentenceIdPhrasalVerbId, String> priorPolarityDefaultNeutral = sp -> {
+        Double sentiment = generalInquirer.getSentimentOfPhraseDefaultNeutral(sp.getPhrasalVerbTokens());
+        return "priorPolarity" + FeatureGenerator.FEATURE_VALUE_SEPARATOR + FeatureGenerator.getClassBySentiment(sentiment);
+    };
+
+    static {
+        functionToMap.put("ID", phraseId);
+        functionToMap.put("phrasalVerbContextualClassification",
+                phrasalVerbContextualClassification);
+        functionToMap.put("phrasalVerbToken", phrasalVerbToken);
+        functionToMap.put("phrasalVerbPOS", phrasalVerbPOS);
+        functionToMap.put("phrasalVerbContext", phrasalVerbContext);
+
+        functionToMap.put("sentencePOSContext", sentencePOSContext);
+        functionToMap.put("sentenceAdjectCount", sentenceAdjectCount);
+        functionToMap.put("sentenceAdverbCount", sentenceAdverbCount);
+        functionToMap.put("sentenceHasPronoun", sentenceHasPronoun);
+        functionToMap.put("sentenceHasModal", sentenceHasModal);
+        functionToMap.put("sentenceWeakCount", sentenceWeakCount);
+        functionToMap.put("sentenceStrongCount", sentenceStrongCount);
+
+        functionToMap.put("subjectiveModifierCount", subjectiveModifierCount);
+
+        try {
+            generalInquirer = new GeneralInquirer();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
 	public static List<Function<SentenceIdPhrasalVerbId, String>> getFeatureFunctions(
 			ArrayList<String> al) {
