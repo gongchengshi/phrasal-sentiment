@@ -7,4 +7,4 @@ mvn package
 
 bin/experiment_split.py --project_output project_output --random_sampling
 csv2vectors --input project_output/data_working.txt --output project_output/data.vectors
-vectors2classify --input project_output/data.vectors --training-portion 0.6 --num-trials 3 --trainer MaxEnt
+vectors2classify --input project_output/data.vectors --training-portion 0.6 --num-trials 3 --trainer MaxEnt > project_output/data_working_maxin
