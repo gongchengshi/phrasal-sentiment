@@ -92,7 +92,6 @@ public class FeatureGenerator {
                 sb_inner.append(f.apply(sp));
                 sb_inner.append(FEATURE_SEPARATOR);
             });
-            System.out.println(sb_inner.toString());
             sb.append(sb_inner).append("\n");
         });
         return sb.toString();
@@ -104,7 +103,7 @@ public class FeatureGenerator {
         goldStandard.phraseSentiment.keySet().stream().forEach((String phrasal_verb) -> {
             try {
                 Set<Integer> sentenceIds = new HashSet<>(sentenceList.findSentencesWithPhrase(phrasal_verb));
-                
+
                 if (sentenceIds.size() > 0) {
                     keepPhrasalVerb.merge(phrasal_verb, sentenceIds, (value, newValue) -> {
                         if (value == null) {
@@ -125,7 +124,7 @@ public class FeatureGenerator {
                 try {
                     StringBuilder append = new StringBuilder();
                     int id = c.next();
-                    
+
                     phrasalVerbIdToPhrase.put(id, phrasal_verb);
                     append.append(id);
                     append.append("\t");

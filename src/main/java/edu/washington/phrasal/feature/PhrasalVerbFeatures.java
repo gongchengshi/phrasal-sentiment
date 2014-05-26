@@ -124,7 +124,7 @@ public class PhrasalVerbFeatures {
             sb.append(sp.getSentencePOS().get(end));
         }
 
-        return "";
+        return sb.toString();
     };
 
     static final Function<SentenceIdPhrasalVerbId, String> sentenceSubjCount = sp -> {
@@ -253,7 +253,7 @@ public class PhrasalVerbFeatures {
 
     static final Function<SentenceIdPhrasalVerbId, String> priorPolarityDefaultNeutral = sp -> {
         Double sentiment = generalInquirer.getSentimentOfPhraseDefaultNeutral(sp.getPhrasalVerbTokens());
-        return "priorPolarity" + FeatureGenerator.FEATURE_VALUE_SEPARATOR + FeatureGenerator.getClassBySentiment(sentiment);
+        return "priorPolarityDefaultNeutral" + FeatureGenerator.FEATURE_VALUE_SEPARATOR + FeatureGenerator.getClassBySentiment(sentiment);
     };
 
     static final Function<SentenceIdPhrasalVerbId, String> containsIntensifier = sp
