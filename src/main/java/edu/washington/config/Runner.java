@@ -41,6 +41,8 @@ public class Runner {
                         + "sentenceHasModal,"
                         + "sentenceWeakCount,"
                         + "sentenceStrongCount,"
+                        + "containsIntensifier,"
+                        + "priorPolarity,"
                         + "subjectiveModifierCount"));
 
             }

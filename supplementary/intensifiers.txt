@@ -47,5 +47,11 @@ low
 strong
 literally
 bitterly
+major
+simply
+stunningly
+perfectly
+insanely
+
 
 
