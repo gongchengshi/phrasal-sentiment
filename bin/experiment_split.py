@@ -44,11 +44,12 @@ def enumerate_feature_set(tfm, keep_token_list=None):
     feature_list = [key for key in feature_token_map.iterkeys()]
     # print feature_list
     fs = []
-    for i in range(4, len(feature_list)):
+    for i in range(6, len(feature_list)):
         for fl in combinations(feature_list, i):
             f = {}
             for feature in fl:
-                f[feature] = feature_token_map[feature]
+                for value in feature_token_map[feature].iterkeys():
+                    f[value] = True
             fs.append(f)
     return fs
 
@@ -71,9 +72,7 @@ def parse_data(basepath, data_file):
         data[classify].append(d)
     return (data, token_set)
 
-def filter_data(class_list, basepath, output_file, base):
-    filepath = os.path.join(basepath, output_file)
-    f = open(filepath, "w")
+def sample_data(class_list, base):
     min_num = len(base[class_list[0]])
     for class_string in class_list:
         l = len(base[class_string])
@@ -83,10 +82,43 @@ def filter_data(class_list, basepath, output_file, base):
     for class_string in base.iterkeys():
         for datum in random.sample(base[class_string], min(min_num, len(base[class_string]))):
             data_filter[class_string].append(datum)
-            data_list = [ datum['ID'], datum['sentiment'] ] + \
-                [ "%s=%s" % (key, value) for key,value in datum.iteritems() if key not in ["ID", "sentiment"]]
-            f.write( " ".join(data_list) + "\n")
     return data_filter
+
+def filter_data(base, tokens):
+    data = defaultdict(list)
+    for class_string in base.iterkeys():
+        for datum in base[class_string]:
+            filter_datum = {}
+            for key in tokens:
+                if key in datum:
+                    filter_datum[key] = datum[key]
+            filter_datum['ID'] = datum['ID']
+            filter_datum['sentiment'] = datum['sentiment']
+            data[class_string].append(filter_datum)
+    return data
+
+def output_data(data, filepath, head=None):
+    f = open(filepath, "w")
+    if head:
+        f.write(head + "\n")
+    for class_string in data.iterkeys():
+        for datum in data[class_string]:
+            f.write(datum_line(datum))
+    f.close()
+
+def datum_line(datum):
+    data_list = [ datum['ID'], datum['sentiment'] ] + \
+        [ "%s=%s" % (key, value) for key,value in datum.iteritems() if key not in ["ID", "sentiment"]]
+    return " ".join(data_list) + "\n"
+
+def output_experiments(data, token_dict, basepath):
+    i = 0
+    file_prefix = os.path.join(basepath, "data_exp_%d.txt")
+    for exp in token_dict:
+        i += 1
+        filepath = file_prefix % i
+        data_filter = filter_data(data, exp)
+        output_data(data_filter, filepath, head="# " + " ".join([token for token in exp.iterkeys()]))
 
 def main(arg=sys.argv[1:]):
     tfm = token_feature_map()
@@ -101,13 +133,16 @@ def main(arg=sys.argv[1:]):
     basepath = os.path.normpath(os.path.abspath(ns.project_output))
     (data_base, token_set) = parse_data(basepath, "data.txt")
 
-    data_working = filter_data(["positive", "neutral", "negative"], basepath, "data_working.txt", data_base)
+    data_working = sample_data(["positive", "neutral", "negative"], data_base)
 
-    fs = enumerate_feature_set(tfm, token_set)
+    output_data(data_working, os.path.join(basepath, "data_working.txt"))
 
+    token_dict = enumerate_feature_set(tfm, token_set)
+
+    print len(token_dict)
+    output_experiments(data_working, token_dict, basepath)
     # for key in data_working.iterkeys():
     #     print key, len(data_working[key])
-    # print len(fs)
 
 
 if __name__ == '__main__':
