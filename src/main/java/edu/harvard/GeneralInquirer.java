@@ -3,9 +3,7 @@ package edu.harvard;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class GeneralInquirer {
     // As of 5/12/2014 out of 11788 total words in the General Inquirer dictionary there are 4211 words with sentiment.
@@ -51,14 +49,27 @@ public class GeneralInquirer {
 
     public Double getSentimentOfPhrase(String phrase) {
         // Todo: implement better stemming
-        String[] words = phrase.toLowerCase().split(" ");
-        Double sum = 0.0;
+        List<String> words = Arrays.asList(phrase.toLowerCase().split(" "));
+        return getSentimentOfPhrase(words);
+    }
+
+    public Double getSentimentOfPhrase(Collection<String> words) {
+        Double sum = null;
         for(String word : words) {
-            Double value = getSentimentOfTerm(word);
+            Double value = getSentimentOfTerm(word.toLowerCase());
             if(value != null) {
+                if(sum == null) {
+                    sum = 0.0;
+                }
                 sum += value;
             }
         }
-        return sum / words.length;
+
+        return sum == null? null : sum / words.size();
     }
+
+    public Double getSentimentOfPhraseDefaultNeutral(Collection<String> words) {
+        Double sentiment = getSentimentOfPhrase(words);
+        return sentiment == null? 0.0 : sentiment;
+   }
 }

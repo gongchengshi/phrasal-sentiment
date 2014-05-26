@@ -7,6 +7,7 @@ package edu.washington.phrasal.feature;
 
 import com.google.common.base.Joiner;
 
+import edu.harvard.GeneralInquirer;
 import edu.stanford.nlp.ie.machinereading.common.SimpleTokenize;
 import edu.stanford.nlp.ling.HasWord;
 import edu.stanford.nlp.ling.IndexedWord;
@@ -16,6 +17,7 @@ import edu.stanford.nlp.semgraph.SemanticGraph;
 import edu.stanford.nlp.semgraph.SemanticGraphEdge;
 import edu.washington.util.StanfordAnnotator;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -234,26 +236,45 @@ public class PhrasalVerbFeatures {
 
 	};
 
-	static {
-		functionToMap.put("ID", phraseId);
-		functionToMap.put("phrasalVerbContextualClassification",
-				phrasalVerbContextualClassification);
-		functionToMap.put("phrasalVerbToken", phrasalVerbToken);
-		functionToMap.put("phrasalVerbPOS", phrasalVerbPOS);
-		functionToMap.put("phrasalVerbContext", phrasalVerbContext);
+    static GeneralInquirer generalInquirer = null;
 
-		functionToMap.put("sentencePOSContext", sentencePOSContext);
-		functionToMap.put("sentenceAdjectCount", sentenceAdjectCount);
-		functionToMap.put("sentenceAdverbCount", sentenceAdverbCount);
-		functionToMap.put("sentenceHasPronoun", sentenceHasPronoun);
-		functionToMap.put("sentenceHasModal", sentenceHasModal);
-		functionToMap.put("sentenceWeakCount", sentenceWeakCount);
-		functionToMap.put("sentenceStrongCount", sentenceStrongCount);
+    static final Function<SentenceIdPhrasalVerbId, String> priorPolarity = sp -> {
+        Double sentiment = generalInquirer.getSentimentOfPhrase(sp.getPhrasalVerbTokens());
+        if (sentiment == null) {
+            return "";
+        }
+        return "priorPolarity" + FeatureGenerator.FEATURE_VALUE_SEPARATOR + FeatureGenerator.getClassBySentiment(sentiment);
+    };
 
-		functionToMap.put("subjectiveModifierCount", subjectiveModifierCount);
+    static final Function<SentenceIdPhrasalVerbId, String> priorPolarityDefaultNeutral = sp -> {
+        Double sentiment = generalInquirer.getSentimentOfPhraseDefaultNeutral(sp.getPhrasalVerbTokens());
+        return "priorPolarity" + FeatureGenerator.FEATURE_VALUE_SEPARATOR + FeatureGenerator.getClassBySentiment(sentiment);
+    };
 
+    static {
+        functionToMap.put("ID", phraseId);
+        functionToMap.put("phrasalVerbContextualClassification",
+                phrasalVerbContextualClassification);
+        functionToMap.put("phrasalVerbToken", phrasalVerbToken);
+        functionToMap.put("phrasalVerbPOS", phrasalVerbPOS);
+        functionToMap.put("phrasalVerbContext", phrasalVerbContext);
 
-	}
+        functionToMap.put("sentencePOSContext", sentencePOSContext);
+        functionToMap.put("sentenceAdjectCount", sentenceAdjectCount);
+        functionToMap.put("sentenceAdverbCount", sentenceAdverbCount);
+        functionToMap.put("sentenceHasPronoun", sentenceHasPronoun);
+        functionToMap.put("sentenceHasModal", sentenceHasModal);
+        functionToMap.put("sentenceWeakCount", sentenceWeakCount);
+        functionToMap.put("sentenceStrongCount", sentenceStrongCount);
+
+        functionToMap.put("subjectiveModifierCount", subjectiveModifierCount);
+
+        try {
+            generalInquirer = new GeneralInquirer();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
 	public static List<Function<SentenceIdPhrasalVerbId, String>> getFeatureFunctions(
 			ArrayList<String> al) {
