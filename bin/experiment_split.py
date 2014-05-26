@@ -33,7 +33,7 @@ def token_feature_map():
         'priorPolarityDefaultNeutral' : 'priorPolarityDefaultNeutral',
     }
 
-def enumerate_feature_set(tfm, keep_token_list=None):
+def enumerate_feature_set(tfm, keep_token_list=None, features=6):
     feature_token_map = defaultdict(lambda: defaultdict( lambda: defaultdict(bool)))
     # print keep_token_list
     for key, value in tfm.iteritems():
@@ -44,7 +44,7 @@ def enumerate_feature_set(tfm, keep_token_list=None):
     feature_list = [key for key in feature_token_map.iterkeys()]
     # print feature_list
     fs = []
-    for i in range(6, len(feature_list)):
+    for i in range(min(features, len(feature_list)-1), len(feature_list)):
         for fl in combinations(feature_list, i):
             f = {}
             for feature in fl:
@@ -111,10 +111,10 @@ def datum_line(datum):
         [ "%s=%s" % (key, value) for key,value in datum.iteritems() if key not in ["ID", "sentiment"]]
     return " ".join(data_list) + "\n"
 
-def output_experiments(data, token_dict, basepath):
+def output_experiments(data, token_dict_list, basepath, experiments=60):
     i = 0
     file_prefix = os.path.join(basepath, "data_exp_%d.txt")
-    for exp in token_dict:
+    for exp in random.sample(token_dict_list, min(experiments, len(token_dict_list))):
         i += 1
         filepath = file_prefix % i
         data_filter = filter_data(data, exp)
@@ -125,8 +125,10 @@ def main(arg=sys.argv[1:]):
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--project_output', help='location of the data.txt file', default='./')
-    parser.add_argument('--random_sampling', help='perform random sampling of positive,neutral,negative with the least number of row from the three class',
-        default=False, action='store_true')
+    parser.add_argument('--experiments', help="number of experiments to perform", default=60,
+        type=int)
+    parser.add_argument('--features', help="number of experiments to perform", default=6,
+        type=int)
 
     ns = parser.parse_args(arg)
     #print ns
@@ -137,10 +139,10 @@ def main(arg=sys.argv[1:]):
 
     output_data(data_working, os.path.join(basepath, "data_working.txt"))
 
-    token_dict = enumerate_feature_set(tfm, token_set)
+    token_dict = enumerate_feature_set(tfm, token_set, features=ns.features)
 
     print len(token_dict)
-    output_experiments(data_working, token_dict, basepath)
+    output_experiments(data_working, token_dict, basepath, experiments=ns.experiments)
     # for key in data_working.iterkeys():
     #     print key, len(data_working[key])
 
