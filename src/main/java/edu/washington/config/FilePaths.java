@@ -18,5 +18,5 @@ public class FilePaths {
             new StanfordSentimentTreebankInfo("supplementary/stanfordSentimentTreebank");
     public static final Path subjectivityLexicon = Paths
             .get("supplementary/mpqaSubjectivityLexicon/subjclueslen1-HLTEMNLP05.tff");
-
+    public static final Path intensifiers = Paths.get("supplementary/intensifiers.txt");
 }

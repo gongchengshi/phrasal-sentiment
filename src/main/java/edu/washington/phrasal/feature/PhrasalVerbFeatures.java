@@ -257,6 +257,9 @@ public class PhrasalVerbFeatures {
         return "priorPolarity" + FeatureGenerator.FEATURE_VALUE_SEPARATOR + FeatureGenerator.getClassBySentiment(sentiment);
     };
 
+    static final Function<SentenceIdPhrasalVerbId, String> containsIntensifier = sp ->
+            "containsIntensifier" + FeatureGenerator.FEATURE_VALUE_SEPARATOR + Intensifiers.ContainsIntensifier(sp.getPhrasalVerbTokens());
+
     static {
         functionToMap.put("ID", phraseId);
         functionToMap.put("phrasalVerbContextualClassification",
@@ -274,6 +277,11 @@ public class PhrasalVerbFeatures {
         functionToMap.put("sentenceStrongCount", sentenceStrongCount);
 
         functionToMap.put("subjectiveModifierCount", subjectiveModifierCount);
+
+        functionToMap.put("priorPolarity", priorPolarity);
+        functionToMap.put("priorPolarityDefaultNeutral", priorPolarityDefaultNeutral);
+
+        functionToMap.put("containsIntensifier", containsIntensifier);
 
         try {
             generalInquirer = new GeneralInquirer();
