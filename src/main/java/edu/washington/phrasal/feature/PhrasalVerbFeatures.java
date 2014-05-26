@@ -192,43 +192,49 @@ public class PhrasalVerbFeatures {
 		return sb.toString();
 	};
 
+	static 		List<String> relTypes = Arrays.asList("adj", "mod", "vmod", "advmod", "nsubj");
 	static final Function<SentenceIdPhrasalVerbId, String> subjectiveModifierCount = sp -> {
 		StringBuilder sb = new StringBuilder();
-
-		String input = "The human rights report poses a substantial challenge to interpretation of the us interpretation of good and evil.";
-
-		StanfordAnnotator annotator = StanfordAnnotator.getInstance();
-		SemanticGraph deps = annotator.getDeps(input);
-
-		List<String> relTypes = Arrays.asList("adj", "mod", "vmod");
-		IndexedWord node = deps.getNodeByWordPattern(sp.getSentenceTokens()
-				.get(sp.pvStartIndex));
-		Collection<IndexedWord> childrenAndParents = deps.getChildren(node);
-		childrenAndParents.addAll(deps.getParents(node));
 		boolean modifiesStronbSubj = false;
 		boolean modifiesWeakSubj = false;
-		for (IndexedWord word : childrenAndParents) {
-			SemanticGraphEdge relType = deps.getEdge(node, word);
-			if (relTypes.contains(relType)) {
-				if (sp.getFG().subjectivityLexicon.weaksubj.contains(word
-						.originalText())) {
-					modifiesWeakSubj = true;
-				}
-				if (sp.getFG().subjectivityLexicon.strongsubj.contains(word
-						.originalText())) {
-					modifiesStronbSubj = true;
+		StanfordAnnotator annotator = StanfordAnnotator.getInstance();
+		SemanticGraph deps = annotator.getDeps(sp.getSentence());
+		System.out.println("base");
+		if (sp.pvStartIndex > 1) {
+			IndexedWord node = deps.getNodeByWordPattern(sp.getSentenceTokens()
+					.get(sp.pvStartIndex));
+			if (node != null) {
+				Collection<IndexedWord> childrenAndParents = deps
+						.getChildren(node);
+				childrenAndParents.addAll(deps.getParents(node));
+				for (IndexedWord word : childrenAndParents) {
+					SemanticGraphEdge edge = deps.getEdge(node, word);
+					if (edge != null && edge.getRelation() != null) {
+						String relType = edge.getRelation().getShortName();
+						if (relTypes.contains(relType)) {
+							if (sp.getFG().subjectivityLexicon.weaksubj
+									.contains(word.originalText())) {
+								modifiesWeakSubj = true;
+							}
+							if (sp.getFG().subjectivityLexicon.strongsubj
+									.contains(word.originalText())) {
+								modifiesStronbSubj = true;
+							}
+						}
+						
+					}
 				}
 			}
-		}
-		if (modifiesStronbSubj) {
-			sb.append("strongsubjCount");
-			sb.append(FeatureGenerator.FEATURE_VALUE_SEPARATOR);
-			sb.append(1+ " ");
-		}
-		if (modifiesWeakSubj) {
-			sb.append("weakSubjCount");
-			sb.append(FeatureGenerator.FEATURE_VALUE_SEPARATOR);
-			sb.append(1+ " ");
+			if (modifiesStronbSubj) {
+				sb.append("strongSubjRelation");
+				sb.append(FeatureGenerator.FEATURE_VALUE_SEPARATOR);
+				sb.append(1 + " ");
+			}
+			if (modifiesWeakSubj) {
+				sb.append("weakSubjRelation");
+				sb.append(FeatureGenerator.FEATURE_VALUE_SEPARATOR);
+				sb.append(1 + " ");
+			}
 		}
 		return sb.toString();
 
@@ -249,9 +255,7 @@ public class PhrasalVerbFeatures {
 		functionToMap.put("sentenceHasModal", sentenceHasModal);
 		functionToMap.put("sentenceWeakCount", sentenceWeakCount);
 		functionToMap.put("sentenceStrongCount", sentenceStrongCount);
-
 		functionToMap.put("subjectiveModifierCount", subjectiveModifierCount);
-
 
 	}
 

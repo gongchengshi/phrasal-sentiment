@@ -115,7 +115,6 @@ public class StanfordAnnotator {
 		SemanticGraph dependecies = annotatedSentence
 				.get(CollapsedCCProcessedDependenciesAnnotation.class);
 		return dependecies;
-		// Tree tree = annotatedSentence.get(TreeAnnotation.class);
 
 	}
 
