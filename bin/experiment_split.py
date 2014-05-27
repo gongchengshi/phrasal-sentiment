@@ -120,8 +120,8 @@ def generate_run_script(basepath, file_prefix, num):
         current_file = file_prefix % i
         f.write("""
 csv2vectors --input %s.txt --output %s.vector
-vectors2classify --input %s.vector --training-portion 0.6 --num-trials 3 --trainer MaxEnt > %s.out
-""" % (current_file, current_file, current_file, current_file))
+vectors2classify --input %s.vector --training-portion 0.6 --num-trials 3 --trainer MaxEnt > %s.out  2> %s.err
+""" % (current_file, current_file, current_file, current_file, current_file))
     f.close()
     st = os.stat(filepath)
     os.chmod(filepath, st.st_mode | stat.S_IEXEC)
