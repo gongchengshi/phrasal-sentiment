@@ -4,6 +4,7 @@ import sys
 import argparse
 import os
 import random
+import stat
 
 from collections import defaultdict
 from itertools import *
@@ -111,14 +112,31 @@ def datum_line(datum):
         [ "%s=%s" % (key, value) for key,value in datum.iteritems() if key not in ["ID", "sentiment"]]
     return " ".join(data_list) + "\n"
 
-def output_experiments(data, token_dict_list, basepath, experiments=60):
+def generate_run_script(basepath, file_prefix, num):
+    filepath = os.path.join(basepath, "run_exp.sh")
+    f = open(filepath, "w")
+    f.write("#!/bin/sh\n")
+    for i in range(1, num+1):
+        current_file = file_prefix % i
+        f.write("""
+csv2vectors --input %s.txt --output %s.vector
+vectors2classify --input %s.vector --training-portion 0.6 --num-trials 3 --trainer MaxEnt > %s.out
+""" % (current_file, current_file, current_file, current_file))
+    f.close()
+    st = os.stat(filepath)
+    os.chmod(filepath, st.st_mode | stat.S_IEXEC)
+
+def output_experiments(data, token_dict_list, basepath, experiments=60, generate_run=False):
     i = 0
-    file_prefix = os.path.join(basepath, "data_exp_%d.txt")
+
+    file_prefix = os.path.join(basepath, "data_exp_%d")
     for exp in random.sample(token_dict_list, min(experiments, len(token_dict_list))):
         i += 1
-        filepath = file_prefix % i
+        filepath = (file_prefix % i) + ".txt"
         data_filter = filter_data(data, exp)
         output_data(data_filter, filepath, head="# " + " ".join([token for token in exp.iterkeys()]))
+    if generate_run:
+        generate_run_script(basepath, file_prefix, i)
 
 def main(arg=sys.argv[1:]):
     tfm = token_feature_map()
@@ -129,6 +147,7 @@ def main(arg=sys.argv[1:]):
         type=int)
     parser.add_argument('--features', help="number of experiments to perform", default=6,
         type=int)
+    parser.add_argument('--generate_run', help='generate experiement run file', action='store_true', default=False)
 
     ns = parser.parse_args(arg)
     #print ns
@@ -142,7 +161,7 @@ def main(arg=sys.argv[1:]):
     token_dict = enumerate_feature_set(tfm, token_set, features=ns.features)
 
     print len(token_dict)
-    output_experiments(data_working, token_dict, basepath, experiments=ns.experiments)
+    output_experiments(data_working, token_dict, basepath, experiments=ns.experiments, generate_run=ns.generate_run)
     # for key in data_working.iterkeys():
     #     print key, len(data_working[key])
 
