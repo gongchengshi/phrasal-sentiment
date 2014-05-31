@@ -163,8 +163,8 @@ def main(arg=sys.argv[1:]):
 
     token_dict = enumerate_feature_set(tfm, token_set, features=ns.features)
 
-    print len(token_dict)
-    output_experiments(data_working, token_dict, basepath, experiments=ns.experiments, generate_run=ns.generate_run)
+    if ns.generate_run:
+        output_experiments(data_working, token_dict, basepath, experiments=ns.experiments, generate_run=ns.generate_run)
     # for key in data_working.iterkeys():
     #     print key, len(data_working[key])
 
