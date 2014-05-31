@@ -73,15 +73,16 @@ def parse_data(basepath, data_file):
         data[classify].append(d)
     return (data, token_set)
 
-def sample_data(class_list, base):
+def sample_data(class_list, base, tokens):
     min_num = len(base[class_list[0]])
     for class_string in class_list:
         l = len(base[class_string])
         min_num = min(min_num, l)
 
     data_filter = defaultdict(list)
-    for class_string in base.iterkeys():
-        for datum in random.sample(base[class_string], min(min_num, len(base[class_string]))):
+    data_filtered = filter_data(base, tokens)
+    for class_string in data_filtered.iterkeys():
+        for datum in random.sample(data_filtered[class_string], min(min_num, len(base[class_string]))):
             data_filter[class_string].append(datum)
     return data_filter
 
@@ -151,18 +152,31 @@ def main(arg=sys.argv[1:]):
     parser.add_argument('--features', help="number of experiments to perform", default=6,
         type=int)
     parser.add_argument('--generate_run', help='generate experiement run file', action='store_true', default=False)
+    parser.add_argument('--wanted_features', help="wanted features in csv format", type=str)
 
     ns = parser.parse_args(arg)
-    #print ns
+
     basepath = os.path.normpath(os.path.abspath(ns.project_output))
     (data_base, token_set) = parse_data(basepath, "data.txt")
 
-    data_working = sample_data(["positive", "neutral", "negative"], data_base)
+    base_tokens = [key for key in tfm.iterkeys()]
+    if ns.wanted_features is not None:
+        features = ns.wanted_features.split(",")
+        feature_tokens = defaultdict(list)
+        for token, feature in tfm.iteritems():
+            feature_tokens[feature].append(token)
+        base_tokens = []
+        for feature in features:
+            if feature in feature_tokens:
+                base_tokens += feature_tokens[feature]
+            else:
+                raise Exception("invalid feature [%s]" % (feature))
+
+    data_working = sample_data(["positive", "neutral", "negative"], data_base, base_tokens)
 
     output_data(data_working, os.path.join(basepath, "data_working.txt"))
 
     token_dict = enumerate_feature_set(tfm, token_set, features=ns.features)
-
     if ns.generate_run:
         output_experiments(data_working, token_dict, basepath, experiments=ns.experiments, generate_run=ns.generate_run)
     # for key in data_working.iterkeys():
