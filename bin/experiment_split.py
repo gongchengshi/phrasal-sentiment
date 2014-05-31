@@ -102,9 +102,12 @@ def output_data(data, filepath, head=None):
     f = open(filepath, "w")
     if head:
         f.write(head + "\n")
+    lines = []
     for class_string in data.iterkeys():
         for datum in data[class_string]:
-            f.write(datum_line(datum))
+            lines.append(datum_line(datum))
+    for line in random.sample(lines, len(lines)):
+        f.write(line)
     f.close()
 
 def datum_line(datum):
