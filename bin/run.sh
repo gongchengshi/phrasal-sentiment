@@ -9,4 +9,4 @@ echo "genearting experiment files, call project_output/run_exp.sh to run"
 bin/experiment_split.py --project_output ./project_output/ --features=7 --experiments=60 --generate_run
 
 csv2vectors --input project_output/data_working.txt --output project_output/data.vectors
-vectors2classify --input project_output/data.vectors --training-portion 0.6 --num-trials 3 --trainer MaxEnt > project_output/data_working_maxin
+vectors2classify --input project_output/data.vectors --training-portion 0.6 --num-trials 3 --trainer MaxEnt > project_output/data_working_maxin.out 2> project_output/data_working_maxin.err
