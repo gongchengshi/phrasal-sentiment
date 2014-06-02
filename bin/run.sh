@@ -3,6 +3,8 @@
 export JAVA_HOME=/opt/jdk1.8.0/jre
 mvn package
 
+echo "making project_output" directory
+mkdir ./project_output/
 /opt/jdk1.8.0/jre/bin/java -jar target/phrasal_sentiment-1.0-SNAPSHOT-jar-with-dependencies.jar
 
 echo "genearting experiment files, call project_output/run_exp.sh to run"
