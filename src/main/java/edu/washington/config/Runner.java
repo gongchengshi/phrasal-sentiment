@@ -32,6 +32,7 @@ public class Runner {
 //                writer.write(f.generateFeature("ID,phrasalVerbContextualClassification,phrasalVerbToken,phrasalVerbPOS,phrasalVerbContext"));
                 writer.write(f.generateFeature("ID,"
                         + "phrasalVerbContextualClassification,"
+                        + "phrasalVerbToken,"
                         + "phrasalVerbPOS,"
                         + "phrasalVerbContext,"
                         + "sentencePOSContext,"
@@ -43,6 +44,7 @@ public class Runner {
                         + "sentenceStrongCount,"
                         + "containsIntensifier,"
                         + "priorPolarity,"
+                        + "priorPolarityDefaultNeutral,"
                         + "subjectiveModifierCount"));
 
             }
